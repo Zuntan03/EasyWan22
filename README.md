@@ -30,6 +30,9 @@ ComfyUI の学習などが目的の方は、[SimpleComfyUi](https://github.com/Z
 
 `Easy/99_WIP_Kijai_LowSpec.json` 上にある緑のノードを操作します。
 
+**[重要] `モデルを使用して画像を拡大` によるアップスケールや `RIFE VFI` によるフレーム補間は無効にして、シードガチャをしてください。**  
+**良い動画が生成できたら mp4 を ComfyUI で読み込んで、アップスケールとフレーム補間を有効にして生成します。**
+
 `ComfyUI/extra_model_paths.yaml.example` をコピーしてから `ComfyUI/extra_model_paths.yaml` にリネームし、
 ```yaml
 comfyui:
