@@ -46,6 +46,8 @@ comfyui:
 - `99_WIP_Kijai_LowSpec` ワークフローで LoRA の読み込みと、旧タイプ？の終了画像に対応しました。
 - `Download\vae_approx\taew2_1.bat` のダウンロードに対応しました。
 	- [ComfyUI-Manager と Video Helper の設定](https://github.com/kijai/ComfyUI-WanVideoWrapper/issues/229#issuecomment-2729456556) で `WanVideoSampler` にプレビューが表示されます。
+- `Wan2.2-I2V-A14B` の `Q4_K_M`, `Q6_K`, `Q8_0` のダウンロードに対応しました。
+	- `Download\diffusion_models\Base-Wan2.2-I2V-A14B.bat` でまとめてダウンロードできます。
 
 ## ライセンス
 
