@@ -21,6 +21,9 @@ ComfyUI の学習などが目的の方は、[SimpleComfyUi](https://github.com/Z
 	- **`発行元を確認できませんでした。このソフトウェアを実行しますか？` と表示されたら `実行` します。**
 	- **`WindowsによってPCが保護されました` と表示されたら、`詳細表示` から `実行` します。**
 	- **`Microsoft Visual C++ 2015-2022 Redistributable` のインストールで `このアプリがデバイスに変更を加えることを許可しますか？` と表示されたら `はい` とします。**
+	- **必要なファイルのダウンロードに [Civitai](https://civitai.com/) API キーが必要ですので、画面の案内に沿って入力してください。**
+
+問題が発生する場合は、Python 3.12.x 系をパスを通してインストールしたら解決するかもしれません。
 
 ## 使い方
 
@@ -28,7 +31,9 @@ ComfyUI の学習などが目的の方は、[SimpleComfyUi](https://github.com/Z
 	- 初回起動時にブラウザキャッシュにある過去のワークフローが開かれ、エラーになる場合があります。エラーを無視してワークフローを閉じてください。
 - `Update.bat` で更新します。
 
-`Easy/99_WIP_Kijai_LowSpec.json` 上にある緑のノードを操作します。
+**`Easy/00_I2V(ImageToVideo)` ワークフローを開いて、ワークフロー内の説明を確認してください。**
+
+~~`Easy/99_WIP_Kijai_LowSpec.json` 上にある緑のノードを操作します。~~
 
 **[重要] `モデルを使用して画像を拡大` によるアップスケールや `RIFE VFI` によるフレーム補間は無効にして、シードガチャをしてください。**  
 **良い動画が生成できたら mp4 を ComfyUI で読み込んで、アップスケールとフレーム補間を有効にして生成します。**
@@ -43,6 +48,15 @@ comfyui:
 `D:/EasyWanVideo/ComfyUI/` の部分を EasyWanVideo インストール先の `EasyWanVideo/ComfyUI/` への絶対パスに書き換えてください。
 
 ## 最近の更新
+
+### 2025/08/02
+
+- `Easy/00_I2V(ImageToVideo)` ワークフローを追加しました。
+	- EasyWanVideo の NsfwFast と同様のモザイク三種盛り、アップスケール、フレーム補間、ラベルに対応し、シードガチャ当たりからの後処理で再生成を不要にしました。
+- 更新やインストールに Civitai の API キーが必要になります。
+- `Download\loras\Nsfw\GeneralNsfw22_v006.bat` のダウンロードに対応しました。
+
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/I2V.webp)
 
 ### 2025/07/31
 

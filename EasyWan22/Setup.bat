@@ -24,17 +24,6 @@ echo triton-windows==3.3.1.post19> "%EASY_COMFYUI%\Triton_Version.txt"
 @REM https://github.com/woct0rdho/SageAttention/releases
 echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows/sageattention-2.2.0+cu128torch2.7.1-cp312-cp312-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
 
-@REM https://github.com/kijai/ComfyUI-Florence2/issues/134
-@REM https://github.com/huggingface/transformers/issues/36886
-@REM echo pip install -qq transformers==4.49.0
-@REM pip install -qq transformers==4.49.0
-@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
-
-@REM ComfyUI-Impact-Pack\requirements.txt
-@REM echo pip install -qq numpy==1.26.4 opencv-python-headless==4.11.0.86 opencv-contrib-python==4.11.0.86 opencv-python==4.11.0.86
-@REM pip install -qq numpy==1.26.4 opencv-python-headless==4.11.0.86 opencv-contrib-python==4.11.0.86 opencv-python==4.11.0.86
-@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
-
 call %EASY_TOOLS%\ComfyUi\ComfyUi_Update.bat
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
@@ -42,21 +31,13 @@ popd rem "%~dp0.."
 pushd "%~dp0..\ComfyUI\custom_nodes"
 
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 9edab7456230b200667a9680d7a93ff12cfd9000
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\
 
-@REM https://github.com/kijai/ComfyUI-KJNodes/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-KJNodes main
-if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
-
 @REM DEBUG
 if defined EASY_WAN22_QUICK_UPDATE ( exit /b 0 )
-
-if not exist ComfyUI-KJNodes\fonts\f910-shin-comic-2.04.otf (
-	copy %~dp0f910-shin-comic-2.04\f910-shin-comic-2.04.otf ComfyUI-KJNodes\fonts\
-)
 
 @REM https://github.com/christian-byrne/audio-separation-nodes-comfyui/commits/master/
 call :GITHUB_HASH_REQUIREMENTS christian-byrne audio-separation-nodes-comfyui master 31a4567726e035097cc2d1f767767908a6fda2ea
@@ -104,6 +85,14 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 if not exist ..\models\ultralytics\ ( mkdir ..\models\ultralytics )
 
+@REM https://github.com/kijai/ComfyUI-KJNodes/commits/main/
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-KJNodes main a6b867b63a29ca48ddb15c589e17a9f2d8530d57
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
+if not exist ComfyUI-KJNodes\fonts\f910-shin-comic-2.04.otf (
+	copy %~dp0f910-shin-comic-2.04\f910-shin-comic-2.04.otf ComfyUI-KJNodes\fonts\
+)
+
 @REM https://github.com/kijai/ComfyUI-segment-anything-2/commits/main/
 call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-segment-anything-2 main c59676b008a76237002926f684d0ca3a9b29ac54
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
@@ -128,17 +117,17 @@ popd rem "%~dp0..\ComfyUI\custom_nodes"
 pushd "%~dp0..\ComfyUI"
 
 call %JUNCTION% ..\Output output
-if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+@REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 call %JUNCTION% ..\Model models
-if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+@REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 if not exist ComfyUi\user\default\workflows\ ( mkdir ComfyUi\user\default\workflows )
 call %JUNCTION% ..\Workflow user\default\workflows
-if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+@REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 call %JUNCTION% user\default\workflows\Easy %~dp0Workflow
-if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+@REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 if exist input\takopii_kirara.webp ( goto :EXIST_INPUT_IMG )
 echo %CURL_CMD% -o input\takopii_kirara.webp https://yyy.wpx.jp/EasyWanVideo/input/takopii_kirara.webp

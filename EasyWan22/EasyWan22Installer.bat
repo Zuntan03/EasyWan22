@@ -124,6 +124,7 @@ if %ERRORLEVEL% neq 0 ( exit /b 1 )
 
 if /i not "%DOWNLOAD_MODEL_YES_OR_NO%" == "n" (
 	call %~dp0%PROJECT_NAME%\AutoDownload_Enable.bat
+	call %EASY_TOOLS_DIR%\Civitai\Civitai_ApiKey.bat
 )
 
 call %PROJECT_SETUP_BAT%
