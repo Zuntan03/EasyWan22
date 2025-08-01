@@ -1,18 +1,34 @@
 ﻿# <ruby>EasyWan22<rt>ｲｰｼﾞｰﾜﾝﾆｬﾝﾆｬﾝ</rt></ruby>
 
-諸々整備中。週末ぐらいにはまともになるはず。
+[MT English, README_en.md](README_en.md)
 
-RAM 32GB, VRAM 8GB で動きます。  
-Geforce RTX 3060 12GB で長辺 1024 px, 101フレームが生成できました。
+Wan 2.2 **I2V-A14B** が RAM 32GB, VRAM 8GB で普通に動きます。  
+Geforce RTX 3060 12GB で長辺 1024 px, 101フレームが生成できます。
 
-ComfyUI の学習などが目的の方は、[SimpleComfyUi](https://github.com/Zuntan03/SimpleComfyUi) をご利用ください。
+[Wan 2.2 **I2V-A14B** が **RAM 16GB**, Geforce **GTX 1660Ti VRAM 6GB** でもなんとか動きます。](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/EasyWan22_I2V-A14B_Vram6GB_Ram16GB.mp4)  
+`Easy/I2V` ワークフロー変更点: 長辺 384px, T5 gpu->cpu fp8_e4m3fn->none, sageattn->spda
+
+[test](https://yyy.wpx.jp/2025/08/EasyWan22_I2V-A14B_Vram6GB_Ram16GB.mp4)
+
+動画の量産時の手数を減らすためにワークフローが大きめです。  
+ComfyUI の学習などには不向きですので、それらが目的の方は、[SimpleComfyUi](https://github.com/Zuntan03/SimpleComfyUi) をご利用ください。
+
+## 利用者の声
+
+記事
+
+- 『[Wan2.2が簡単に使える「EasyWan22」の使い方](https://note.com/aiaicreate/n/n0c24cf1a8035)』
+
+作例
+
+- 8/2: [@nellygem888](https://x.com/nellygem888/status/1951302176556589368) [2](https://x.com/nellygem888/status/1951313234662924646)
+- 8/1: [@BeamManP](https://x.com/BeamManP/status/1950969267484238201), [@kagami_kami_m](https://x.com/kagami_kami_m/status/1951218120171106682), [@Kuze0x0_](https://x.com/Kuze0x0_/status/1950953805618835893), [@m_gen_chan](https://x.com/m_gen_chan/status/1951116909933633797), [@kp4114](https://x.com/kp4114/status/1951150976116859195), [@yukimino_doga](https://x.com/yukimino_doga/status/1950816818408374735) [2](https://x.com/yukimino_doga/status/1951263437939425350) [3](https://x.com/yukimino_doga/status/1950768548600770891), [@kp4114](https://x.com/kp4114/status/1951150976116859195), [@croblz25](https://x.com/croblz25/status/1950944166097326435)
+- 7/31: [@Emanon_14](https://x.com/Emanon_14/status/1950892068705841599), [@yukimino_doga](https://x.com/yukimino_doga/status/1950761171797377392) [2](https://x.com/yukimino_doga/status/1950878350257312142)
 
 ## ワークフロー付き仮サンプル動画
 
-アップスケールとフレーム補間を無効にすると高速に生成できます。
-
-- 2025/07/31 LoRA でダンス（WIP ワークフロー）
 - 2025/07/31 [プロンプトでダンス（旧 WIP ワークフロー）](https://yyy.wpx.jp/2025/07/20250731-EasyWan22.mp4)
+	- アップスケールとフレーム補間を無効にすると高速に生成できます。
 
 ## インストール方法
 
@@ -21,9 +37,7 @@ ComfyUI の学習などが目的の方は、[SimpleComfyUi](https://github.com/Z
 	- **`発行元を確認できませんでした。このソフトウェアを実行しますか？` と表示されたら `実行` します。**
 	- **`WindowsによってPCが保護されました` と表示されたら、`詳細表示` から `実行` します。**
 	- **`Microsoft Visual C++ 2015-2022 Redistributable` のインストールで `このアプリがデバイスに変更を加えることを許可しますか？` と表示されたら `はい` とします。**
-	- **必要なファイルのダウンロードに [Civitai](https://civitai.com/) API キーが必要ですので、画面の案内に沿って入力してください。**
-
-問題が発生する場合は、Python 3.12.x 系をパスを通してインストールしたら解決するかもしれません。
+	- **必要なファイルのダウンロードに [Civitai](https://civitai.com/) API キーが必要ですので、画面の案内や [ノウハウ](https://www.google.com/search?q=civitai+api+key) に沿って入力してください。**
 
 ## 使い方
 
@@ -31,12 +45,9 @@ ComfyUI の学習などが目的の方は、[SimpleComfyUi](https://github.com/Z
 	- 初回起動時にブラウザキャッシュにある過去のワークフローが開かれ、エラーになる場合があります。エラーを無視してワークフローを閉じてください。
 - `Update.bat` で更新します。
 
-**`Easy/00_I2V(ImageToVideo)` ワークフローを開いて、ワークフロー内の説明を確認してください。**
+**`Easy/00_I2V(ImageToVideo)` ワークフローを開いて、ワークフロー内上部の説明を確認してください。**
 
 ~~`Easy/99_WIP_Kijai_LowSpec.json` 上にある緑のノードを操作します。~~
-
-**[重要] `モデルを使用して画像を拡大` によるアップスケールや `RIFE VFI` によるフレーム補間は無効にして、シードガチャをしてください。**  
-**良い動画が生成できたら mp4 を ComfyUI で読み込んで、アップスケールとフレーム補間を有効にして生成します。**
 
 `ComfyUI/extra_model_paths.yaml.example` をコピーしてから `ComfyUI/extra_model_paths.yaml` にリネームし、
 ```yaml
@@ -55,6 +66,7 @@ comfyui:
 	- EasyWanVideo の NsfwFast と同様のモザイク三種盛り、アップスケール、フレーム補間、ラベルに対応し、シードガチャ当たりからの後処理で再生成を不要にしました。
 - 更新やインストールに Civitai の API キーが必要になります。
 - `Download\loras\Nsfw\GeneralNsfw22_v006.bat` のダウンロードに対応しました。
+- 利用者の声を記載しました。
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/I2V.webp)
 
