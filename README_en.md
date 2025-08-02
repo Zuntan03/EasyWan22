@@ -53,6 +53,17 @@ Examples
 
 ## Recent Updates
 
+### 2025/08/03
+
+- Continuing to update `Easy/I2V` workflow.
+	- **Added support for Japanese prompt translation to English.**  
+	**You can choose between local translation and Google Translator.**
+	- Made text encoder selectable from `Kijai`, `Native`, `NAG`.  
+	Default is scaled fp8 `Native`.
+	- Enabled concatenation of preset prompts and input prompts for negative prompts.
+	- Added support for prompt generation from images.
+		- The effect of calming movement is more powerful than Wan 2.1, so usage seems limited.
+
 ### 2025/08/02
 
 - Added `Easy/00_I2V(ImageToVideo)` workflow.

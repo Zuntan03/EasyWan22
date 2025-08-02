@@ -66,6 +66,11 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call :GITHUB_HASH_REQUIREMENTS pythongosssss ComfyUI-Custom-Scripts main aac13aa7ce35b07d43633c3bbe654a38c00d74f5
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
+@REM 08/02 c34f5b465ecc77886b5a87ddd6a3a887603d7559
+@REM https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet/commits/master/
+call :GITHUB_HASH_REQUIREMENTS AlekPet ComfyUI_Custom_Nodes_AlekPet master c34f5b465ecc77886b5a87ddd6a3a887603d7559
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
 @REM https://github.com/kijai/ComfyUI-DepthAnythingV2/commits/main/
 call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-DepthAnythingV2 main d505cbca99803fc63327b8305618a23e59a18b42
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
