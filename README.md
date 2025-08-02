@@ -57,6 +57,7 @@ ComfyUI の学習などには不向きですので、それらが目的の方は
 	- EasyWanVideo の NsfwFast と同様のモザイク三種盛り、アップスケール、フレーム補間、ラベルに対応し、シードガチャ当たりからの後処理で再生成を不要にしました。
 - 更新やインストールに Civitai の API キーが必要になります。
 - `Download\loras\Nsfw\GeneralNsfw22_v006.bat` のダウンロードに対応しました。
+	- `Download\loras\Nsfw\GeneralNsfw22_v008a.bat` にバージョンアップしました。
 - 利用者の声を記載しました。
 - `Sample/` への作例のダウンロードに対応しました。
 - 無保証の Python 3.10 対応を試験的に導入。

@@ -19,4 +19,4 @@ call %~dp0vae_approx\taew2_1.bat
 
 call %~dp0loras\Wan21Fast\lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.bat
 
-call %~dp0loras\Nsfw\GeneralNsfw22_v006.bat
+call %~dp0loras\Nsfw\GeneralNsfw22_v008a.bat

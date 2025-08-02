@@ -57,6 +57,7 @@ Examples
 	- Supports three types of mosaic like EasyWanVideo's NsfwFast, upscaling, frame interpolation, and labels, eliminating the need for regeneration after post-processing from seed gacha hits.
 - Civitai API key is now required for updates and installation.
 - Added support for downloading `Download\loras\Nsfw\GeneralNsfw22_v006.bat`.
+	- Updated to version `Download\loras\Nsfw\GeneralNsfw22_v008a.bat`.
 - Added user feedback section.
 - Added support for downloading examples to `Sample/`.
 - Experimental introduction of unsupported Python 3.10 compatibility.
