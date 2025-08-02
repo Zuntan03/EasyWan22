@@ -1,6 +1,7 @@
 ﻿# <ruby>EasyWan22<rt>easy wan nyan nyan</rt></ruby>
 
 Wan 2.2 **I2V-A14B** runs normally with RAM 32GB, VRAM 8GB.  
+RAM 16GB might be tolerable, so if you're interested, please give it a try.  
 With Geforce RTX 3060 12GB, you can generate 1024px long side 101 frames or 704px long side 241 frames.
 
 [Wan 2.2 **I2V-A14B** also works somehow with **RAM 16GB**, Geforce **GTX 1660Ti VRAM 6GB**.](https://yyy.wpx.jp/2025/08/EasyWan22_I2V-A14B_Vram6GB_Ram16GB.mp4)  
