@@ -29,6 +29,17 @@ echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows
 call %EASY_TOOLS%\ComfyUi\ComfyUi_Update.bat
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
+@REM ComfyUI-Impact-Pack\requirements.txt
+echo pip install -qq numpy==1.26.4 opencv-python-headless==4.11.0.86 opencv-contrib-python==4.11.0.86 opencv-python==4.11.0.86
+pip install -qq numpy==1.26.4 opencv-python-headless==4.11.0.86 opencv-contrib-python==4.11.0.86 opencv-python==4.11.0.86
+if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+
+@REM https://github.com/kijai/ComfyUI-Florence2/issues/134
+@REM https://github.com/huggingface/transformers/issues/36886
+@REM echo pip install -qq transformers==4.49.0
+@REM pip install -qq transformers==4.49.0
+@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+
 popd rem "%~dp0.."
 pushd "%~dp0..\ComfyUI\custom_nodes"
 

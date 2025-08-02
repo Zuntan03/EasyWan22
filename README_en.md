@@ -58,6 +58,7 @@ Examples
 - Added user feedback section.
 - Added support for downloading examples to `Sample/`.
 - Experimental introduction of unsupported Python 3.10 compatibility.
+- Reverted to version pinning of `numpy==1.26.4` and `opencv-python==4.11.0.86` as safety measures.
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/I2V.webp)
 
