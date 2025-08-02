@@ -6,7 +6,7 @@ Wan 2.2 **I2V-A14B** が RAM 32GB, VRAM 8GB なら普通に動きます。
 Geforce RTX 3060 12GB で長辺 1024px 101フレームや、長辺 704px 241フレームが生成できます。
 
 [Wan 2.2 **I2V-A14B** が **RAM 16GB**, Geforce **GTX 1660Ti VRAM 6GB** でもなんとか動きます。](https://yyy.wpx.jp/2025/08/EasyWan22_I2V-A14B_Vram6GB_Ram16GB.mp4)  
-`Easy/I2V` ワークフロー変更点: 長辺 384px, T5 gpu->cpu fp8_e4m3fn->none, sageattn->spda
+`Easy/I2V` ワークフロー変更点: 長辺 384px, T5 gpu->cpu fp8_e4m3fn->none, sageattn->sdpa
 
 動画の量産時の手数を減らすためにワークフローが大きめです。  
 ComfyUI の学習などには不向きですので、それらが目的の方は、[SimpleComfyUi](https://github.com/Zuntan03/SimpleComfyUi) をご利用ください。

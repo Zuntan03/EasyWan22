@@ -4,7 +4,7 @@ Wan 2.2 **I2V-A14B** runs normally with RAM 32GB, VRAM 8GB.
 With Geforce RTX 3060 12GB, you can generate 1024px long side 101 frames or 704px long side 241 frames.
 
 [Wan 2.2 **I2V-A14B** also works somehow with **RAM 16GB**, Geforce **GTX 1660Ti VRAM 6GB**.](https://yyy.wpx.jp/2025/08/EasyWan22_I2V-A14B_Vram6GB_Ram16GB.mp4)  
-`Easy/I2V` workflow changes: 384px long side, T5 gpu->cpu fp8_e4m3fn->none, sageattn->spda
+`Easy/I2V` workflow changes: 384px long side, T5 gpu->cpu fp8_e4m3fn->none, sageattn->sdpa
 
 The workflow is designed to be larger to reduce the number of steps during mass video production.  
 It's not suitable for ComfyUI learning purposes, so if that's your goal, please use [SimpleComfyUi](https://github.com/Zuntan03/SimpleComfyUi).
