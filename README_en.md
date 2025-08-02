@@ -17,14 +17,9 @@ Articles
 
 Examples
 
-- 8/2: [@nellygem888](https://x.com/nellygem888/status/1951302176556589368) [2](https://x.com/nellygem888/status/1951313234662924646)
+- 8/2: [@yukimino_doga](https://x.com/yukimino_doga/status/1951447771086725594), [@nellygem888](https://x.com/nellygem888/status/1951302176556589368) [2](https://x.com/nellygem888/status/1951313234662924646), [@iitomyii](https://x.com/iitomyii/status/1951352115835838685)
 - 8/1: [@BeamManP](https://x.com/BeamManP/status/1950969267484238201), [@kagami_kami_m](https://x.com/kagami_kami_m/status/1951218120171106682), [@Kuze0x0_](https://x.com/Kuze0x0_/status/1950953805618835893), [@m_gen_chan](https://x.com/m_gen_chan/status/1951116909933633797), [@kp4114](https://x.com/kp4114/status/1951150976116859195), [@yukimino_doga](https://x.com/yukimino_doga/status/1950816818408374735) [2](https://x.com/yukimino_doga/status/1951263437939425350) [3](https://x.com/yukimino_doga/status/1950768548600770891), [@kp4114](https://x.com/kp4114/status/1951150976116859195), [@croblz25](https://x.com/croblz25/status/1950944166097326435)
 - 7/31: [@Emanon_14](https://x.com/Emanon_14/status/1950892068705841599), [@yukimino_doga](https://x.com/yukimino_doga/status/1950761171797377392) [2](https://x.com/yukimino_doga/status/1950878350257312142)
-
-## Sample Video with Workflow
-
-- 2025/07/31 [Prompt Dance (Old WIP Workflow)](https://yyy.wpx.jp/2025/07/20250731-EasyWan22.mp4)
-	- You can generate quickly by disabling upscaling and frame interpolation.
 
 ## Installation Method
 
@@ -40,10 +35,14 @@ Examples
 - Launch with `ComfyUi.bat`.
 	- On first launch, old workflows in browser cache may open and cause errors. Please ignore the errors and close the workflow.
 - Update with `Update.bat`.
+	- Automatic file download during updates can be toggled with `EasyWan22/AutoDownload_(Enable|Disable).bat`.  
+	However, disabling it may cause `Easy/*` workflows to not work properly after updates.
 
 **Open the `Easy/00_I2V(ImageToVideo)` workflow and check the instructions at the top of the workflow.**
 
-~~Operate the green nodes above `Easy/99_WIP_Kijai_LowSpec.json`.~~
+**There are examples with workflows in `Sample/`.**  
+**The examples have post-processing like upscaling and frame interpolation enabled.**  
+**If you want to do seed gacha based on the examples, please disable post-processing first before doing gacha.**
 
 Copy `ComfyUI/extra_model_paths.yaml.example` and rename it to `ComfyUI/extra_model_paths.yaml`, then rewrite the content to:
 ```yaml
@@ -63,6 +62,7 @@ Replace `D:/EasyWanVideo/ComfyUI/` with the absolute path to `EasyWanVideo/Comfy
 - Civitai API key is now required for updates and installation.
 - Added support for downloading `Download\loras\Nsfw\GeneralNsfw22_v006.bat`.
 - Added user feedback section.
+- Added support for downloading examples to `Sample/`.
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/I2V.webp)
 
@@ -74,6 +74,9 @@ Replace `D:/EasyWanVideo/ComfyUI/` with the absolute path to `EasyWanVideo/Comfy
 	- With [ComfyUI-Manager and Video Helper settings](https://github.com/kijai/ComfyUI-WanVideoWrapper/issues/229#issuecomment-2729456556), preview is displayed in `WanVideoSampler`.
 - Added support for downloading `Wan2.2-I2V-A14B` in `Q4_K_M`, `Q6_K`, `Q8_0` formats.
 	- You can download all at once with `Download\diffusion_models\Base-Wan2.2-I2V-A14B.bat`.
+- [Prompt Dance (Old WIP Workflow)](https://yyy.wpx.jp/2025/07/20250731-EasyWan22.mp4)
+	- You can generate quickly by disabling upscaling and frame interpolation.
+- Operate the green nodes above `Easy/99_WIP_Kijai_LowSpec.json`.
 
 ## License
 

@@ -138,6 +138,7 @@ popd rem "%~dp0..\ComfyUI"
 
 if not exist %~dp0AutoDownload.txt ( exit /b 0 )
 call %~dp0..\Download\Default.bat
+call %~dp0..\Sample\_Download.bat
 exit /b 0
 
 

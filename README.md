@@ -19,14 +19,9 @@ ComfyUI の学習などには不向きですので、それらが目的の方は
 
 作例
 
-- 8/2: [@nellygem888](https://x.com/nellygem888/status/1951302176556589368) [2](https://x.com/nellygem888/status/1951313234662924646)
+- 8/2: [@yukimino_doga](https://x.com/yukimino_doga/status/1951447771086725594), [@nellygem888](https://x.com/nellygem888/status/1951302176556589368) [2](https://x.com/nellygem888/status/1951313234662924646), [@iitomyii](https://x.com/iitomyii/status/1951352115835838685)
 - 8/1: [@BeamManP](https://x.com/BeamManP/status/1950969267484238201), [@kagami_kami_m](https://x.com/kagami_kami_m/status/1951218120171106682), [@Kuze0x0_](https://x.com/Kuze0x0_/status/1950953805618835893), [@m_gen_chan](https://x.com/m_gen_chan/status/1951116909933633797), [@kp4114](https://x.com/kp4114/status/1951150976116859195), [@yukimino_doga](https://x.com/yukimino_doga/status/1950816818408374735) [2](https://x.com/yukimino_doga/status/1951263437939425350) [3](https://x.com/yukimino_doga/status/1950768548600770891), [@kp4114](https://x.com/kp4114/status/1951150976116859195), [@croblz25](https://x.com/croblz25/status/1950944166097326435)
 - 7/31: [@Emanon_14](https://x.com/Emanon_14/status/1950892068705841599), [@yukimino_doga](https://x.com/yukimino_doga/status/1950761171797377392) [2](https://x.com/yukimino_doga/status/1950878350257312142)
-
-## ワークフロー付き仮サンプル動画
-
-- 2025/07/31 [プロンプトでダンス（旧 WIP ワークフロー）](https://yyy.wpx.jp/2025/07/20250731-EasyWan22.mp4)
-	- アップスケールとフレーム補間を無効にすると高速に生成できます。
 
 ## インストール方法
 
@@ -42,19 +37,14 @@ ComfyUI の学習などには不向きですので、それらが目的の方は
 - `ComfyUi.bat` で起動します。
 	- 初回起動時にブラウザキャッシュにある過去のワークフローが開かれ、エラーになる場合があります。エラーを無視してワークフローを閉じてください。
 - `Update.bat` で更新します。
+	- 更新時のファイルの自動ダウンロードは `EasyWan22/AutoDownload_(Enable|Disable).bat` で切り替えられます。  
+	ただし、無効にすると更新で `Easy/*` のワークフローが正常に動作しなくなる可能性があります。
 
-**`Easy/00_I2V(ImageToVideo)` ワークフローを開いて、ワークフロー内上部の説明を確認してください。**
+**`Easy/00_I2V(ImageToVideo)` ワークフローを開いて、ワークフロー内の上部にある説明を確認してください。**
 
-~~`Easy/99_WIP_Kijai_LowSpec.json` 上にある緑のノードを操作します。~~
-
-`ComfyUI/extra_model_paths.yaml.example` をコピーしてから `ComfyUI/extra_model_paths.yaml` にリネームし、
-```yaml
-comfyui:
-    base_path: D:/EasyWanVideo/ComfyUI/
-    loras: models/loras/
-```
-といった内容に書き換えると、EasyWanVideo の Wan 2.1 LoRA を参照できます。  
-`D:/EasyWanVideo/ComfyUI/` の部分を EasyWanVideo インストール先の `EasyWanVideo/ComfyUI/` への絶対パスに書き換えてください。
+**`Sample/` にワークフロー付きの作例があります。**  
+**作例ではアップスケールやフレーム補間などの仕上げの後処理が有効になっています。**  
+**作例を元にシードガチャをする場合は、後処理を無効にしてからガチャってください。**
 
 ## 最近の更新
 
@@ -65,6 +55,7 @@ comfyui:
 - 更新やインストールに Civitai の API キーが必要になります。
 - `Download\loras\Nsfw\GeneralNsfw22_v006.bat` のダウンロードに対応しました。
 - 利用者の声を記載しました。
+- `Sample/` への作例のダウンロードに対応しました。
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/I2V.webp)
 
@@ -76,6 +67,18 @@ comfyui:
 	- [ComfyUI-Manager と Video Helper の設定](https://github.com/kijai/ComfyUI-WanVideoWrapper/issues/229#issuecomment-2729456556) で `WanVideoSampler` にプレビューが表示されます。
 - `Wan2.2-I2V-A14B` の `Q4_K_M`, `Q6_K`, `Q8_0` のダウンロードに対応しました。
 	- `Download\diffusion_models\Base-Wan2.2-I2V-A14B.bat` でまとめてダウンロードできます。
+- [プロンプトでダンス（旧 WIP ワークフロー）](https://yyy.wpx.jp/2025/07/20250731-EasyWan22.mp4)
+	- アップスケールとフレーム補間を無効にすると高速に生成できます。
+- `Easy/99_WIP_Kijai_LowSpec.json` 上にある緑のノードを操作します。
+
+`ComfyUI/extra_model_paths.yaml.example` をコピーしてから `ComfyUI/extra_model_paths.yaml` にリネームし、
+```yaml
+comfyui:
+    base_path: D:/EasyWanVideo/ComfyUI/
+    loras: models/loras/
+```
+といった内容に書き換えると、EasyWanVideo の Wan 2.1 LoRA を参照できます。  
+`D:/EasyWanVideo/ComfyUI/` の部分を EasyWanVideo インストール先の `EasyWanVideo/ComfyUI/` への絶対パスに書き換えてください。
 
 ## ライセンス
 
