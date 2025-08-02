@@ -61,6 +61,7 @@ ComfyUI の学習などには不向きですので、それらが目的の方は
 - `Sample/` への作例のダウンロードに対応しました。
 - 無保証の Python 3.10 対応を試験的に導入。
 - 安全策の `numpy==1.26.4` と `opencv-python==4.11.0.86` へのバージョン固定を復活させました。
+- `Easy/00_I2V(ImageToVideo)` ワークフローに `99_WIP_Kijai_LowSpec` にもあった `EndImage` 機能を追加しました。
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/I2V.webp)
 

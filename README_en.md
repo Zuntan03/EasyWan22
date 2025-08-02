@@ -1,5 +1,7 @@
 ﻿# <ruby>EasyWan22<rt>easy wan nyan nyan</rt></ruby>
 
+[日本語 README](README.md)
+
 Wan 2.2 **I2V-A14B** runs normally with RAM 32GB, VRAM 8GB.  
 RAM 16GB might be tolerable, so if you're interested, please give it a try.  
 With Geforce RTX 3060 12GB, you can generate 1024px long side 101 frames or 704px long side 241 frames.
@@ -59,6 +61,7 @@ Examples
 - Added support for downloading examples to `Sample/`.
 - Experimental introduction of unsupported Python 3.10 compatibility.
 - Reverted to version pinning of `numpy==1.26.4` and `opencv-python==4.11.0.86` as safety measures.
+- Added `EndImage` functionality to `Easy/00_I2V(ImageToVideo)` workflow, which was also available in `99_WIP_Kijai_LowSpec`.
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/I2V.webp)
 
