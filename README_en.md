@@ -29,6 +29,8 @@ Examples
 1. Right-click and save [EasyWan22Installer.bat](https://github.com/Zuntan03/EasyWan22/raw/main/EasyWan22/EasyWan22Installer.bat?ver=0).
 	- By default, it uses [Python 3.12 recommended by ComfyUI official](https://github.com/comfyanonymous/ComfyUI#manual-install-windows-linux).  
 	While unverified, you can use Python 3.10 series by installing with [EasyWan22Installer-Python3_10.bat](https://github.com/Zuntan03/EasyWan22/raw/main/EasyWan22/EasyWan22Installer-Python3_10.bat?ver=0).
+		- Due to environment-dependent issues, some environments may only work with Python 3.10.  
+		If installation or startup fails, please try this option as well.
 2. Prepare an **empty folder** for installation at a shallow path like `C:/EasyWan22/` or `D:/EasyWan22/`, place `EasyWan22Installer.bat` there and run it.
 	- **If "Publisher could not be verified. Do you want to run this software?" appears, click `Run`.**
 	- **If "Windows protected your PC" appears, click `More info` then `Run anyway`.**
