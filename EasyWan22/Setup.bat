@@ -10,19 +10,21 @@ set CURL_CMD=C:\Windows\System32\curl.exe -kL
 pushd "%~dp0.."
 
 @REM https://github.com/comfyanonymous/ComfyUI/releases
-echo v0.3.47> "%EASY_COMFYUI%\ComfyUi_Version.txt"
+echo v0.3.48> "%EASY_COMFYUI%\ComfyUi_Version.txt"
 
 @REM https://github.com/Comfy-Org/ComfyUI-Manager/tags
 echo 3.35> "%EASY_COMFYUI%\ComfyUiManager_Version.txt"
 
 @REM https://pytorch.org/get-started/locally/
+@REM https://download.pytorch.org/whl/torch/ torch-2.8.0
 echo torch==2.7.1+cu128 torchvision==0.22.1+cu128 torchaudio==2.7.1+cu128 xformers==0.0.31.post1 --index-url https://download.pytorch.org/whl/cu128> "%EASY_COMFYUI%\Torch_Version.txt"
 
-@REM https://github.com/woct0rdho/triton-windows/releases
+@REM https://github.com/woct0rdho/triton-windows/releases v3.4.x PyTorch >= 2.8
 echo triton-windows==3.3.1.post19> "%EASY_COMFYUI%\Triton_Version.txt"
 
 @REM https://github.com/woct0rdho/SageAttention/releases
-echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows/sageattention-2.2.0+cu128torch2.7.1-cp312-cp312-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
+@REM echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows/sageattention-2.2.0+cu128torch2.7.1-cp312-cp312-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
+echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post1/sageattention-2.2.0+cu128torch2.7.1.post1-cp39-abi3-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
 
 call %EASY_TOOLS%\ComfyUi\ComfyUi_Update.bat
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
@@ -30,8 +32,10 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 popd rem "%~dp0.."
 pushd "%~dp0..\ComfyUI\custom_nodes"
 
+@REM 08/01 9edab7456230b200667a9680d7a93ff12cfd9000
+@REM 08/02 8035353cc05756f0a786597d3969657ab626e0e1
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 9edab7456230b200667a9680d7a93ff12cfd9000
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 8035353cc05756f0a786597d3969657ab626e0e1
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\
@@ -60,7 +64,9 @@ call :GITHUB_HASH_REQUIREMENTS cubiq ComfyUI_essentials main 9d9f4bedfc9f0321c19
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/kijai/ComfyUI-Florence2/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-Florence2 main de485b65b3e1b9b887ab494afa236dff4bef9a7e
+@REM 05/21 de485b65b3e1b9b887ab494afa236dff4bef9a7e
+@REM 08/02 6b3064b8bdfe0afca123918804300271995b0be5
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-Florence2 main 6b3064b8bdfe0afca123918804300271995b0be5
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/Fannovel16/ComfyUI-Frame-Interpolation/commits/main/
@@ -110,7 +116,9 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 @REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/rgthree/rgthree-comfy/commits/main/
-call :GITHUB_HASH_REQUIREMENTS rgthree rgthree-comfy main 944d5353a1b0a668f40844018c3dc956b95a67d7
+@REM 07/12 944d5353a1b0a668f40844018c3dc956b95a67d7
+@REM 08/02 c5ffa43de4ddb17244626a65a30700a05dd6b67d
+call :GITHUB_HASH_REQUIREMENTS rgthree rgthree-comfy main c5ffa43de4ddb17244626a65a30700a05dd6b67d
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 popd rem "%~dp0..\ComfyUI\custom_nodes"
@@ -122,7 +130,7 @@ call %JUNCTION% ..\Output output
 call %JUNCTION% ..\Model models
 @REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-if not exist ComfyUi\user\default\workflows\ ( mkdir ComfyUi\user\default\workflows )
+if not exist user\default\workflows\ ( mkdir user\default\workflows )
 call %JUNCTION% ..\Workflow user\default\workflows
 @REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 

@@ -3,7 +3,6 @@ chcp 65001 > NUL
 set EASY_TOOLS=%~dp0EasyTools
 set GIT_SET_PATH=%EASY_TOOLS%\Git\Git_SetPath.bat
 set PYTHON_ACTIVATE=%EASY_TOOLS%\Python\Python_Activate.bat
-set EMBEDDABLE_PYTHON=%EASY_TOOLS%\Python\env\python312
 
 if not exist %~dp0ComfyUI\venv\ (
 	echo call %~dp0Update.bat

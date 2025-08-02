@@ -2,9 +2,9 @@
 
 [English README](README_en.md)
 
-Wan 2.2 **I2V-A14B** が RAM 32GB, VRAM 8GB なら普通に動きます。  
-RAM 16GB は我慢できるかも？なので、気になるようなら試してみてください。  
-Geforce RTX 3060 12GB で長辺 1024px 101フレームや、長辺 704px 241フレームが生成できます。
+Wan 2.2 **I2V-A14B** が Win PC の RAM 32GB, Geforce RTX 30x0 以降の VRAM 8GB 以上なら普通に動きます。  
+RAM 16GB でも我慢できるかも？なので、気になるようなら試してみてください。  
+Geforce RTX 3060 12GB なら長辺 1024px 101フレームや、長辺 704px 241フレームが生成できます。
 
 [Wan 2.2 **I2V-A14B** が **RAM 16GB**, Geforce **GTX 1660Ti VRAM 6GB** でもなんとか動きます。](https://yyy.wpx.jp/2025/08/EasyWan22_I2V-A14B_Vram6GB_Ram16GB.mp4)  
 `Easy/I2V` ワークフロー変更点: 長辺 384px, T5 gpu->cpu fp8_e4m3fn->none, sageattn->sdpa
@@ -27,6 +27,8 @@ ComfyUI の学習などには不向きですので、それらが目的の方は
 ## インストール方法
 
 1. [EasyWan22Installer.bat](https://github.com/Zuntan03/EasyWan22/raw/main/EasyWan22/EasyWan22Installer.bat?ver=0) を右クリックから保存します。
+	- デフォルトでは [ComfyUI 公式が推奨している Python 3.12](https://github.com/comfyanonymous/ComfyUI#manual-install-windows-linux) を使用します。  
+	未検証とはなりますが [EasyWan22Installer-Python3_10.bat](https://github.com/Zuntan03/EasyWan22/raw/main/EasyWan22/EasyWan22Installer-Python3_10.bat?ver=0) でインストールすると Python 3.10 系を利用できます。
 2. インストール先の **空フォルダ** を `C:/EasyWan22/` や `D:/EasyWan22/` などの浅いパスに用意して、`EasyWan22Installer.bat` を置いて実行します。
 	- **`発行元を確認できませんでした。このソフトウェアを実行しますか？` と表示されたら `実行` します。**
 	- **`WindowsによってPCが保護されました` と表示されたら、`詳細表示` から `実行` します。**
@@ -57,6 +59,7 @@ ComfyUI の学習などには不向きですので、それらが目的の方は
 - `Download\loras\Nsfw\GeneralNsfw22_v006.bat` のダウンロードに対応しました。
 - 利用者の声を記載しました。
 - `Sample/` への作例のダウンロードに対応しました。
+- 無保証の Python 3.10 対応を試験的に導入。
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/I2V.webp)
 
