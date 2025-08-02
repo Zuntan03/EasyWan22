@@ -25,6 +25,8 @@ Examples
 ## Installation Method
 
 1. Right-click and save [EasyWan22Installer.bat](https://github.com/Zuntan03/EasyWan22/raw/main/EasyWan22/EasyWan22Installer.bat?ver=0).
+	- By default, it uses [Python 3.12 recommended by ComfyUI official](https://github.com/comfyanonymous/ComfyUI#manual-install-windows-linux).  
+	While unverified, you can use Python 3.10 series by installing with [EasyWan22Installer-Python3_10.bat](https://github.com/Zuntan03/EasyWan22/raw/main/EasyWan22/EasyWan22Installer-Python3_10.bat?ver=0).
 2. Prepare an **empty folder** for installation at a shallow path like `C:/EasyWan22/` or `D:/EasyWan22/`, place `EasyWan22Installer.bat` there and run it.
 	- **If "Publisher could not be verified. Do you want to run this software?" appears, click `Run`.**
 	- **If "Windows protected your PC" appears, click `More info` then `Run anyway`.**
@@ -45,15 +47,6 @@ Examples
 **The examples have post-processing like upscaling and frame interpolation enabled.**  
 **If you want to do seed gacha based on the examples, please disable post-processing first before doing gacha.**
 
-Copy `ComfyUI/extra_model_paths.yaml.example` and rename it to `ComfyUI/extra_model_paths.yaml`, then rewrite the content to:
-```yaml
-comfyui:
-    base_path: D:/EasyWanVideo/ComfyUI/
-    loras: models/loras/
-```
-This allows you to reference Wan 2.1 LoRA from EasyWanVideo.  
-Replace `D:/EasyWanVideo/ComfyUI/` with the absolute path to `EasyWanVideo/ComfyUI/` where EasyWanVideo is installed.
-
 ## Recent Updates
 
 ### 2025/08/02
@@ -64,6 +57,7 @@ Replace `D:/EasyWanVideo/ComfyUI/` with the absolute path to `EasyWanVideo/Comfy
 - Added support for downloading `Download\loras\Nsfw\GeneralNsfw22_v006.bat`.
 - Added user feedback section.
 - Added support for downloading examples to `Sample/`.
+- Experimental introduction of unsupported Python 3.10 compatibility.
 
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/I2V.webp)
 
@@ -78,6 +72,15 @@ Replace `D:/EasyWanVideo/ComfyUI/` with the absolute path to `EasyWanVideo/Comfy
 - [Prompt Dance (Old WIP Workflow)](https://yyy.wpx.jp/2025/07/20250731-EasyWan22.mp4)
 	- You can generate quickly by disabling upscaling and frame interpolation.
 - Operate the green nodes above `Easy/99_WIP_Kijai_LowSpec.json`.
+
+Copy `ComfyUI/extra_model_paths.yaml.example` and rename it to `ComfyUI/extra_model_paths.yaml`, then rewrite the content to:
+```yaml
+comfyui:
+    base_path: D:/EasyWanVideo/ComfyUI/
+    loras: models/loras/
+```
+This allows you to reference Wan 2.1 LoRA from EasyWanVideo.  
+Replace `D:/EasyWanVideo/ComfyUI/` with the absolute path to `EasyWanVideo/ComfyUI/` where EasyWanVideo is installed.
 
 ## License
 
