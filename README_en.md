@@ -63,6 +63,8 @@ Examples
 	- Enabled concatenation of preset prompts and input prompts for negative prompts.
 	- Added support for prompt generation from images.
 		- The effect of calming movement is more powerful than Wan 2.1, so usage seems limited.
+	- **Added support for prompt extension by locally-running Qwen in `WanVideoPromptExtender`.**
+	- Added support for selective combination of multiple types of positive prompts.
 
 ### 2025/08/02
 
