@@ -34,19 +34,21 @@ echo pip install -qq numpy==1.26.4 opencv-python-headless==4.11.0.86 opencv-cont
 pip install -qq numpy==1.26.4 opencv-python-headless==4.11.0.86 opencv-contrib-python==4.11.0.86 opencv-python==4.11.0.86
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
+@REM WanVideoPromptExtender Qwen
 @REM https://github.com/kijai/ComfyUI-Florence2/issues/134
 @REM https://github.com/huggingface/transformers/issues/36886
-@REM echo pip install -qq transformers==4.49.0
-@REM pip install -qq transformers==4.49.0
-@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+echo pip install -qq transformers==4.49.0
+pip install -qq transformers==4.49.0
+if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 popd rem "%~dp0.."
 pushd "%~dp0..\ComfyUI\custom_nodes"
 
 @REM 08/01 9edab7456230b200667a9680d7a93ff12cfd9000
 @REM 08/02 8035353cc05756f0a786597d3969657ab626e0e1
+@REM 08/03 309a93c2211dfd8a7c94199eeae6c83d743e9338
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 8035353cc05756f0a786597d3969657ab626e0e1
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 309a93c2211dfd8a7c94199eeae6c83d743e9338
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\
@@ -81,7 +83,7 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/kijai/ComfyUI-Florence2/commits/main/
 @REM 05/21 de485b65b3e1b9b887ab494afa236dff4bef9a7e
-@REM 08/02 6b3064b8bdfe0afca123918804300271995b0be5
+@REM 08/02 6b3064b8bdfe0afca123918804300271995b0be5 Need transformers==4.49.0
 call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-Florence2 main 6b3064b8bdfe0afca123918804300271995b0be5
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
@@ -120,8 +122,8 @@ call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-segment-anything-2 main c59676b008a
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/SeanScripts/ComfyUI-Unload-Model
-@REM call :GITHUB_HASH_REQUIREMENTS SeanScripts ComfyUI-Unload-Model main ac5ffb4ed05546545ce7cf38e7b69b5152714eed
-@REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+call :GITHUB_HASH_REQUIREMENTS SeanScripts ComfyUI-Unload-Model main ac5ffb4ed05546545ce7cf38e7b69b5152714eed
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite/commits/main/
 call :GITHUB_HASH_REQUIREMENTS Kosinkadink ComfyUI-VideoHelperSuite main 330bce6c3c0d47ebdedcc0348d9ab355707b7523

@@ -9,6 +9,7 @@ call %~dp0diffusion_models\Base\Wan2.2-I2V-A14B-LowNoise-Q3_K_M.bat
 
 call %~dp0text_encoders\umt5_xxl_fp8_e4m3fn_scaled.bat
 call %~dp0text_encoders\umt5-xxl-enc-fp8_e4m3fn.bat
+call %~dp0text_encoders\Qwen2.5_3B_instruct_bf16.bat
 
 call %~dp0ultralytics\segm\AnimeNsfwDetectionAll_v4.bat
 
