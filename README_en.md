@@ -53,6 +53,11 @@ Examples
 
 ## Recent Updates
 
+### 2025/08/04
+
+- Continuing to update `Easy/I2V` workflow.
+	- Added support for `Rewrite Prompt` that rewrites prompts with local Qwen, separate from the prompt extension in `ExtendPrompt`.
+
 ### 2025/08/03
 
 - Continuing to update `Easy/I2V` workflow.
