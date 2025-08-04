@@ -20,6 +20,8 @@ Articles
 
 Examples
 
+- 8/4: [@studiomasakaki](https://x.com/studiomasakaki/status/1952222138762768553)
+- 8/3: [@yukimino_doga](https://x.com/yukimino_doga/status/1951947103095476427) [2](https://x.com/yukimino_doga/status/1951886943588901017), [@kuromonchaya](https://x.com/kuromonchaya/status/1951983575420522602), [@aoi_yotsub16292](https://x.com/aoi_yotsub16292/status/1952052870397984795) [2](https://x.com/aoi_yotsub16292/status/1952015286774960406) [3](https://x.com/aoi_yotsub16292/status/1951990309266886843), [@remote_komusou](https://x.com/remote_komusou/status/1951792261420966189), [@ramnacolumn](https://x.com/ramnacolumn/status/1951921310218723353), [@NegiTurkey](https://x.com/NegiTurkey/status/1952135962324300120), [@nellygem888](https://x.com/nellygem888/status/1951966481043841362), [@municocco](https://x.com/municocco/status/1951858568929718562)
 - 8/2: [@yukimino_doga](https://x.com/yukimino_doga/status/1951447771086725594), [@nellygem888](https://x.com/nellygem888/status/1951302176556589368) [2](https://x.com/nellygem888/status/1951313234662924646), [@iitomyii](https://x.com/iitomyii/status/1951352115835838685)
 - 8/1: [@BeamManP](https://x.com/BeamManP/status/1950969267484238201), [@kagami_kami_m](https://x.com/kagami_kami_m/status/1951218120171106682), [@Kuze0x0_](https://x.com/Kuze0x0_/status/1950953805618835893), [@m_gen_chan](https://x.com/m_gen_chan/status/1951116909933633797), [@kp4114](https://x.com/kp4114/status/1951150976116859195), [@yukimino_doga](https://x.com/yukimino_doga/status/1950816818408374735) [2](https://x.com/yukimino_doga/status/1951263437939425350) [3](https://x.com/yukimino_doga/status/1950768548600770891), [@kp4114](https://x.com/kp4114/status/1951150976116859195), [@croblz25](https://x.com/croblz25/status/1950944166097326435)
 - 7/31: [@Emanon_14](https://x.com/Emanon_14/status/1950892068705841599), [@yukimino_doga](https://x.com/yukimino_doga/status/1950761171797377392) [2](https://x.com/yukimino_doga/status/1950878350257312142)
@@ -57,6 +59,7 @@ Examples
 
 - Continuing to update `Easy/I2V` workflow.
 	- Added support for `Rewrite Prompt` that rewrites prompts with local Qwen, separate from the prompt extension in `ExtendPrompt`.
+- Updates to `WanVideoWrapper` may have resolved memory shortage issues.
 
 ### 2025/08/03
 
