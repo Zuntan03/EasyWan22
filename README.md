@@ -67,6 +67,7 @@ ComfyUI の学習などには不向きですので、それらが目的の方は
 		- `Refiner` は VRAM 消費が減るわけではありません。  
 		解像度を落として高速にガチャを回せるようになるのが特徴です。
 - `Download\loras\Nsfw\GeneralNsfw22_v008a-L.bat` のダウンロードに対応しました。
+- ComfyUI と WanVideoWrapper のバージョンを更新しました。
 
 ### 2025/08/04
 

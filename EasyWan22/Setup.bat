@@ -10,7 +10,7 @@ set CURL_CMD=C:\Windows\System32\curl.exe -kL
 pushd "%~dp0.."
 
 @REM https://github.com/comfyanonymous/ComfyUI/releases
-echo v0.3.48> "%EASY_COMFYUI%\ComfyUi_Version.txt"
+echo v0.3.49> "%EASY_COMFYUI%\ComfyUi_Version.txt"
 
 @REM https://github.com/Comfy-Org/ComfyUI-Manager/tags
 echo 3.35> "%EASY_COMFYUI%\ComfyUiManager_Version.txt"
@@ -44,14 +44,11 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 popd rem "%~dp0.."
 pushd "%~dp0..\ComfyUI\custom_nodes"
 
-@REM 08/01 9edab7456230b200667a9680d7a93ff12cfd9000
-@REM 08/02 8035353cc05756f0a786597d3969657ab626e0e1
-@REM 08/03 309a93c2211dfd8a7c94199eeae6c83d743e9338
-@REM 08/03 5cde6f2216ac948bf7f34959cf7999100763a008
 @REM 08/04 7862749cfe1d427a7b81cce92deb8905e99bf96f
 @REM 08/05 9129c8cc1d695eaf79541ee7112cbfff67cebfc6
+@REM 08/06 69dd4689bfd69d37d7f997289cb980e45f8b19bb
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 9129c8cc1d695eaf79541ee7112cbfff67cebfc6
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 69dd4689bfd69d37d7f997289cb980e45f8b19bb
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\
