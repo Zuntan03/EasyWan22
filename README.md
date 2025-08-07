@@ -58,6 +58,19 @@ ComfyUI の学習などには不向きですので、それらが目的の方は
 
 ## 最近の更新
 
+### 2025/08/08
+
+- `Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1` に対応したワークフロー `00_I2V_Experimental-Wan22Lightning` を一時的に追加しました。
+	- 動作確認の時間をあまり取れていませんので、取り急ぎの Experimental です。
+- 以下のファイルのダウンロードに対応しました。
+	- `Download\loras\Fast\Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1-H.bat`
+	- `Download\loras\Fast\Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1-L.bat`
+- `PyYAML` を明示的にインストールするようにしました。
+	- Python 3.12 環境でのインストールの問題が解決しているかもしれません。
+
+GitHub リポジトリの Watch 設定を忘れていたため、Issue の登録に気がついておりませんでした。  
+申し訳ありません。
+
 ### 2025/08/07
 
 - `Easy/I2V` ワークフローを引き続き更新しています。

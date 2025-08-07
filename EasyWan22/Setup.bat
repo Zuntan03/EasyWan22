@@ -41,6 +41,11 @@ echo pip install -qq transformers==4.49.0
 pip install -qq transformers==4.49.0
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
+@REM https://github.com/Zuntan03/EasyWan22/issues/1
+echo pip install -qq PyYAML==6.0.2
+pip install -qq PyYAML==6.0.2
+if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+
 popd rem "%~dp0.."
 pushd "%~dp0..\ComfyUI\custom_nodes"
 

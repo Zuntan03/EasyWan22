@@ -58,6 +58,19 @@ Generate videos by clicking `Queue Prompt`.
 
 ## Recent Updates
 
+### 2025/08/08
+
+- Temporarily added `00_I2V_Experimental-Wan22Lightning` workflow supporting `Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1`.
+	- This is a quick Experimental release as I haven't had much time for thorough testing.
+- Added support for downloading the following files:
+	- `Download\loras\Fast\Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1-H.bat`
+	- `Download\loras\Fast\Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1-L.bat`
+- Added explicit installation of `PyYAML`.
+	- This may have resolved installation issues in Python 3.12 environments.
+
+I forgot to set up GitHub repository Watch settings, so I wasn't noticing Issue registrations.  
+My apologies.
+
 ### 2025/08/07
 
 - Continuing to update `Easy/I2V` workflow.
