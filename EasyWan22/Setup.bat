@@ -47,8 +47,9 @@ pushd "%~dp0..\ComfyUI\custom_nodes"
 @REM 08/04 7862749cfe1d427a7b81cce92deb8905e99bf96f
 @REM 08/05 9129c8cc1d695eaf79541ee7112cbfff67cebfc6
 @REM 08/06 69dd4689bfd69d37d7f997289cb980e45f8b19bb
+@REM 08/07 ab06ac2f646a7e5eb46b022c114a53bcac85009f
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 69dd4689bfd69d37d7f997289cb980e45f8b19bb
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main ab06ac2f646a7e5eb46b022c114a53bcac85009f
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\

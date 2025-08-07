@@ -42,18 +42,42 @@ Examples
 ## How to Use
 
 - Launch with `ComfyUi.bat`.
-	- On first launch, old workflows in browser cache may open and cause errors. Please ignore the errors and close the workflow.
+	- **[ Warning ][ ComfyUI Trap ][ Many Victims ]  
+	On first launch, old workflows in browser cache may open and cause errors.  
+	Please ignore the errors and close the workflow.**
 - Update with `Update.bat`.
 	- Automatic file download during updates can be toggled with `EasyWan22/AutoDownload_(Enable|Disable).bat`.  
 	However, disabling it may cause `Easy/*` workflows to not work properly after updates.
 
-**Open the `Easy/00_I2V(ImageToVideo)` workflow and check the instructions at the top of the workflow.**
+1. **After launching `ComfyUI.bat`, open the `Easy/00_I2V(ImageToVideo)` workflow and check the instructions at the top of the workflow from the top-left.**  
+Generate videos by clicking `Queue Prompt`.
 
 **There are examples with workflows in `Sample/`.**  
 **The examples have post-processing like upscaling and frame interpolation enabled.**  
 **If you want to do seed gacha based on the examples, please disable post-processing first before doing gacha.**
 
 ## Recent Updates
+
+### 2025/08/07
+
+- Continuing to update `Easy/I2V` workflow.
+	- As the number of green nodes has increased, frequently used nodes are now colored red.
+	- Added `Trim` functionality to `PostProcess` to remove specified number of frames from the beginning or end of videos.
+	- Changed to toggle function enable/disable with single toggles.
+	- Adjusted video save filenames for specific purposes.
+	- Made `Refiner`'s Full Block swap an optional feature.
+		- Resolves the issue of slightly increased VRAM consumption in LowNoise.
+
+### 2025/08/06
+
+- `Easy/I2V` workflow now supports `Refiner`.
+	- Enlarges generated videos and refines them with LowNoise V2V that inherits from original video generation.
+	- Added `Refiner` example samples to `Sample/`.
+		- Generate with long side `640px` for gacha, refine to `960px`, then upscale 2x for FullHD+.
+		- `Refiner` doesn't reduce VRAM consumption.  
+		Its feature is enabling faster gacha loops at lower resolutions.
+- Added support for downloading `Download\loras\Nsfw\GeneralNsfw22_v008a-L.bat`.
+- Updated ComfyUI and WanVideoWrapper versions.
 
 ### 2025/08/04
 
