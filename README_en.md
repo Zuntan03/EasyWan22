@@ -63,10 +63,13 @@ Generate videos by clicking `Queue Prompt`.
 - Continuing to update `Easy/I2V` workflow.
 	- As the number of green nodes has increased, frequently used nodes are now colored red.
 	- Added `Trim` functionality to `PostProcess` to remove specified number of frames from the beginning or end of videos.
+	- Changed `PointMosaic` to be specified on the video before `Refiner` application.
+		- Eliminates the need to respecify point positions after `Refiner`.
 	- Changed to toggle function enable/disable with single toggles.
 	- Adjusted video save filenames for specific purposes.
 	- Made `Refiner`'s Full Block swap an optional feature.
 		- Resolves the issue of slightly increased VRAM consumption in LowNoise.
+	- Added support for disabling start images as an experimental and temporary feature.
 
 ### 2025/08/06
 
