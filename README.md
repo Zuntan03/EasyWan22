@@ -67,6 +67,7 @@ ComfyUI の学習などには不向きですので、それらが目的の方は
 	- `Download\loras\Fast\Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1-L.bat`
 - `PyYAML` を明示的にインストールするようにしました。
 	- Python 3.12 環境でのインストールの問題が解決しているかもしれません。
+- `SaveLastImage` で最終フレーム画像でなく、開始フレーム画像が保存されていた不具合を修正しました。
 
 GitHub リポジトリの Watch 設定を忘れていたため、Issue の登録に気がついておりませんでした。  
 申し訳ありません。

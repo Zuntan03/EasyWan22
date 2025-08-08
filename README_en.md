@@ -2,7 +2,7 @@
 
 [日本語 README](README.md)
 
-Wan 2.2 **I2V-A14B** runs normally with RAM 32GB, VRAM 8GB.  
+Wan 2.2 **I2V-A14B** runs normally on Win PC with RAM 32GB, Geforce RTX 30x0 or later with VRAM 8GB or more.  
 RAM 16GB might be tolerable, so if you're interested, please give it a try.  
 With Geforce RTX 3060 12GB, you can generate 1024px long side 101 frames or 704px long side 241 frames.
 
@@ -67,6 +67,7 @@ Generate videos by clicking `Queue Prompt`.
 	- `Download\loras\Fast\Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1-L.bat`
 - Added explicit installation of `PyYAML`.
 	- This may have resolved installation issues in Python 3.12 environments.
+- Fixed a bug in `SaveLastImage` where the start frame image was being saved instead of the final frame image.
 
 I forgot to set up GitHub repository Watch settings, so I wasn't noticing Issue registrations.  
 My apologies.
