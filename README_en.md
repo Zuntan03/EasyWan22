@@ -82,8 +82,8 @@ The page file location can be changed in Windows `Advanced System Settings - Per
 **For AI-related tools, `System managed size` is recommended over `Custom size` to avoid troubles.**  
 **Setting page files on slow disks like HDDs may slow down the entire PC.**
 
-The `Active time` in Task Manager's `Performance` tab is also affected by reads, so it's inappropriate from the perspective of worrying about SSD lifespan.  
-When starting ComfyUI and generating for the first time, model writes to page files occur, but in subsequent generations, no page file writes occur if there are no changes to the model.  
+The information in Task Manager's `Performance - Disk` tab is also affected by reads, so it's inappropriate from the perspective of worrying about SSD lifespan.  
+~~When starting ComfyUI and generating for the first time, model writes to page files occur, but in subsequent generations, no page file writes occur if there are no changes to the model.~~ Block swap behavior is missing. Needs verification.  
 Please judge based on actual usage over about a week rather than a few generations or SSD active time.
 
 ## Recent Updates
