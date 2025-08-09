@@ -56,7 +56,41 @@ Generate videos by clicking `Queue Prompt`.
 **The examples have post-processing like upscaling and frame interpolation enabled.**  
 **If you want to do seed gacha based on the examples, please disable post-processing first before doing gacha.**
 
+## Impact of Large AI Tool Models on SSD Lifespan
+
+There are cases where concerns about the impact of large AI tool models on SSD lifespan are based on inaccurate information and are unnecessarily heightened.
+
+While I cannot guarantee safety, if you're concerned, please make your own judgment based on the `Health Status` in [CrystalDiskInfo](https://forest.watch.impress.co.jp/library/software/crdiskinfo/) [[Japanese](https://crystalmark.info/ja/download/#CrystalDiskInfo)] [[English](https://crystalmark.info/en/download/#CrystalDiskInfo)] and other indicators.
+
+Not limited to SSD lifespan, PCs break when they break. Please back up truly important data.
+
+### More Detailed Explanation
+
+Virtual memory is a mechanism that expands memory by using page files on disks like SSDs when physical memory is insufficient.  
+When large AI tool models don't fit entirely in physical memory, they may write to page files to place parts of the model on disk.
+
+While the large size of AI tools may cause concern, please judge based on the cumulative write amount in actual usage conditions.  
+SSD read amounts are generally considered to have minimal impact on lifespan.
+
+1. Record the SSD model number and `Total Host Writes` in CrystalDiskInfo.
+2. Search for the SSD model number and TBW (Total Bytes Written) to check the expected total write amount for the SSD.
+3. Use AI tools for about a week and compare the change in `Total Host Writes` with TBW in CrystalDiskInfo.
+4. If you want to further reduce anxiety, periodically check the drive's `Health Status` in CrystalDiskInfo.
+
+If you have multiple SSDs, you can expect more stable operation by moving the page file to an SSD with good `Health Status`.  
+The page file location can be changed in Windows `Advanced System Settings - Performance Options - Advanced` under `Virtual Memory`.  
+**For AI-related tools, `System managed size` is recommended over `Custom size` to avoid troubles.**  
+**Setting page files on slow disks like HDDs may slow down the entire PC.**
+
+The `Active time` in Task Manager's `Performance` tab is also affected by reads, so it's inappropriate from the perspective of worrying about SSD lifespan.  
+When starting ComfyUI and generating for the first time, model writes to page files occur, but in subsequent generations, no page file writes occur if there are no changes to the model.  
+Please judge based on actual usage over about a week rather than a few generations or SSD active time.
+
 ## Recent Updates
+
+### 2025/08/09
+
+- Added "[Impact of Large AI Tool Models on SSD Lifespan](#impact-of-large-ai-tool-models-on-ssd-lifespan)" information.
 
 ### 2025/08/08
 
