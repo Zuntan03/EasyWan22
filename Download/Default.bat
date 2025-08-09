@@ -18,10 +18,16 @@ call %~dp0upscale_models\2x-AnimeSharpV4_Fast_RCAN_PU.bat
 call %~dp0vae\Wan2_1_VAE_bf16.bat
 call %~dp0vae_approx\taew2_1.bat
 
-call %~dp0loras\Fast\Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1-H.bat
-call %~dp0loras\Fast\Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1-L.bat
+call %~dp0loras\Fast\Wan22-I2V-A14B-4steps-lora-rank64-Seko-V1-H.bat
+call %~dp0loras\Fast\Wan22-I2V-A14B-4steps-lora-rank64-Seko-V1-L.bat
+call %~dp0loras\Fast\Wan2.2-Lightning_I2V-A14B-4steps-lora_HIGH_fp16.bat
+call %~dp0loras\Fast\Wan2.2-Lightning_I2V-A14B-4steps-lora_LOW_fp16.bat
+
+call %~dp0loras\Bundle\Nashikone-I2v.bat
 
 call %~dp0loras\Wan21Fast\lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.bat
 
 call %~dp0loras\Nsfw\GeneralNsfw22_v008a-H.bat
 call %~dp0loras\Nsfw\GeneralNsfw22_v008a-L.bat
+call %~dp0loras\Nsfw\PenisPlay-H.bat
+call %~dp0loras\Nsfw\PenisPlay-L.bat

@@ -83,10 +83,18 @@ The page file location can be changed in Windows `Advanced System Settings - Per
 **Setting page files on slow disks like HDDs may slow down the entire PC.**
 
 The information in Task Manager's `Performance - Disk` tab is also affected by reads, so it's inappropriate from the perspective of worrying about SSD lifespan.  
-~~When starting ComfyUI and generating for the first time, model writes to page files occur, but in subsequent generations, no page file writes occur if there are no changes to the model.~~ Block swap behavior is missing. Needs verification.  
-Please judge based on actual usage over about a week rather than a few generations or SSD active time.
+Please judge based on actual usage over about a week rather than a few generations.
 
 ## Recent Updates
+
+### 2025/08/09
+
+- Currently revamping I2V workflow, but documentation updates haven't caught up.
+	- Changed to specify video size by the side length of an area-based square.
+	- Added support for `Color Match`. Available right after the first `Trim` in post-processing and after enlargement in `Refiner`.
+	- Added support for `Color Correct`.
+	- Made I2V-A14B LoRA easily accessible through `LoRA Presets`.
+- Moved old workflows to `Easy/Deprecated/`.
 
 ### 2025/08/09
 

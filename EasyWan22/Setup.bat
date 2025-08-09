@@ -49,12 +49,11 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 popd rem "%~dp0.."
 pushd "%~dp0..\ComfyUI\custom_nodes"
 
-@REM 08/04 7862749cfe1d427a7b81cce92deb8905e99bf96f
-@REM 08/05 9129c8cc1d695eaf79541ee7112cbfff67cebfc6
-@REM 08/06 69dd4689bfd69d37d7f997289cb980e45f8b19bb
 @REM 08/07 ab06ac2f646a7e5eb46b022c114a53bcac85009f
+@REM 08/08 a64d8bb0df21efdd933692f11231dbd4abc8d2dc
+@REM 08/09 53e740a1e64e56ab840e3b67127e54de370b416b
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main ab06ac2f646a7e5eb46b022c114a53bcac85009f
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 53e740a1e64e56ab840e3b67127e54de370b416b
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\
@@ -66,7 +65,7 @@ if defined EASY_WAN22_QUICK_UPDATE ( exit /b 0 )
 call :GITHUB_HASH_REQUIREMENTS christian-byrne audio-separation-nodes-comfyui master 31a4567726e035097cc2d1f767767908a6fda2ea
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-@REM @REM https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved/commits/main/
+@REM https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved/commits/main/
 @REM call :GITHUB_HASH_REQUIREMENTS Kosinkadink ComfyUI-AnimateDiff-Evolved main a34036b662d69d155a4536b2ac65483ae941e257
 @REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
@@ -123,6 +122,10 @@ if not exist ComfyUI-KJNodes\fonts\f910-shin-comic-2.04.otf (
 	copy %~dp0f910-shin-comic-2.04\f910-shin-comic-2.04.otf ComfyUI-KJNodes\fonts\
 )
 
+@REM https://github.com/Smirnov75/ComfyUI-mxToolkit/commits/main/
+call :GITHUB_HASH_REQUIREMENTS Smirnov75 ComfyUI-mxToolkit main 7f7a0e584f12078a1c589645d866ae96bad0cc35
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
 @REM https://github.com/kijai/ComfyUI-segment-anything-2/commits/main/
 call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-segment-anything-2 main c59676b008a76237002926f684d0ca3a9b29ac54
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
@@ -131,8 +134,9 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call :GITHUB_HASH_REQUIREMENTS SeanScripts ComfyUI-Unload-Model main ac5ffb4ed05546545ce7cf38e7b69b5152714eed
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
+@REM 2025/08/09 8e4d79471bf1952154768e8435a9300077b534fa
 @REM https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite/commits/main/
-call :GITHUB_HASH_REQUIREMENTS Kosinkadink ComfyUI-VideoHelperSuite main 330bce6c3c0d47ebdedcc0348d9ab355707b7523
+call :GITHUB_HASH_REQUIREMENTS Kosinkadink ComfyUI-VideoHelperSuite main 8e4d79471bf1952154768e8435a9300077b534fa
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/orssorbit/ComfyUI-wanBlockswap/commits/main/

@@ -4,8 +4,8 @@ set EASY_TOOLS=%~dp0..\..\..\EasyTools
 set HUGGING_FACE=%EASY_TOOLS%\Download\HuggingFace.bat
 pushd %~dp0..\..\..\ComfyUI\models\loras
 
-@REM https://huggingface.co/lightx2v/Wan2.2-Lightning
-call %HUGGING_FACE% Fast\ Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1-H.safetensors lightx2v/Wan2.2-Lightning Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1/high_noise_model.safetensors?
+@REM https://huggingface.co/Kijai/WanVideo_comfy
+call %HUGGING_FACE% Fast\ Wan2.2-Lightning_I2V-A14B-4steps-lora_HIGH_fp16.safetensors Kijai/WanVideo_comfy Wan22-Lightning/
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 popd rem %~dp0..\..\..\ComfyUI\models\loras
