@@ -1,4 +1,5 @@
-﻿# <ruby>EasyWan22<rt>easy wan nyan nyan</rt></ruby>
+﻿<!-- README.md を英訳して README_en.md を更新します。このコメントは残してください。更新履歴をよく更新します。 -->
+# <ruby>EasyWan22<rt>easy wan nyan nyan</rt></ruby>
 
 [日本語 README](README.md)
 
@@ -88,6 +89,13 @@ Please judge based on actual usage over about a week rather than a few generatio
 ## Recent Updates
 
 Currently, documentation updates haven't caught up.
+
+### 2025/08/11
+
+- Changed to use GGUF with fast LoRA baked in for acceleration.
+	- You can download higher accuracy models with `Download/diffusion_models/FastMix/*.bat`.
+- Made it possible to use upscalers for enlargement in `Refiner`.
+	- Quality improves when using modest rewrites like `2step`.
 
 ### 2025/08/10
 

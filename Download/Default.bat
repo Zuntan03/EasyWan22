@@ -4,8 +4,8 @@ set EASY_TOOLS=%~dp0..\EasyTools
 call %EASY_TOOLS%\Civitai\Civitai_ApiKey.bat
 @REM if %ERRORLEVEL% neq 0 ( exit /b 1 )
 
-call %~dp0diffusion_models\Base\Wan2.2-I2V-A14B-HighNoise-Q3_K_M.bat
-call %~dp0diffusion_models\Base\Wan2.2-I2V-A14B-LowNoise-Q3_K_M.bat
+call %~dp0diffusion_models\FastMix\Wan22-I2V_A14B-Lightning-H-Q3_K_M.bat
+call %~dp0diffusion_models\FastMix\Wan22-I2V_A14B-Lightning-L-Q3_K_M.bat
 
 call %~dp0text_encoders\umt5_xxl_fp8_e4m3fn_scaled.bat
 call %~dp0text_encoders\umt5-xxl-enc-fp8_e4m3fn.bat
@@ -18,14 +18,13 @@ call %~dp0upscale_models\2x-AnimeSharpV4_Fast_RCAN_PU.bat
 call %~dp0vae\Wan2_1_VAE_bf16.bat
 call %~dp0vae_approx\taew2_1.bat
 
-call %~dp0loras\Fast\Wan22-I2V-A14B-4steps-lora-rank64-Seko-V1-H.bat
-call %~dp0loras\Fast\Wan22-I2V-A14B-4steps-lora-rank64-Seko-V1-L.bat
-call %~dp0loras\Fast\Wan2.2-Lightning_I2V-A14B-4steps-lora_HIGH_fp16.bat
-call %~dp0loras\Fast\Wan2.2-Lightning_I2V-A14B-4steps-lora_LOW_fp16.bat
+@REM call %~dp0loras\Wan21Fast\lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.bat
+@REM call %~dp0loras\Fast\Wan22-I2V-A14B-4steps-lora-rank64-Seko-V1-H.bat
+@REM call %~dp0loras\Fast\Wan22-I2V-A14B-4steps-lora-rank64-Seko-V1-L.bat
+@REM call %~dp0loras\Fast\Wan2.2-Lightning_I2V-A14B-4steps-lora_HIGH_fp16.bat
+@REM call %~dp0loras\Fast\Wan2.2-Lightning_I2V-A14B-4steps-lora_LOW_fp16.bat
 
 call %~dp0loras\Bundle\Nashikone-I2v.bat
-
-call %~dp0loras\Wan21Fast\lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.bat
 
 call %~dp0loras\Nsfw\GeneralNsfw22_v008a-H.bat
 call %~dp0loras\Nsfw\GeneralNsfw22_v008a-L.bat
