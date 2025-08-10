@@ -152,6 +152,9 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 popd rem "%~dp0..\ComfyUI\custom_nodes"
 pushd "%~dp0..\ComfyUI"
 
+call %JUNCTION% ..\Input input
+@REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
 call %JUNCTION% ..\Output output
 @REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
