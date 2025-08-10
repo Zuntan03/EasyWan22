@@ -98,6 +98,7 @@ Currently, documentation updates haven't caught up.
 - Added `LoRA Presets`. There were LoRA connection issues as of yesterday.
 	- Increased presets to 5 types.
 - Fixed a bug where `ColorMatch` in `Refiner` stopped working.
+- Made it possible to choose between area-based and long-side specification for video size.
 
 ### 2025/08/09
 
