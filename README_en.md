@@ -96,6 +96,7 @@ Currently, documentation updates haven't caught up.
 	- You can download higher accuracy models with `Download/diffusion_models/FastMix/*.bat`.
 - Made it possible to use upscalers for enlargement in `Refiner`.
 	- Quality improves when using modest rewrites like `2step`.
+- Adjusted parameters overall.
 
 ### 2025/08/10
 
