@@ -87,6 +87,16 @@ Please judge based on actual usage over about a week rather than a few generatio
 
 ## Recent Updates
 
+Currently, documentation updates haven't caught up.
+
+### 2025/08/10
+
+- Added functionality to generate videos using image files from the `Input/Load/` folder randomly or sequentially.
+	- Switch with `LoadImageFrom` below the start image loading.
+	- You can also specify folders from different paths with `LoadImageFolderPath`.
+	- Set random or sequential with `randomize | increment & Set 0`
+- Added `LoRA Presets`. There were LoRA connection issues as of yesterday.
+
 ### 2025/08/09
 
 - Currently revamping I2V workflow, but documentation updates haven't caught up.
