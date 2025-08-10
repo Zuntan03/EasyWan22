@@ -31,3 +31,5 @@ call %~dp0loras\Nsfw\GeneralNsfw22_v008a-H.bat
 call %~dp0loras\Nsfw\GeneralNsfw22_v008a-L.bat
 call %~dp0loras\Nsfw\PenisPlay-H.bat
 call %~dp0loras\Nsfw\PenisPlay-L.bat
+call %~dp0loras\Nsfw\PovMissionary-H.bat
+call %~dp0loras\Nsfw\PovMissionary-L.bat

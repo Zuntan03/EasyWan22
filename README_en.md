@@ -96,6 +96,8 @@ Currently, documentation updates haven't caught up.
 	- You can also specify folders from different paths with `LoadImageFolderPath`.
 	- Set random or sequential with `randomize | increment & Set 0`
 - Added `LoRA Presets`. There were LoRA connection issues as of yesterday.
+	- Increased presets to 5 types.
+- Fixed a bug where `ColorMatch` in `Refiner` stopped working.
 
 ### 2025/08/09
 
