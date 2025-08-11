@@ -1,4 +1,4 @@
-﻿<!-- README.md を英訳して README_en.md を更新します。このコメントは残してください。更新履歴をよく更新します。 -->
+﻿<!-- English ruby is easy wan nyan nyan -->
 # <ruby>EasyWan22<rt>easy wan nyan nyan</rt></ruby>
 
 [日本語 README](README.md)
@@ -17,6 +17,8 @@ It's not suitable for ComfyUI learning purposes, so if that's your goal, please 
 
 Articles
 
+- 8/11: "[Free video generation AI 'Wan2.2' is amazing - You can achieve this quality on PC locally](https://ascii.jp/elem/000/004/312/4312173/)" (Japanese)
+	- [p. 5 "For installation, Zuntan's 'EasyWan22' environment is recommended as it can be set up without getting lost."](https://ascii.jp/elem/000/004/312/4312173/5/)
 - "[How to use EasyWan22, which makes Wan2.2 easy to use](https://note.com/aiaicreate/n/n0c24cf1a8035)" (Japanese)
 
 Examples
@@ -90,6 +92,10 @@ Please judge based on actual usage over about a week rather than a few generatio
 
 Currently, documentation updates haven't caught up.
 
+### 2025/08/12
+
+- Fine-tuned the `Refiner` settings.
+
 ### 2025/08/11
 
 - Changed to use GGUF with fast LoRA baked in for acceleration.
@@ -97,6 +103,8 @@ Currently, documentation updates haven't caught up.
 - Made it possible to use upscalers for enlargement in `Refiner`.
 	- Quality improves when using modest rewrites like `2step`.
 - Adjusted parameters overall.
+- Added `RepeatFade` that fades with the beginning at the end of the video.
+	- Crops several frames from the beginning of the video and cross-fades them at the end.
 
 ### 2025/08/10
 
