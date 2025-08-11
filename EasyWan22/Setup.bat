@@ -17,6 +17,7 @@ echo 3.35> "%EASY_COMFYUI%\ComfyUiManager_Version.txt"
 
 @REM https://pytorch.org/get-started/locally/
 @REM https://download.pytorch.org/whl/torch/ torch-2.8.0
+@REM https://download.pytorch.org/whl/xformers/ 0.0.32?
 echo torch==2.7.1+cu128 torchvision==0.22.1+cu128 torchaudio==2.7.1+cu128 xformers==0.0.31.post1 --index-url https://download.pytorch.org/whl/cu128> "%EASY_COMFYUI%\Torch_Version.txt"
 
 @REM https://github.com/woct0rdho/triton-windows/releases v3.4.x PyTorch >= 2.8
