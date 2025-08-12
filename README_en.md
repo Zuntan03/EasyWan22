@@ -95,6 +95,11 @@ Currently, documentation updates haven't caught up.
 ### 2025/08/12
 
 - Fine-tuned the `Refiner` settings.
+- Added support for notifications when generation is complete.
+	- Can be disabled with the `SystemNotification` node.
+- Changed the default `TextEncoder` from `Native` to `Kijai`.
+	- While accuracy is reduced due to fp8 not being `scaled`, it has the benefits of avoiding the issue where GPU is sometimes not used and supporting disk cache.
+- Asset Webp saving is no longer treated as a target for frame interpolation.
 
 ### 2025/08/11
 
