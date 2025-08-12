@@ -19,11 +19,21 @@ Articles
 
 - 8/11: "[Free video generation AI 'Wan2.2' is amazing - You can achieve this quality on PC locally](https://ascii.jp/elem/000/004/312/4312173/)" (Japanese)
 	- [p. 5 "For installation, Zuntan's 'EasyWan22' environment is recommended as it can be set up without getting lost."](https://ascii.jp/elem/000/004/312/4312173/5/)
-- "[How to use EasyWan22, which makes Wan2.2 easy to use](https://note.com/aiaicreate/n/n0c24cf1a8035)" (Japanese)
+- 8/5: "[Tried Wan2.2's img2video in local environment](https://kagaseo.blog.jp/archives/29271567.html)" (Japanese)
+- 7/31: "[How to use EasyWan22, which makes Wan2.2 easy to use](https://note.com/aiaicreate/n/n0c24cf1a8035)" (Japanese)
 
 Examples
 
-- 8/4: [@studiomasakaki](https://x.com/studiomasakaki/status/1952222138762768553)
+- I'm running out of time to track examples. For the latest status, please check [here](https://x.com/search?q=%22easywan22%22&src=typed_query&f=live).
+- 8/12: [@studiomasakaki](https://x.com/studiomasakaki/status/1955098988962881757), [@yimamura](https://x.com/yimamura/status/1955222752786518075), [@YTxscc4lOtBHTKy](https://x.com/YTxscc4lOtBHTKy/status/1955116517236117530), [@magchan360](https://x.com/magchan360/status/1955002379453206753), [@ugoku_yeah](https://x.com/ugoku_yeah/status/1954922640612966735)
+- 8/11: [@kuromonchaya](https://x.com/kuromonchaya/status/1954619427124924785), [@OkogeOnigiri](https://x.com/OkogeOnigiri/status/1954831538333372507), [@sirsirtaro_sub](https://x.com/sirsirtaro_sub/status/1954819183570497709), [@magchan360](https://x.com/magchan360/status/1954809827680457138) [2](https://x.com/magchan360/status/1954801881525764422) [3](https://x.com/magchan360/status/1954652281967927692), [@sirsirtaro29](https://x.com/sirsirtaro29/status/1954786781960011873), [@virtuarian](https://x.com/virtuarian/status/1954742657475023293), [@akasetouta](https://x.com/akasetouta/status/1954720972533338167)
+- 8/10: [@RistyFalette](https://x.com/RistyFalette/status/1954342340866486548)
+- 8/9: [@ramnacolumn](https://x.com/ramnacolumn/status/1954157838055715096), [@erot_ai](https://x.com/erot_ai/status/1954140200751308810), [@yobo_41](https://x.com/yobo_41/status/1953847312498774356), [@magchan360](https://x.com/magchan360/status/1954122025737367567)
+- 8/8: [@croblz25](https://x.com/croblz25/status/1953652991799795842), [@tottarkun](https://x.com/tottarkun/status/1953784103523815471)
+- 8/7: [@tottarkun](https://x.com/tottarkun/status/1953400449350160771)
+- 8/6: [@Kuze0x0_](https://x.com/Kuze0x0_/status/1953037332489355689), [@Akiya_Saisei_PM](https://x.com/Akiya_Saisei_PM/status/1953099647842488603), [@yukimino_doga](https://x.com/yukimino_doga/status/1952972105630597241), [@wisperingcat](https://x.com/wisperingcat/status/1952894649791857146)
+- 8/5: [@aryn_ra](https://x.com/aryn_ra/status/1952534391500185683), [@takey_21](https://x.com/takey_21/status/1952712030412271638)
+- 8/4: [@studiomasakaki](https://x.com/studiomasakaki/status/1952222138762768553), [@croblz25](https://x.com/croblz25/status/1952325277960622547), [@RistyFalette](https://x.com/RistyFalette/status/1952380739095547936), [@Artemi_AI](https://x.com/Artemi_AI/status/1952357042066428116), [@ojihotaren](https://x.com/ojihotaren/status/1952346242580922672)
 - 8/3: [@yukimino_doga](https://x.com/yukimino_doga/status/1951947103095476427) [2](https://x.com/yukimino_doga/status/1951886943588901017), [@kuromonchaya](https://x.com/kuromonchaya/status/1951983575420522602), [@aoi_yotsub16292](https://x.com/aoi_yotsub16292/status/1952052870397984795) [2](https://x.com/aoi_yotsub16292/status/1952015286774960406) [3](https://x.com/aoi_yotsub16292/status/1951990309266886843), [@remote_komusou](https://x.com/remote_komusou/status/1951792261420966189), [@ramnacolumn](https://x.com/ramnacolumn/status/1951921310218723353), [@NegiTurkey](https://x.com/NegiTurkey/status/1952135962324300120), [@nellygem888](https://x.com/nellygem888/status/1951966481043841362), [@municocco](https://x.com/municocco/status/1951858568929718562)
 - 8/2: [@yukimino_doga](https://x.com/yukimino_doga/status/1951447771086725594), [@nellygem888](https://x.com/nellygem888/status/1951302176556589368) [2](https://x.com/nellygem888/status/1951313234662924646), [@iitomyii](https://x.com/iitomyii/status/1951352115835838685)
 - 8/1: [@BeamManP](https://x.com/BeamManP/status/1950969267484238201), [@kagami_kami_m](https://x.com/kagami_kami_m/status/1951218120171106682), [@Kuze0x0_](https://x.com/Kuze0x0_/status/1950953805618835893), [@m_gen_chan](https://x.com/m_gen_chan/status/1951116909933633797), [@kp4114](https://x.com/kp4114/status/1951150976116859195), [@yukimino_doga](https://x.com/yukimino_doga/status/1950816818408374735) [2](https://x.com/yukimino_doga/status/1951263437939425350) [3](https://x.com/yukimino_doga/status/1950768548600770891), [@kp4114](https://x.com/kp4114/status/1951150976116859195), [@croblz25](https://x.com/croblz25/status/1950944166097326435)
@@ -88,7 +98,9 @@ The page file location can be changed in Windows `Advanced System Settings - Per
 The information in Task Manager's `Performance - Disk` tab is also affected by reads, so it's inappropriate from the perspective of worrying about SSD lifespan.  
 Please judge based on actual usage over about a week rather than a few generations.
 
-## Recent Updates
+## Recent Update History
+
+[ChangeLog](https://github.com/Zuntan03/EasyWan22/wiki/ChangeLog)
 
 Currently, documentation updates haven't caught up.
 
@@ -96,6 +108,14 @@ Currently, documentation updates haven't caught up.
 
 - Fine-tuned the `Refiner` settings.
 - Added support for notifications when generation is complete.
+	- Can be disabled with the `SystemNotification` node.
+- Changed the default `TextEncoder` from `Native` to `Kijai`.
+	- While accuracy is reduced due to fp8 not being `scaled`, it has the benefits of avoiding the issue where GPU is sometimes not used and supporting disk cache.
+- Asset Webp saving is no longer treated as a target for frame interpolation.
+- Updated 'User Feedback'.
+- Added 4 types of samples `20250812-GeneralNsfw_A~D` to Sample.
+	- These are simply generated using `GeneralNsfw` preset with random loading of past images thrown into folders via `LoadImageFrom`.
+	- The highlights are the revival of kanji in speech bubbles through V2V Refiner and fluid simulation.
 	- Can be disabled with the `SystemNotification` node.
 - Changed the default `TextEncoder` from `Native` to `Kijai`.
 	- While accuracy is reduced due to fp8 not being `scaled`, it has the benefits of avoiding the issue where GPU is sometimes not used and supporting disk cache.
@@ -122,113 +142,10 @@ Currently, documentation updates haven't caught up.
 - Fixed a bug where `ColorMatch` in `Refiner` stopped working.
 - Made it possible to choose between area-based and long-side specification for video size.
 
-### 2025/08/09
+## Document
 
-- Currently revamping I2V workflow, but documentation updates haven't caught up.
-	- Changed to specify video size by the side length of an area-based square.
-	- Added support for `Color Match`. Available right after the first `Trim` in post-processing and after enlargement in `Refiner`.
-	- Added support for `Color Correct`.
-	- Made I2V-A14B LoRA easily accessible through `LoRA Presets`.
-- Moved old workflows to `Easy/Deprecated/`.
-
-### 2025/08/09
-
-- Added "[Impact of Large AI Tool Models on SSD Lifespan](#impact-of-large-ai-tool-models-on-ssd-lifespan)" information.
-
-### 2025/08/08
-
-- Temporarily added `00_I2V_Experimental-Wan22Lightning` workflow supporting `Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1`.
-	- This is a quick Experimental release as I haven't had much time for thorough testing.
-- Added support for downloading the following files:
-	- `Download\loras\Fast\Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1-H.bat`
-	- `Download\loras\Fast\Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1-L.bat`
-- Added explicit installation of `PyYAML`.
-	- This may have resolved installation issues in Python 3.12 environments.
-- Fixed a bug in `SaveLastImage` where the start frame image was being saved instead of the final frame image.
-
-I forgot to set up GitHub repository Watch settings, so I wasn't noticing Issue registrations.  
-My apologies.
-
-### 2025/08/07
-
-- Continuing to update `Easy/I2V` workflow.
-	- As the number of green nodes has increased, frequently used nodes are now colored red.
-	- Added `Trim` functionality to `PostProcess` to remove specified number of frames from the beginning or end of videos.
-	- Changed `PointMosaic` to be specified on the video before `Refiner` application.
-		- Eliminates the need to respecify point positions after `Refiner`.
-	- Changed to toggle function enable/disable with single toggles.
-	- Adjusted video save filenames for specific purposes.
-	- Made `Refiner`'s Full Block swap an optional feature.
-		- Resolves the issue of slightly increased VRAM consumption in LowNoise.
-	- Added support for disabling start images as an experimental and temporary feature.
-
-### 2025/08/06
-
-- `Easy/I2V` workflow now supports `Refiner`.
-	- Enlarges generated videos and refines them with LowNoise V2V that inherits from original video generation.
-	- Added `Refiner` example samples to `Sample/`.
-		- Generate with long side `640px` for gacha, refine to `960px`, then upscale 2x for FullHD+.
-		- `Refiner` doesn't reduce VRAM consumption.  
-		Its feature is enabling faster gacha loops at lower resolutions.
-- Added support for downloading `Download\loras\Nsfw\GeneralNsfw22_v008a-L.bat`.
-- Updated ComfyUI and WanVideoWrapper versions.
-
-### 2025/08/04
-
-- Continuing to update `Easy/I2V` workflow.
-	- Added support for `Rewrite Prompt` that rewrites prompts with local Qwen, separate from the prompt extension in `ExtendPrompt`.
-- Updates to `WanVideoWrapper` may have resolved memory shortage issues.
-
-### 2025/08/03
-
-- Continuing to update `Easy/I2V` workflow.
-	- **Added support for Japanese prompt translation to English.**  
-	**You can choose between local translation and Google Translator.**
-	- Made text encoder selectable from `Kijai`, `Native`, `NAG`.  
-	Default is scaled fp8 `Native`.
-	- Enabled concatenation of preset prompts and input prompts for negative prompts.
-	- Added support for prompt generation from images.
-		- The effect of calming movement is more powerful than Wan 2.1, so usage seems limited.
-	- **Added support for prompt extension by locally-running Qwen in `WanVideoPromptExtender`.**
-	- Added support for selective combination of multiple types of positive prompts.
-	- Changed to set video length in seconds.
-	- Made frame interpolation selectable from `60FPS`, `60FPS 1.3x Speed`, `30FPS`.
-
-### 2025/08/02
-
-- Added `Easy/00_I2V(ImageToVideo)` workflow.
-	- Supports three types of mosaic like EasyWanVideo's NsfwFast, upscaling, frame interpolation, and labels, eliminating the need for regeneration after post-processing from seed gacha hits.
-- Civitai API key is now required for updates and installation.
-- Added support for downloading `Download\loras\Nsfw\GeneralNsfw22_v006.bat`.
-	- Updated to version `Download\loras\Nsfw\GeneralNsfw22_v008a.bat`.
-- Added user feedback section.
-- Added support for downloading examples to `Sample/`.
-- Experimental introduction of unsupported Python 3.10 compatibility.
-- Reverted to version pinning of `numpy==1.26.4` and `opencv-python==4.11.0.86` as safety measures.
-- Added `EndImage` functionality to `Easy/00_I2V(ImageToVideo)` workflow, which was also available in `99_WIP_Kijai_LowSpec`.
-
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/I2V.webp)
-
-### 2025/07/31
-
-- `99_WIP_Kijai_LowSpec` workflow now supports LoRA loading and old-type end images.
-	- 20:45 Fixed a bug where end images didn't work properly.
-- Added support for downloading `Download\vae_approx\taew2_1.bat`.
-	- With [ComfyUI-Manager and Video Helper settings](https://github.com/kijai/ComfyUI-WanVideoWrapper/issues/229#issuecomment-2729456556), preview is displayed in `WanVideoSampler`.
-- Added support for downloading `Wan2.2-I2V-A14B` in `Q4_K_M`, `Q6_K`, `Q8_0` formats.
-	- You can download all at once with `Download\diffusion_models\Base-Wan2.2-I2V-A14B.bat`.
-- [Prompt Dance (Old WIP Workflow)](https://yyy.wpx.jp/2025/07/20250731-EasyWan22.mp4)
-	- You can generate quickly by disabling upscaling and frame interpolation.
-- Operate the green nodes above `Easy/99_WIP_Kijai_LowSpec.json`.
-
-Copy `ComfyUI/extra_model_paths.yaml.example` and rename it to `ComfyUI/extra_model_paths.yaml`, then rewrite the content to:
-```yaml
-comfyui:
-    base_path: D:/EasyWanVideo/ComfyUI/
-    loras: models/loras/
-```
-This allows you to reference Wan 2.1 LoRA from EasyWanVideo.  
-Replace `D:/EasyWanVideo/ComfyUI/` with the absolute path to `EasyWanVideo/ComfyUI/` where EasyWanVideo is installed.
+- [FAQ](https://github.com/Zuntan03/EasyWan22/wiki/FAQ)
+- [ChangeLog](https://github.com/Zuntan03/EasyWan22/wiki/ChangeLog)
 
 ## License
 
