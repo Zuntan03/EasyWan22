@@ -26,6 +26,8 @@ call %~dp0vae_approx\taew2_1.bat
 
 call %~dp0loras\Bundle\Nashikone-I2v.bat
 
+call %~dp0loras\Nsfw\Footjob_v10-H.bat
+call %~dp0loras\Nsfw\Footjob_v10-L.bat
 call %~dp0loras\Nsfw\GeneralNsfw22_v008a-H.bat
 call %~dp0loras\Nsfw\GeneralNsfw22_v008a-L.bat
 call %~dp0loras\Nsfw\PenisPlay-H.bat

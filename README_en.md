@@ -102,7 +102,16 @@ Please judge based on actual usage over about a week rather than a few generatio
 
 [ChangeLog](https://github.com/Zuntan03/EasyWan22/wiki/ChangeLog)
 
+
 Currently, documentation updates haven't caught up.
+
+### 2025/08/13
+
+- Added a sample to verify the versatility of the general NSFW LoRA and the mass production capability of the `I2V` workflow.
+	- Just loading past favorite images with folder specification and generating with presets as-is.
+- Added `Use Sigmas` to enable disabling Sigmas.
+- Added NSFW presets.
+	- `Download\loras\Nsfw\Footjob_v10-(H|L).bat`
 
 ### 2025/08/12
 
@@ -116,10 +125,6 @@ Currently, documentation updates haven't caught up.
 - Added 4 types of samples `20250812-GeneralNsfw_A~D` to Sample.
 	- These are simply generated using `GeneralNsfw` preset with random loading of past images thrown into folders via `LoadImageFrom`.
 	- The highlights are the revival of kanji in speech bubbles through V2V Refiner and fluid simulation.
-	- Can be disabled with the `SystemNotification` node.
-- Changed the default `TextEncoder` from `Native` to `Kijai`.
-	- While accuracy is reduced due to fp8 not being `scaled`, it has the benefits of avoiding the issue where GPU is sometimes not used and supporting disk cache.
-- Asset Webp saving is no longer treated as a target for frame interpolation.
 
 ### 2025/08/11
 

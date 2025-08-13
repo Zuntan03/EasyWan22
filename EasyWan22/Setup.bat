@@ -50,11 +50,11 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 popd rem "%~dp0.."
 pushd "%~dp0..\ComfyUI\custom_nodes"
 
-@REM 08/11 d6270ace0aac92a39f67fad202b96b94ca67e867
 @REM 08/12 97da701379ca54cef928a469f993601cfcfcb632
-@REM 08/13 d59690105518ab5eef50690028a7b0fe0d793631
+@REM 08/13 2c854c53ee8c078069d9b95bf493bb44b25039ee ver 1.2.8
+@REM 08/13 d59690105518ab5eef50690028a7b0fe0d793631 Result changed
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main d59690105518ab5eef50690028a7b0fe0d793631
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 2c854c53ee8c078069d9b95bf493bb44b25039ee
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\
