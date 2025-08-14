@@ -105,6 +105,10 @@ Please judge based on actual usage over about a week rather than a few generatio
 
 Currently, documentation updates haven't caught up.
 
+### 2025/08/14
+
+- Added samples demonstrating that GeneralNsfw presets can be used for various images.
+
 ### 2025/08/13
 
 - Added a sample to verify the versatility of the general NSFW LoRA and the mass production capability of the `I2V` workflow.
