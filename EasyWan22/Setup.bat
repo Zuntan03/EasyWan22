@@ -10,22 +10,22 @@ set CURL_CMD=C:\Windows\System32\curl.exe -kL
 pushd "%~dp0.."
 
 @REM https://github.com/comfyanonymous/ComfyUI/releases
-echo v0.3.49> "%EASY_COMFYUI%\ComfyUi_Version.txt"
+echo v0.3.50> "%EASY_COMFYUI%\ComfyUi_Version.txt"
 
 @REM https://github.com/Comfy-Org/ComfyUI-Manager/tags
 echo 3.35> "%EASY_COMFYUI%\ComfyUiManager_Version.txt"
 
+echo xformers> "%EASY_COMFYUI%\UninstallModule.txt"
+
 @REM https://pytorch.org/get-started/locally/
 @REM https://download.pytorch.org/whl/torch/ torch-2.8.0
-@REM https://download.pytorch.org/whl/xformers/ 0.0.32?
-echo torch==2.7.1+cu128 torchvision==0.22.1+cu128 torchaudio==2.7.1+cu128 xformers==0.0.31.post1 --index-url https://download.pytorch.org/whl/cu128> "%EASY_COMFYUI%\Torch_Version.txt"
+echo torch==2.8.0+cu128 torchvision==0.23.0+cu128 torchaudio==2.8.0+cu128 --index-url https://download.pytorch.org/whl/cu128> "%EASY_COMFYUI%\Torch_Version.txt"
 
 @REM https://github.com/woct0rdho/triton-windows/releases v3.4.x PyTorch >= 2.8
-echo triton-windows==3.3.1.post19> "%EASY_COMFYUI%\Triton_Version.txt"
+echo triton-windows==3.4.0.post20> "%EASY_COMFYUI%\Triton_Version.txt"
 
 @REM https://github.com/woct0rdho/SageAttention/releases
-@REM echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows/sageattention-2.2.0+cu128torch2.7.1-cp312-cp312-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
-echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post1/sageattention-2.2.0+cu128torch2.7.1.post1-cp39-abi3-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
+echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post2/sageattention-2.2.0+cu128torch2.8.0.post2-cp39-abi3-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
 
 call %EASY_TOOLS%\ComfyUi\ComfyUi_Update.bat
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
