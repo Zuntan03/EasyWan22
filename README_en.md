@@ -105,8 +105,17 @@ Please judge based on actual usage over about a week rather than a few generatio
 
 Currently, documentation updates haven't caught up.
 
+### 2025/08/16
+
+- Released [Wan22-FastMix](https://huggingface.co/Zuntan/Wan22-FastMix) and adjusted workflows accordingly.
+	- Achieved ghost reduction and motion enhancement.
+	- While there's compatibility with used LoRAs, you can increase or decrease motion size and speed with `EnhanceMotion`.
+- Rolled back PyTorch version to `2.7.1` as some environments seem to have compilation issues or slower performance.
+
 ### 2025/08/14
 
+- Updated ComfyUI version to `v0.3.50`.
+- Upgraded PyTorch version to `2.8.0` and CUDA version to `12.8`.
 - Added samples demonstrating that GeneralNsfw presets can be used for various images.
 
 ### 2025/08/13

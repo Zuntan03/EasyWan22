@@ -18,14 +18,18 @@ echo 3.35> "%EASY_COMFYUI%\ComfyUiManager_Version.txt"
 echo xformers> "%EASY_COMFYUI%\UninstallModule.txt"
 
 @REM https://pytorch.org/get-started/locally/
-@REM https://download.pytorch.org/whl/torch/ torch-2.8.0
-echo torch==2.8.0+cu128 torchvision==0.23.0+cu128 torchaudio==2.8.0+cu128 --index-url https://download.pytorch.org/whl/cu128> "%EASY_COMFYUI%\Torch_Version.txt"
+@REM https://download.pytorch.org/whl/torch/ Compile bug, torch-2.8.1 ?
+@REM echo torch==2.8.0+cu128 torchvision==0.23.0+cu128 torchaudio==2.8.0+cu128 --index-url https://download.pytorch.org/whl/cu128> "%EASY_COMFYUI%\Torch_Version.txt"
+echo torch==2.7.1+cu128 torchvision==0.22.1+cu128 torchaudio==2.7.1+cu128 --index-url https://download.pytorch.org/whl/cu128> "%EASY_COMFYUI%\Torch_Version.txt"
+
 
 @REM https://github.com/woct0rdho/triton-windows/releases v3.4.x PyTorch >= 2.8
-echo triton-windows==3.4.0.post20> "%EASY_COMFYUI%\Triton_Version.txt"
+@REM echo triton-windows==3.4.0.post20> "%EASY_COMFYUI%\Triton_Version.txt"
+echo triton-windows==3.3.1.post19> "%EASY_COMFYUI%\Triton_Version.txt"
 
 @REM https://github.com/woct0rdho/SageAttention/releases
-echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post2/sageattention-2.2.0+cu128torch2.8.0.post2-cp39-abi3-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
+@REM echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post2/sageattention-2.2.0+cu128torch2.8.0.post2-cp39-abi3-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
+echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post1/sageattention-2.2.0+cu128torch2.7.1.post1-cp39-abi3-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
 
 call %EASY_TOOLS%\ComfyUi\ComfyUi_Update.bat
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
@@ -50,11 +54,12 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 popd rem "%~dp0.."
 pushd "%~dp0..\ComfyUI\custom_nodes"
 
-@REM 08/12 97da701379ca54cef928a469f993601cfcfcb632
 @REM 08/13 2c854c53ee8c078069d9b95bf493bb44b25039ee ver 1.2.8
 @REM 08/13 d59690105518ab5eef50690028a7b0fe0d793631 Result changed
+@REM 08/14 43447dbaf96688b83bc25a5f8a9c24654b3a4d4d
+@REM 08/16 8bf010a835fa86aa3abfa302a97431281973b681
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 2c854c53ee8c078069d9b95bf493bb44b25039ee
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 8bf010a835fa86aa3abfa302a97431281973b681
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\
