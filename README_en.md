@@ -105,6 +105,10 @@ Please judge based on actual usage over about a week rather than a few generatio
 
 Currently, documentation updates haven't caught up.
 
+### 2025/08/17
+
+- Added `CumshotAesthetics` preset and sample.
+
 ### 2025/08/16
 
 - Released [Wan22-FastMix](https://huggingface.co/Zuntan/Wan22-FastMix) and adjusted workflows accordingly.
@@ -162,8 +166,9 @@ Currently, documentation updates haven't caught up.
 
 ## Document
 
-- [FAQ](https://github.com/Zuntan03/EasyWan22/wiki/FAQ)
-- [ChangeLog](https://github.com/Zuntan03/EasyWan22/wiki/ChangeLog)
+- [Tutorial](https://github.com/Zuntan03/EasyWan22/wiki/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB)
+<!-- - [FAQ](https://github.com/Zuntan03/EasyWan22/wiki/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F%E3%81%A8%E5%9B%9E%E7%AD%94) -->
+- [ChangeLog](https://github.com/Zuntan03/EasyWan22/wiki/%E6%9B%B4%E6%96%B0%E5%B1%A5%E6%AD%B4) 
 
 ## License
 

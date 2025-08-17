@@ -28,6 +28,8 @@ call %~dp0loras\Fast\Wan22-I2V-A14B-4steps-lora-rank64-Seko-V1-H.bat
 
 call %~dp0loras\Bundle\Nashikone-I2v.bat
 
+call %~dp0loras\Nsfw\AnimeCumshotAesthetics_v10-H.bat
+call %~dp0loras\Nsfw\AnimeCumshotAesthetics_v10-L.bat
 call %~dp0loras\Nsfw\Footjob_v10-H.bat
 call %~dp0loras\Nsfw\Footjob_v10-L.bat
 call %~dp0loras\Nsfw\GeneralNsfw22_v008a-H.bat

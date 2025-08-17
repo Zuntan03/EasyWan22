@@ -106,6 +106,10 @@ SSD が複数ある場合は、`健康状態` の良い SSD にページファ�
 
 現在、ドキュメントの更新が追いついていません。
 
+### 2025/08/17
+
+- `CumshotAesthetics` のプリセットとサンプルを追加しました。
+
 ### 2025/08/16
 
 - [Wan22-FastMix](https://huggingface.co/Zuntan/Wan22-FastMix) を公開し、これに合わせてワークフローを調整しました。
@@ -163,7 +167,8 @@ SSD が複数ある場合は、`健康状態` の良い SSD にページファ�
 
 ## ドキュメント
 
-- [よくある質問と回答](https://github.com/Zuntan03/EasyWan22/wiki/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F%E3%81%A8%E5%9B%9E%E7%AD%94)
+- [チュートリアル](https://github.com/Zuntan03/EasyWan22/wiki/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB)
+<!-- - [よくある質問と回答](https://github.com/Zuntan03/EasyWan22/wiki/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F%E3%81%A8%E5%9B%9E%E7%AD%94) -->
 - [更新履歴](https://github.com/Zuntan03/EasyWan22/wiki/%E6%9B%B4%E6%96%B0%E5%B1%A5%E6%AD%B4)
 
 ## ライセンス
