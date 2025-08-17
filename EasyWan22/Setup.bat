@@ -54,6 +54,9 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 popd rem "%~dp0.."
 pushd "%~dp0..\ComfyUI\custom_nodes"
 
+@REM REMBG: pip UnicodeDecodeError: 'cp932' codec can't decode byte 0x97 in position 2879: illegal multibyte sequence
+set PYTHONUTF8=1
+
 @REM 08/13 2c854c53ee8c078069d9b95bf493bb44b25039ee ver 1.2.8
 @REM 08/13 d59690105518ab5eef50690028a7b0fe0d793631 Result changed
 @REM 08/14 43447dbaf96688b83bc25a5f8a9c24654b3a4d4d
@@ -130,6 +133,10 @@ if not exist ComfyUI-KJNodes\fonts\f910-shin-comic-2.04.otf (
 
 @REM https://github.com/Smirnov75/ComfyUI-mxToolkit/commits/main/
 call :GITHUB_HASH_REQUIREMENTS Smirnov75 ComfyUI-mxToolkit main 7f7a0e584f12078a1c589645d866ae96bad0cc35
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
+@REM https://github.com/1038lab/ComfyUI-RMBG
+call :GITHUB_HASH_REQUIREMENTS 1038lab ComfyUI-RMBG main 25c07e9cf1cc7c886a631cd3cc1d4d1497be124e
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/kijai/ComfyUI-segment-anything-2/commits/main/

@@ -107,6 +107,18 @@ Currently, documentation updates haven't caught up.
 
 ### 2025/08/17
 
+- Made it possible to toggle the entire post-processing on/off with `Enable PostProcess`.
+- Made it possible to edit mosaics with `Enable MosaicWork` even when the entire post-processing is disabled.  
+Here's an example procedure for editing mosaics at maximum speed:
+	1. Disable `Enable PostProcess`.
+	2. Load a generated Webp video with `LoadWebpVideo` in `PostProcessSource`.
+	3. Enable `Enable MosaicWork`.
+	4. Disable file saving like `SaveMp4` in `Output`.
+	5. Enable `Enable PointMosaic`, `Enable MaskMosaic`, `Enable AutoMosaic` to edit mosaics.
+	6. When mosaic editing is finished, enable `Enable PostProcess` and file saving, then execute to generate a mosaic-processed video with post-processing.
+- Made it possible to append generated videos to existing Webp videos with `AppendVideo`.
+	- You can remove trailing frames from the previous generated Webp video with `TrimEndFrames`.
+		- If you want to remove leading frames from the generated video, use `TrimStartFrames`.
 - Added `CumshotAesthetics` preset and sample.
 
 ### 2025/08/16

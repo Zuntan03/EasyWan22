@@ -108,6 +108,18 @@ SSD が複数ある場合は、`健康状態` の良い SSD にページファ�
 
 ### 2025/08/17
 
+- `Enable PostProcess` でポストプロセス全体の有効無効を切り替えられるようにしました。
+- `Enable MosaicWork` でポストプロセス全体が無効でも、モザイクの編集をできるようにしました。  
+以下は最速でモザイクを編集するための手順例です。
+	1. `Enable PostProcess` を無効にする。
+	2. `PostProcessSource` の `LoadWebpVideo` で生成済み Webp 動画を読み込む。
+	3. `Enable MosaicWork` を有効にする。
+	4. `Output` の `SaveMp4` などのファイル保存を無効にする。
+	5. `Enable PointMosaic`, `Enable MaskMosaic`, `Enable AutoMosaic` を有効にしてモザイクを編集する。
+	6. モザイクの編集が終わったら、`Enable PostProcess` とファイル保存を有効にして実行すると、ポストプロセス込みのモザイク済み動画を生成。
+- `AppendVideo` で生成済み Webp 動画に、生成した動画を付け足せるようにしました。
+	- `TrimEndFrames` で前の生成済み Webp 動画の末尾フレームを削除できます。
+		- 生成した動画の先頭フレームを削除したい場合は `TrimStartFrames` で。
 - `CumshotAesthetics` のプリセットとサンプルを追加しました。
 
 ### 2025/08/16
