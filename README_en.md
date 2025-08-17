@@ -105,6 +105,11 @@ Please judge based on actual usage over about a week rather than a few generatio
 
 Currently, documentation updates haven't caught up.
 
+### 2025/08/18
+
+- Added a sample of the `CumshotAesthetics` preset assisted by prompts.
+	- Japanese instructions are automatically converted to three-language prompts (Japanese, English, and Chinese).
+
 ### 2025/08/17
 
 - Made it possible to toggle the entire post-processing on/off with `Enable PostProcess`.
