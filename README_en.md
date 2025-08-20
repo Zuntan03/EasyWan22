@@ -15,6 +15,8 @@ It's not suitable for ComfyUI learning purposes, so if that's your goal, please 
 
 ## User Feedback
 
+Latest user feedback can be found here: [Twitter](https://x.com/search?q=%22easywan22%22&src=typed_query&f=live), [YouTube](https://www.youtube.com/results?search_query=EasyWan22), [Google](https://www.google.com/search?q=easywan22)
+
 Articles
 
 - 8/11: "[Free video generation AI 'Wan2.2' is amazing - You can achieve this quality on PC locally](https://ascii.jp/elem/000/004/312/4312173/)" (Japanese)
@@ -24,7 +26,6 @@ Articles
 
 Examples
 
-- I'm running out of time to track examples. For the latest status, please check [here](https://x.com/search?q=%22easywan22%22&src=typed_query&f=live).
 - 8/12: [@studiomasakaki](https://x.com/studiomasakaki/status/1955098988962881757), [@yimamura](https://x.com/yimamura/status/1955222752786518075), [@YTxscc4lOtBHTKy](https://x.com/YTxscc4lOtBHTKy/status/1955116517236117530), [@magchan360](https://x.com/magchan360/status/1955002379453206753), [@ugoku_yeah](https://x.com/ugoku_yeah/status/1954922640612966735)
 - 8/11: [@kuromonchaya](https://x.com/kuromonchaya/status/1954619427124924785), [@OkogeOnigiri](https://x.com/OkogeOnigiri/status/1954831538333372507), [@sirsirtaro_sub](https://x.com/sirsirtaro_sub/status/1954819183570497709), [@magchan360](https://x.com/magchan360/status/1954809827680457138) [2](https://x.com/magchan360/status/1954801881525764422) [3](https://x.com/magchan360/status/1954652281967927692), [@sirsirtaro29](https://x.com/sirsirtaro29/status/1954786781960011873), [@virtuarian](https://x.com/virtuarian/status/1954742657475023293), [@akasetouta](https://x.com/akasetouta/status/1954720972533338167)
 - 8/10: [@RistyFalette](https://x.com/RistyFalette/status/1954342340866486548)
@@ -102,8 +103,28 @@ Please judge based on actual usage over about a week rather than a few generatio
 
 [ChangeLog](https://github.com/Zuntan03/EasyWan22/wiki/ChangeLog)
 
+<!-- Translate README.md to English and update README_en.md. Update changelog frequently. Do not change links to EasyWan22/wiki/. -->
 
 Currently, documentation updates haven't caught up.
+
+### 2025/08/20
+
+- Added support for past video generation from end images and video generation from start and end images.
+	- `SwapStartEnd` treats the start image as an end image and generates a past video leading to the image.
+	- `UseEndImage` additionally specifies an end image to generate a video from start image to end image.
+		- Resource consumption is high due to brute force approach.
+	- This is not VACE, so motion continuity depends on luck.
+	- Added `LoopFLF2V` sample that generates a 15-second loop video from a single image.
+
+`LoopFLF2V` sample generation procedure:
+
+1. Enable `SwapStartEnd` to generate a 5-second past video from the end image.
+2. Disable `SwapStartEnd` to generate a 5-second video from the start image.  
+	Enable `AppendVideo` and set `Asset.webp` from step 1 to `PreviousWebpVideo` to check motion continuity.
+	- This becomes a simple 10-second video generation at this point.
+3. Enable `UseEndImage`, set the start image from step 2 and the end image from step 1's `EndFrame.webp`, then generate a 5-second video.  
+	Enable `AppendVideo` and set `Asset.webp` from step 2 to `PreviousWebpVideo`.  
+	This creates a looping video: step 1 > step 2 > step 3 > step 1.
 
 ### 2025/08/18
 
@@ -181,7 +202,7 @@ Here's an example procedure for editing mosaics at maximum speed:
 - Fixed a bug where `ColorMatch` in `Refiner` stopped working.
 - Made it possible to choose between area-based and long-side specification for video size.
 
-## Document
+## Documentation
 
 - [Tutorial](https://github.com/Zuntan03/EasyWan22/wiki/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB)
 <!-- - [FAQ](https://github.com/Zuntan03/EasyWan22/wiki/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F%E3%81%A8%E5%9B%9E%E7%AD%94) -->

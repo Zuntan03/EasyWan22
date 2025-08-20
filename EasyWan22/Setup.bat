@@ -61,8 +61,10 @@ set PYTHONUTF8=1
 @REM 08/13 d59690105518ab5eef50690028a7b0fe0d793631 Result changed
 @REM 08/14 43447dbaf96688b83bc25a5f8a9c24654b3a4d4d
 @REM 08/16 8bf010a835fa86aa3abfa302a97431281973b681
+@REM 08/18 427e7be6c2c3a2be6563a631b0275443f69b0d94
+@REM 08/19 345c286c867440978a0ce4c2311724844606c8f4
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 8bf010a835fa86aa3abfa302a97431281973b681
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 345c286c867440978a0ce4c2311724844606c8f4
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\
@@ -130,6 +132,10 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 if not exist ComfyUI-KJNodes\fonts\f910-shin-comic-2.04.otf (
 	copy %~dp0f910-shin-comic-2.04\f910-shin-comic-2.04.otf ComfyUI-KJNodes\fonts\
 )
+
+@REM https://github.com/WainWong/ComfyUI-Loop-image
+call :GITHUB_HASH_REQUIREMENTS WainWong ComfyUI-Loop-image main 2e0153ba950c5b723062209d9aff8c0aba23a88e
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/Smirnov75/ComfyUI-mxToolkit/commits/main/
 call :GITHUB_HASH_REQUIREMENTS Smirnov75 ComfyUI-mxToolkit main 7f7a0e584f12078a1c589645d866ae96bad0cc35
