@@ -107,6 +107,11 @@ Please judge based on actual usage over about a week rather than a few generatio
 
 Currently, documentation updates haven't caught up.
 
+### 2025/08/21
+
+- Updated ComfyUI version to `v0.3.51`.
+- Added presets for `AssertiveCowgirl`, `PovCowgirl`, and `OralInsertion`.
+
 ### 2025/08/20
 
 - Added support for past video generation from end images and video generation from start and end images.
@@ -211,4 +216,5 @@ Here's an example procedure for editing mosaics at maximum speed:
 ## License
 
 The contents of this repository are under [MIT License](./LICENSE.txt).  
+Folders with separate license files are under those respective licenses.  
 Folders with separate license files are under those respective licenses.

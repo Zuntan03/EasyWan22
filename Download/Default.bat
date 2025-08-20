@@ -30,11 +30,16 @@ call %~dp0loras\Bundle\Nashikone-I2v.bat
 
 call %~dp0loras\Nsfw\AnimeCumshotAesthetics_v10-H.bat
 call %~dp0loras\Nsfw\AnimeCumshotAesthetics_v10-L.bat
+call %~dp0loras\Nsfw\AssertiveCowgirl-H.bat
+call %~dp0loras\Nsfw\AssertiveCowgirl-L.bat
 call %~dp0loras\Nsfw\Footjob_v10-H.bat
 call %~dp0loras\Nsfw\Footjob_v10-L.bat
 call %~dp0loras\Nsfw\GeneralNsfw22_v008a-H.bat
 call %~dp0loras\Nsfw\GeneralNsfw22_v008a-L.bat
+call %~dp0loras\Nsfw\OralInsertion_v10.bat
 call %~dp0loras\Nsfw\PenisPlay-H.bat
 call %~dp0loras\Nsfw\PenisPlay-L.bat
+call %~dp0loras\Nsfw\PovCowgirl_v02-H.bat
+call %~dp0loras\Nsfw\PovCowgirl_v02-L.bat
 call %~dp0loras\Nsfw\PovMissionary-H.bat
 call %~dp0loras\Nsfw\PovMissionary-L.bat
