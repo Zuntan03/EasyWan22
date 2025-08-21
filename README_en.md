@@ -130,6 +130,9 @@ Currently, documentation updates haven't caught up.
 2. Disable `SwapStartEnd` to generate a 5-second video from the start image.  
 	Enable `AppendVideo` and set `Asset.webp` from step 1 to `PreviousWebpVideo` to check motion continuity.
 	- This becomes a simple 10-second video generation at this point.
+	- `AppendVideo` is one of the post-processes, so `Enable PostProcess` must be enabled.
+		- Settings like `Refiner` and `Upscale` should be matched between the videos to be combined.
+		- The next update is expected to allow adjustment of the `AppendVideo` combination timing.
 3. Enable `UseEndImage`, set the start image from step 2 and the end image from step 1's `EndFrame.webp`, then generate a 5-second video.  
 	Enable `AppendVideo` and set `Asset.webp` from step 2 to `PreviousWebpVideo`.  
 	This creates a looping video: step 1 > step 2 > step 3 > step 1.

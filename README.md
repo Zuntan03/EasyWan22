@@ -130,6 +130,9 @@ SSD が複数ある場合は、`健康状態` の良い SSD にページファ�
 2. `SwapStartEnd` を無効にして、開始画像から 5秒の動画を生成する。  
 	`AppendVideo` を有効にして `1.` の `Asset.webp` を `PreviousWebpVideo` に設定すると、動きの繋がりを確認できます。
 	- この時点で簡単な 10秒動画生成になります。
+	- `AppendVideo` はポストプロセスのひとつですので、`Enable PostProcess` が有効である必要があります。
+		- `Refiner` や `Upscale` などの設定は、結合する動画間で合わせてください。
+		- 次回の更新で `AppendVideo` の結合タイミングを調整できるようにする見込みです。
 3. `UseEndImage` を有効にして、開始画像に `2.` の `EndFrame.wabp` 終了画像に `1.` の  `EndFrame.wabp` を設定して 5秒の動画を生成する。  
 	`AppendVideo` を有効にして `2.` の `Asset.webp` を `PreviousWebpVideo` に設定します。  
 	`1.` > `2.` > `3.` > `1.` とループする動画になります。
