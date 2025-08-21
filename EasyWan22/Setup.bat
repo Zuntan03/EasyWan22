@@ -113,7 +113,8 @@ pip install -qq -r ComfyUI-Frame-Interpolation\requirements-no-cupy.txt
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 @REM https://github.com/city96/ComfyUI-GGUF/commits/main/
-call :GITHUB_HASH_REQUIREMENTS city96 ComfyUI-GGUF main b3ec875a68d94b758914fd48d30571d953bb7a54
+@REM 08/21 d247022e3fa66851c5084cc251b076aab816423d
+call :GITHUB_HASH_REQUIREMENTS city96 ComfyUI-GGUF main d247022e3fa66851c5084cc251b076aab816423d
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/ltdrdata/ComfyUI-Impact-Pack/tags

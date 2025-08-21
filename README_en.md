@@ -110,6 +110,9 @@ Currently, documentation updates haven't caught up.
 ### 2025/08/21
 
 - Updated ComfyUI version to `v0.3.51`.
+- Updated `city96/ComfyUI-GGUF` to the 8/20 version.
+- Temporarily fixed the issue where `SaveEndFrame` was saving the start image instead.
+	- The state becomes incorrect when toggling `Enable SaveEndFrame`.
 - Added presets for `AssertiveCowgirl`, `PovCowgirl`, and `OralInsertion`.
 
 ### 2025/08/20
