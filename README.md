@@ -103,9 +103,28 @@ SSD が複数ある場合は、`健康状態` の良い SSD にページファ�
 
 [更新履歴](https://github.com/Zuntan03/EasyWan22/wiki/ChangeLog)
 
-<!-- README.md を英訳して README_en.md を更新します。更新履歴をよく更新します。EasyWan22/wiki/ へのリンクは変更禁止。 -->
+<!--
+README.md を英訳して README_en.md を更新します。更新履歴をよく更新します。EasyWan22/wiki/ へのリンクは変更禁止。「ドキュメント」内は変更禁止。
+-->
 
 現在、ドキュメントの更新が追いついていません。
+
+### 2025/08/24
+
+- サブグラフに対応し、ワークフローの見た目が優しくなりました。
+	- 機能面ではベースモデルへの切り替えを追加しています。
+	- Wiki に UI リファレンスを用意し、各項目からリンクしました。
+
+New  
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/NewWorkflow.webp)  
+
+Old  
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/OldWorkflow.webp)
+
+
+### 2025/08/22
+
+- `ColorMatch` のモデルを意図せず変更していたのを修正。
 
 ### 2025/08/21
 
@@ -218,6 +237,15 @@ SSD が複数ある場合は、`健康状態` の良い SSD にページファ�
 - [チュートリアル](https://github.com/Zuntan03/EasyWan22/wiki/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB)
 <!-- - [よくある質問と回答](https://github.com/Zuntan03/EasyWan22/wiki/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F%E3%81%A8%E5%9B%9E%E7%AD%94) -->
 - [更新履歴](https://github.com/Zuntan03/EasyWan22/wiki/%E6%9B%B4%E6%96%B0%E5%B1%A5%E6%AD%B4)
+- UI 説明
+	- [画像入力](https://github.com/Zuntan03/EasyWan22/wiki/UI-%E7%94%BB%E5%83%8F%E5%85%A5%E5%8A%9B)
+	- [動画出力](https://github.com/Zuntan03/EasyWan22/wiki/UI-%E5%8B%95%E7%94%BB%E5%87%BA%E5%8A%9B)
+	- [保存](https://github.com/Zuntan03/EasyWan22/wiki/UI-%E4%BF%9D%E5%AD%98)
+	- [プロンプト](https://github.com/Zuntan03/EasyWan22/wiki/UI-%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88)
+	- [プリセット](https://github.com/Zuntan03/EasyWan22/wiki/UI-%E3%83%97%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88)
+	- [モデル](https://github.com/Zuntan03/EasyWan22/wiki/UI-%E3%83%A2%E3%83%87%E3%83%AB)
+	- [後処理](https://github.com/Zuntan03/EasyWan22/wiki/UI-%E5%BE%8C%E5%87%A6%E7%90%86)
+	- [モザイク](https://github.com/Zuntan03/EasyWan22/wiki/UI-%E3%83%A2%E3%82%B6%E3%82%A4%E3%82%AF)
 
 ## ライセンス
 

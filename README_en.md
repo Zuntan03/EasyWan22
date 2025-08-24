@@ -107,6 +107,22 @@ Please judge based on actual usage over about a week rather than a few generatio
 
 Currently, documentation updates haven't caught up.
 
+### 2025/08/24
+
+- Added support for subgraphs, making the workflow appearance more user-friendly.
+	- Functionality-wise, added switching to base models.
+	- Added links to Wiki explanations for each item.
+
+New  
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/NewWorkflow.webp)  
+
+Old  
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/OldWorkflow.webp)
+
+### 2025/08/22
+
+- Fixed unintentionally changing the `ColorMatch` model.
+
 ### 2025/08/21
 
 - Updated ComfyUI version to `v0.3.51`.
@@ -215,12 +231,20 @@ Here's an example procedure for editing mosaics at maximum speed:
 
 ## Documentation
 
-- [Tutorial](https://github.com/Zuntan03/EasyWan22/wiki/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB)
+- [Tutorial](https://github.com/Zuntan03/EasyWan22/wiki/Tutorial)
 <!-- - [FAQ](https://github.com/Zuntan03/EasyWan22/wiki/%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F%E3%81%A8%E5%9B%9E%E7%AD%94) -->
 - [ChangeLog](https://github.com/Zuntan03/EasyWan22/wiki/%E6%9B%B4%E6%96%B0%E5%B1%A5%E6%AD%B4) 
+- UI Reference
+	- [ImageInput](https://github.com/Zuntan03/EasyWan22/wiki/UI-ImageInput)
+	- [VideoOutput](https://github.com/Zuntan03/EasyWan22/wiki/UI-VideoOutput)
+	- [Save](https://github.com/Zuntan03/EasyWan22/wiki/UI-Save)
+	- [Prompt](https://github.com/Zuntan03/EasyWan22/wiki/UI-Prompt)
+	- [Preset](https://github.com/Zuntan03/EasyWan22/wiki/UI-Preset)
+	- [Model](https://github.com/Zuntan03/EasyWan22/wiki/UI-Model)
+	- [PostProcess](https://github.com/Zuntan03/EasyWan22/wiki/UI-PostProcess)
+	- [Mosaic](https://github.com/Zuntan03/EasyWan22/wiki/UI-Mosaic)
 
 ## License
 
 The contents of this repository are under [MIT License](./LICENSE.txt).  
-Folders with separate license files are under those respective licenses.  
 Folders with separate license files are under those respective licenses.

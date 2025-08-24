@@ -64,8 +64,9 @@ set PYTHONUTF8=1
 @REM 08/18 427e7be6c2c3a2be6563a631b0275443f69b0d94
 @REM 08/19 345c286c867440978a0ce4c2311724844606c8f4
 @REM 08/20 edf2a24519e8a06fa4661d30423675432ef43c74
+@REM 08/21 bcdd6dc664eeecaf921db8f0706a13ee172f5bb9
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main edf2a24519e8a06fa4661d30423675432ef43c74
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main bcdd6dc664eeecaf921db8f0706a13ee172f5bb9
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\
@@ -82,12 +83,14 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 @REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/pythongosssss/ComfyUI-Custom-Scripts/commits/main/
-call :GITHUB_HASH_REQUIREMENTS pythongosssss ComfyUI-Custom-Scripts main aac13aa7ce35b07d43633c3bbe654a38c00d74f5
+@REM 08/10 f2838ed5e59de4d73cde5c98354b87a8d3200190
+call :GITHUB_HASH_REQUIREMENTS pythongosssss ComfyUI-Custom-Scripts main f2838ed5e59de4d73cde5c98354b87a8d3200190
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM 08/02 c34f5b465ecc77886b5a87ddd6a3a887603d7559
+@REM 08/20 e11d490f7edbe52816fca2f416166af2a0be5064
 @REM https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet/commits/master/
-call :GITHUB_HASH_REQUIREMENTS AlekPet ComfyUI_Custom_Nodes_AlekPet master c34f5b465ecc77886b5a87ddd6a3a887603d7559
+call :GITHUB_HASH_REQUIREMENTS AlekPet ComfyUI_Custom_Nodes_AlekPet master e11d490f7edbe52816fca2f416166af2a0be5064
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/kijai/ComfyUI-DepthAnythingV2/commits/main/
@@ -101,7 +104,8 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 @REM https://github.com/kijai/ComfyUI-Florence2/commits/main/
 @REM 05/21 de485b65b3e1b9b887ab494afa236dff4bef9a7e
 @REM 08/02 6b3064b8bdfe0afca123918804300271995b0be5 Need transformers==4.49.0
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-Florence2 main 6b3064b8bdfe0afca123918804300271995b0be5
+@REM 08/09 00b63382966a444a9fefacb65b8deb188d12a458
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-Florence2 main 00b63382966a444a9fefacb65b8deb188d12a458
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/Fannovel16/ComfyUI-Frame-Interpolation/commits/main/
@@ -128,14 +132,15 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 if not exist ..\models\ultralytics\ ( mkdir ..\models\ultralytics )
 
 @REM https://github.com/kijai/ComfyUI-KJNodes/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-KJNodes main a6b867b63a29ca48ddb15c589e17a9f2d8530d57
+@REM 08/21 e2ce0843d1183aea86ce6a1617426f492dcdc802
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-KJNodes main e2ce0843d1183aea86ce6a1617426f492dcdc802
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 if not exist ComfyUI-KJNodes\fonts\f910-shin-comic-2.04.otf (
 	copy %~dp0f910-shin-comic-2.04\f910-shin-comic-2.04.otf ComfyUI-KJNodes\fonts\
 )
 
-@REM https://github.com/WainWong/ComfyUI-Loop-image
+@REM https://github.com/WainWong/ComfyUI-Loop-image/commits/main/
 call :GITHUB_HASH_REQUIREMENTS WainWong ComfyUI-Loop-image main 2e0153ba950c5b723062209d9aff8c0aba23a88e
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
@@ -143,20 +148,21 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call :GITHUB_HASH_REQUIREMENTS Smirnov75 ComfyUI-mxToolkit main 7f7a0e584f12078a1c589645d866ae96bad0cc35
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-@REM https://github.com/1038lab/ComfyUI-RMBG
-call :GITHUB_HASH_REQUIREMENTS 1038lab ComfyUI-RMBG main 25c07e9cf1cc7c886a631cd3cc1d4d1497be124e
+@REM https://github.com/1038lab/ComfyUI-RMBG/commits/main/
+@REM 08/19 ff0af696a69cfb27ea2a98509d0f57e762200978
+call :GITHUB_HASH_REQUIREMENTS 1038lab ComfyUI-RMBG main ff0af696a69cfb27ea2a98509d0f57e762200978
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/kijai/ComfyUI-segment-anything-2/commits/main/
 call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-segment-anything-2 main c59676b008a76237002926f684d0ca3a9b29ac54
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-@REM https://github.com/SeanScripts/ComfyUI-Unload-Model
+@REM https://github.com/SeanScripts/ComfyUI-Unload-Model/commits/main/
 call :GITHUB_HASH_REQUIREMENTS SeanScripts ComfyUI-Unload-Model main ac5ffb4ed05546545ce7cf38e7b69b5152714eed
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-@REM 2025/08/09 8e4d79471bf1952154768e8435a9300077b534fa
 @REM https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite/commits/main/
+@REM 08/07 8e4d79471bf1952154768e8435a9300077b534fa
 call :GITHUB_HASH_REQUIREMENTS Kosinkadink ComfyUI-VideoHelperSuite main 8e4d79471bf1952154768e8435a9300077b534fa
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
@@ -167,7 +173,8 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 @REM https://github.com/rgthree/rgthree-comfy/commits/main/
 @REM 07/12 944d5353a1b0a668f40844018c3dc956b95a67d7
 @REM 08/02 c5ffa43de4ddb17244626a65a30700a05dd6b67d
-call :GITHUB_HASH_REQUIREMENTS rgthree rgthree-comfy main c5ffa43de4ddb17244626a65a30700a05dd6b67d
+@REM 08/20 110e4ef1dbf2ea20ec39ae5a737bd5e56d4e54c2
+call :GITHUB_HASH_REQUIREMENTS rgthree rgthree-comfy main 110e4ef1dbf2ea20ec39ae5a737bd5e56d4e54c2
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 popd rem "%~dp0..\ComfyUI\custom_nodes"
