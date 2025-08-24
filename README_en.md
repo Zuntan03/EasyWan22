@@ -109,12 +109,19 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 Currently, documentation updates haven't caught up.
 
+### 2025/08/25
+
+- Improved motion with Cfg 3.5 in FastMix by disabling fast LoRA with negative application at the first step.  
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/FirstStepCfgHack.webp) 
+- Added `TopUndressing(L|S)` presets.
+- Stopped pinning nodes I was experimenting with since it was troublesome in various ways.
+- Updated ComfyUI version to `v0.3.52`.
+
 ### 2025/08/24
 
 - Added support for subgraphs, making the workflow appearance more user-friendly.
 	- Functionality-wise, added switching to base models.
 	- Prepared UI reference in Wiki and linked from each item.
-	- If you want to change node placement, select the node and unpin it with the pin icon button.
 
 New  
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/NewWorkflow.webp)  

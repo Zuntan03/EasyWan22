@@ -109,12 +109,19 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 現在、ドキュメントの更新が追いついていません。
 
+### 2025/08/25
+
+- FastMix で最初のステップで高速化 LoRA をマイナス適用で無効化することで、Cfg 3.5 での動きが良くなりました。  
+![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/FirstStepCfgHack.webp) 
+- `上半身脱衣(L|S)` のプリセットを追加しました。
+- 試してみたノードのピン留めが何かと面倒なのでやめました。
+- ComfyUI のバージョンを `v0.3.52` に上げました。
+
 ### 2025/08/24
 
 - サブグラフに対応し、ワークフローの見た目が優しくなりました。
 	- 機能面ではベースモデルへの切り替えを追加しています。
 	- Wiki に UI リファレンスを用意し、各項目からリンクしました。
-	- ノードの配置を変更したい場合は、ノードを選択してピンのアイコンボタンで固定を解除してください。
 
 New  
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/NewWorkflow.webp)  
