@@ -114,6 +114,7 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 - サブグラフに対応し、ワークフローの見た目が優しくなりました。
 	- 機能面ではベースモデルへの切り替えを追加しています。
 	- Wiki に UI リファレンスを用意し、各項目からリンクしました。
+	- ノードの配置を変更したい場合は、ノードを選択してピンのアイコンボタンで固定を解除してください。
 
 New  
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/NewWorkflow.webp)  

@@ -103,7 +103,9 @@ Please judge based on actual usage over about a week rather than a few generatio
 
 [ChangeLog](https://github.com/Zuntan03/EasyWan22/wiki/ChangeLog)
 
-<!-- Translate README.md to English and update README_en.md. Update changelog frequently. Do not change links to EasyWan22/wiki/. -->
+<!--
+README.md を英訳して README_en.md を更新します。更新履歴をよく更新します。EasyWan22/wiki/ へのリンクは変更禁止。「ドキュメント」内は変更禁止。
+-->
 
 Currently, documentation updates haven't caught up.
 
@@ -111,7 +113,8 @@ Currently, documentation updates haven't caught up.
 
 - Added support for subgraphs, making the workflow appearance more user-friendly.
 	- Functionality-wise, added switching to base models.
-	- Added links to Wiki explanations for each item.
+	- Prepared UI reference in Wiki and linked from each item.
+	- If you want to change node placement, select the node and unpin it with the pin icon button.
 
 New  
 ![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/NewWorkflow.webp)  
