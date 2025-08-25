@@ -111,8 +111,11 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 ### 2025/08/25
 
-- FastMix で最初のステップで高速化 LoRA をマイナス適用で無効化することで、Cfg 3.5 での動きが良くなりました。  
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/FirstStepCfgHack.webp) 
+- Base モデルのデフォルト設定を旧 Kijai WIP 仕様に合わせました。
+	- `BaseSampler` の `HiNoise1stEnabled` で 3段サンプラを無効化しています。
+- 動きを強化する `Boost1stStep` を追加しました。
+	- FastMix で最初のステップで高速化 LoRA をマイナス適用で無効化することで、Cfg 3.5 での動きが良くなりました。  
+	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/FirstStepCfgHack.webp) 
 - `上半身脱衣(L|S)` のプリセットを追加しました。
 - 試してみたノードのピン留めが何かと面倒なのでやめました。
 - ComfyUI のバージョンを `v0.3.52` に上げました。

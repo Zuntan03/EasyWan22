@@ -111,8 +111,11 @@ Currently, documentation updates haven't caught up.
 
 ### 2025/08/25
 
-- Improved motion with Cfg 3.5 in FastMix by disabling fast LoRA with negative application at the first step.  
-![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/FirstStepCfgHack.webp) 
+- Adjusted Base model default settings to match the old Kijai WIP specification.
+	- Disabled the 3-stage sampler with `HiNoise1stEnabled` in `BaseSampler`.
+- Added `Boost1stStep` to enhance motion.
+	- Improved motion with Cfg 3.5 in FastMix by disabling fast LoRA with negative application at the first step.  
+	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/FirstStepCfgHack.webp) 
 - Added `TopUndressing(L|S)` presets.
 - Stopped pinning nodes I was experimenting with since it was troublesome in various ways.
 - Updated ComfyUI version to `v0.3.52`.
