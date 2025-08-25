@@ -119,6 +119,10 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 - `上半身脱衣(L|S)` のプリセットを追加しました。
 - 試してみたノードのピン留めが何かと面倒なのでやめました。
 - ComfyUI のバージョンを `v0.3.52` に上げました。
+- 動きを強化する `Boost1stStep` のサンプルを追加しました。
+	- `Boost1stStep` の有効無効の変更のみで、大きく動きが変わります。
+		- A-Boost1stStep [あり](https://yyy.wpx.jp/EW22/S/20250825-Boost1stStepA0_ON.mp4), [なし](https://yyy.wpx.jp/EW22/S/20250825-Boost1stStepA1_OFF.mp4)
+		- B-Boost1stStep [あり](https://yyy.wpx.jp/EW22/S/20250825-Boost1stStepB0_ON.mp4), [なし](https://yyy.wpx.jp/EW22/S/20250825-Boost1stStepB1_OFF.mp4)
 
 ### 2025/08/24
 

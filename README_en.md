@@ -116,9 +116,13 @@ Currently, documentation updates haven't caught up.
 - Added `Boost1stStep` to enhance motion.
 	- Improved motion with Cfg 3.5 in FastMix by disabling fast LoRA with negative application at the first step.  
 	![](https://raw.githubusercontent.com/wiki/Zuntan03/EasyWan22/log/202508/FirstStepCfgHack.webp) 
-- Added `TopUndressing(L|S)` presets.
+- Added `Upper Body Undressing(L|S)` presets.
 - Stopped pinning nodes I was experimenting with since it was troublesome in various ways.
 - Updated ComfyUI version to `v0.3.52`.
+- Added samples for motion-enhancing `Boost1stStep`.
+	- Motion changes significantly just by enabling/disabling `Boost1stStep`.
+		- A-Boost1stStep [ON](https://yyy.wpx.jp/EW22/S/20250825-Boost1stStepA0_ON.mp4), [OFF](https://yyy.wpx.jp/EW22/S/20250825-Boost1stStepA1_OFF.mp4)
+		- B-Boost1stStep [ON](https://yyy.wpx.jp/EW22/S/20250825-Boost1stStepB0_ON.mp4), [OFF](https://yyy.wpx.jp/EW22/S/20250825-Boost1stStepB1_OFF.mp4)
 
 ### 2025/08/24
 
