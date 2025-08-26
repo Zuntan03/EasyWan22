@@ -111,6 +111,7 @@ Currently, documentation updates haven't caught up.
 
 ### 2025/08/26
 
+- Fixed a bug where `Refiner` would error when `EndImage` is enabled.
 - Added `Boost1stStep` samples with LoRA.
 
 ### 2025/08/25

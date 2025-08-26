@@ -59,16 +59,10 @@ set PYTHONUTF8=1
 
 @REM 08/13 2c854c53ee8c078069d9b95bf493bb44b25039ee ver 1.2.8
 @REM 08/13 d59690105518ab5eef50690028a7b0fe0d793631 Result changed
-@REM 08/14 43447dbaf96688b83bc25a5f8a9c24654b3a4d4d
-@REM 08/16 8bf010a835fa86aa3abfa302a97431281973b681
-@REM 08/18 427e7be6c2c3a2be6563a631b0275443f69b0d94
-@REM 08/19 345c286c867440978a0ce4c2311724844606c8f4
-@REM 08/20 edf2a24519e8a06fa4661d30423675432ef43c74
-@REM 08/21 bcdd6dc664eeecaf921db8f0706a13ee172f5bb9
-@REM 08/24 3d9b52cb10933209153cba656695f57c73124f97
 @REM 08/25 bc22008b6684939fcb90472a05b2e28d7bef6675
+@REM 08/26 dfb2a592119bf655742e306d2dd54eb81a8d2217
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main bc22008b6684939fcb90472a05b2e28d7bef6675
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main dfb2a592119bf655742e306d2dd54eb81a8d2217
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\
@@ -91,8 +85,9 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM 08/02 c34f5b465ecc77886b5a87ddd6a3a887603d7559
 @REM 08/20 e11d490f7edbe52816fca2f416166af2a0be5064
+@REM 08/22 13f2e5c33698025f7694ebbf273f905f87c6a4ec
 @REM https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet/commits/master/
-call :GITHUB_HASH_REQUIREMENTS AlekPet ComfyUI_Custom_Nodes_AlekPet master e11d490f7edbe52816fca2f416166af2a0be5064
+call :GITHUB_HASH_REQUIREMENTS AlekPet ComfyUI_Custom_Nodes_AlekPet master 13f2e5c33698025f7694ebbf273f905f87c6a4ec
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/kijai/ComfyUI-DepthAnythingV2/commits/main/

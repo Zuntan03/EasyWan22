@@ -111,6 +111,7 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 ### 2025/08/26
 
+- `EndImage` 有効時の `Refiner` がエラーになる不具合を修正しました。
 - LoRA 込みの `Boost1stStep` サンプルを追加しました。
 
 ### 2025/08/25
