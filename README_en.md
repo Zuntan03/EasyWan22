@@ -109,6 +109,10 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 Currently, documentation updates haven't caught up.
 
+### 2025/08/26
+
+- Added `Boost1stStep` samples with LoRA.
+
 ### 2025/08/25
 
 - Adjusted Base model default settings to match the old Kijai WIP specification.
