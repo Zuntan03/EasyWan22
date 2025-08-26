@@ -27,6 +27,7 @@ call %~dp0loras\Fast\Wan22-I2V-A14B-4steps-lora-rank64-Seko-V1-L.bat
 @REM call %~dp0loras\Fast\Wan2.2-Lightning_I2V-A14B-4steps-lora_LOW_fp16.bat
 
 call %~dp0loras\Bundle\Nashikone-I2v.bat
+call %~dp0loras\Bundle\Nashikone-I2vWan21.bat
 
 call %~dp0loras\Nsfw\AnimeCumshotAesthetics_v10-H.bat
 call %~dp0loras\Nsfw\AnimeCumshotAesthetics_v10-L.bat
