@@ -109,6 +109,10 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 Currently, documentation updates haven't caught up.
 
+### 2025/08/27
+
+- Added presets for [nashikone/iroiroLoRA](https://huggingface.co/nashikone/iroiroLoRA/tree/main/Wan2.2_i2v_A14B).
+
 ### 2025/08/26
 
 - Fixed a bug where `Refiner` would error when `EndImage` is enabled.
