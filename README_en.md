@@ -112,6 +112,7 @@ Currently, documentation updates haven't caught up.
 ### 2025/08/27
 
 - Added presets for [nashikone/iroiroLoRA](https://huggingface.co/nashikone/iroiroLoRA/tree/main/Wan2.2_i2v_A14B).
+- Added Civitai LoRA presets.
 
 ### 2025/08/26
 

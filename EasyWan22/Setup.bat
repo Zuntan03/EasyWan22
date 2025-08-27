@@ -60,9 +60,10 @@ set PYTHONUTF8=1
 @REM 08/13 2c854c53ee8c078069d9b95bf493bb44b25039ee ver 1.2.8
 @REM 08/13 d59690105518ab5eef50690028a7b0fe0d793631 Result changed
 @REM 08/25 bc22008b6684939fcb90472a05b2e28d7bef6675
-@REM 08/26 dfb2a592119bf655742e306d2dd54eb81a8d2217
+@REM 08/26 30f185a19b406a1c486c5932e56aac5c970c7d84
+@REM 08/27 56bd2ec5f6ad9be0e2e9814968be7ab0ad42e6bb No LoRA Error
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main dfb2a592119bf655742e306d2dd54eb81a8d2217
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 30f185a19b406a1c486c5932e56aac5c970c7d84
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\
