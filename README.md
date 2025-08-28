@@ -109,6 +109,11 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 現在、ドキュメントの更新が追いついていません。
 
+### 2025/08/28
+
+- プロンプト拡張が正常に動作していなかった不具合を修正しました。
+- プロンプトの拡張と書換に使用するモデルを、`PositivePrompt` ノードで選択できるようにしました。
+
 ### 2025/08/27
 
 - [nashikone/iroiroLoRA](https://huggingface.co/nashikone/iroiroLoRA/tree/main/Wan2.2_i2v_A14B) のプリセットを追加しました。
