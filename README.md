@@ -114,6 +114,7 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 - プロンプト拡張が正常に動作していなかった不具合を修正しました。
 - プロンプトの拡張と書換に使用するモデルを、`PositivePrompt` ノードで選択できるようにしました。
 - `ModelLoader` の `BlocksToSwap` の設定箇所をスライダーでわかりやすくしました。
+- ComfyUI のバージョンを [`v0.3.53`](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.3.53) にしました。
 
 ### 2025/08/27
 

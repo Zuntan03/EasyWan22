@@ -10,7 +10,7 @@ set CURL_CMD=C:\Windows\System32\curl.exe -kL
 pushd "%~dp0.."
 
 @REM https://github.com/comfyanonymous/ComfyUI/releases
-echo v0.3.52> "%EASY_COMFYUI%\ComfyUi_Version.txt"
+echo v0.3.53> "%EASY_COMFYUI%\ComfyUi_Version.txt"
 
 @REM https://github.com/Comfy-Org/ComfyUI-Manager/tags
 echo 3.35> "%EASY_COMFYUI%\ComfyUiManager_Version.txt"
@@ -61,7 +61,8 @@ set PYTHONUTF8=1
 @REM 08/13 d59690105518ab5eef50690028a7b0fe0d793631 Result changed
 @REM 08/25 bc22008b6684939fcb90472a05b2e28d7bef6675
 @REM 08/26 30f185a19b406a1c486c5932e56aac5c970c7d84
-@REM 08/27 56bd2ec5f6ad9be0e2e9814968be7ab0ad42e6bb No LoRA Error
+@REM No LoRA Error: cannot access local variable 'control_lora' where it is not associated with a value
+@REM 08/27 4bc1ffee24a14f304b16c315d1d0cc2debffd989
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
 call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 30f185a19b406a1c486c5932e56aac5c970c7d84
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
