@@ -113,6 +113,7 @@ Currently, documentation updates haven't caught up.
 
 - Fixed a bug where prompt expansion was not working properly.
 - Made it possible to select the model used for prompt expansion and rewriting in the `PositivePrompt` node.
+- Made the `BlocksToSwap` setting location in `ModelLoader` easier to understand with a slider.
 
 ### 2025/08/27
 
