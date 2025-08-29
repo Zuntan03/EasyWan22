@@ -111,6 +111,14 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 ### 2025/08/28
 
+- プリセットのグループ単位で LoRA 強度を指定できるようにしました。
+- `Input_` 付きの書き換えプロンプトで `PositiveInput` だけでなく、`TranslateInput` も挿入するようにしました。
+	- `ImageToPrompt` を参照しながら書き換えプロンプトを生成しつつも、最終的なプロンプトから取り除くことができます。
+- サンプルを追加しました。
+- ComfyUI のバージョンを [`v0.3.54`](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.3.54) にしました。
+
+### 2025/08/28
+
 - プロンプト拡張が正常に動作していなかった不具合を修正しました。
 - プロンプトの拡張と書換に使用するモデルを、`PositivePrompt` ノードで選択できるようにしました。
 - `ModelLoader` の `BlocksToSwap` の設定箇所をスライダーでわかりやすくしました。
