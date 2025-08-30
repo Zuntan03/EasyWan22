@@ -112,10 +112,14 @@ Currently, documentation updates haven't caught up.
 ### 2025/08/30
 
 - Updated ComfyUI version to [`v0.3.55`](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.3.55).
+- Added samples.
 
 ### 2025/08/28
 
 - Enabled specifying LoRA strength on a per-preset group basis.
+- Made rewrite prompts with `Input_` insert not only `PositiveInput` but also `TranslateInput`.
+	- This allows generating rewrite prompts while referencing `ImageToPrompt`, yet removing them from the final prompt.
+- Added samples.
 - Updated ComfyUI version to [`v0.3.54`](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.3.54).
 
 ### 2025/08/28

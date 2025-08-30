@@ -112,6 +112,7 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 ### 2025/08/30
 
 - ComfyUI のバージョンを [`v0.3.55`](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.3.55) にしました。
+- サンプルを追加しました。
 
 ### 2025/08/28
 
