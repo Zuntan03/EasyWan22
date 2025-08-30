@@ -109,6 +109,10 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 Currently, documentation updates haven't caught up.
 
+### 2025/08/31
+
+- Added samples.
+
 ### 2025/08/30
 
 - Updated ComfyUI version to [`v0.3.55`](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.3.55).
