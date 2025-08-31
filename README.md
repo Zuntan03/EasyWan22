@@ -109,6 +109,14 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 現在、ドキュメントの更新が追いついていません。
 
+### 2025/09/01
+
+- `SelectPrompts` に `LoraPresetTrigger` を追加しました。
+	- LoRA プリセットのトリガーを無効化して、お好みに書き換えることができます。
+- ComfyUI のバージョンを [`v0.3.56`](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.3.56) にしました。
+- FFMEPG を必要とするカスタムノードのために、ComfyUI から FFMEPG を利用できるようにしました。
+- LoRA プリセットを 13種類追加しました。
+
 ### 2025/08/31
 
 - サンプルを追加しました。 x2

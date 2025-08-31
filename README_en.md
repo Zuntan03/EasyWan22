@@ -109,6 +109,14 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 Currently, documentation updates haven't caught up.
 
+### 2025/09/01
+
+- Added `LoraPresetTrigger` to `SelectPrompts`.
+	- You can disable LoRA preset triggers and rewrite them to your preference.
+- Updated ComfyUI version to [`v0.3.56`](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.3.56).
+- Enabled FFMPEG usage from ComfyUI for custom nodes that require FFMPEG.
+- Added 13 LoRA presets.
+
 ### 2025/08/31
 
 - Added samples. x2
