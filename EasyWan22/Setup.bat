@@ -61,8 +61,9 @@ set PYTHONUTF8=1
 @REM No LoRA Error: cannot access local variable 'control_lora' where it is not associated with a value
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/issues/1132 Fixed https://github.com/kijai/ComfyUI-WanVideoWrapper/commit/704cca215bd5f132df6095b6b35e4b0b8e52242f
 @REM 08/31 df0b8c419afcb2ac79062b1ac611bd3b154da317
+@REM 09/01 d9038d575f780107d2ef907761369bf3fbcbeb2f
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main df0b8c419afcb2ac79062b1ac611bd3b154da317
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main d9038d575f780107d2ef907761369bf3fbcbeb2f
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\
