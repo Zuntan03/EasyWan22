@@ -62,8 +62,10 @@ set PYTHONUTF8=1
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/issues/1132 Fixed https://github.com/kijai/ComfyUI-WanVideoWrapper/commit/704cca215bd5f132df6095b6b35e4b0b8e52242f
 @REM 08/31 df0b8c419afcb2ac79062b1ac611bd3b154da317
 @REM 09/01 d9038d575f780107d2ef907761369bf3fbcbeb2f
+@REM 09/02 42d71807590b42e518f9f5065d9f69e2d8eba81d
+@REM 09/03 54391300b16a2925ad4bed7e793db1bf5d3a7e2d
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main d9038d575f780107d2ef907761369bf3fbcbeb2f
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 54391300b16a2925ad4bed7e793db1bf5d3a7e2d
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\

@@ -13,18 +13,28 @@ call %~dp0text_encoders\Qwen2.5_3B_instruct_bf16.bat
 call %~dp0text_encoders\umt5_xxl_fp8_e4m3fn_scaled.bat
 call %~dp0text_encoders\umt5-xxl-enc-fp8_e4m3fn.bat
 
+call %~dp0ultralytics\segm\99coins_anime_girl_face_m_seg.bat
 call %~dp0ultralytics\segm\AnimeNsfwDetectionAll_v4.bat
+call %~dp0ultralytics\segm\AnzhcBreasts-v1-1024-seg.bat
+call %~dp0ultralytics\segm\AnzhcEyes-seg.bat
+call %~dp0ultralytics\segm\AnzhcFace-v3-640-seg.bat
+call %~dp0ultralytics\segm\AnzhcHeadHair-seg.bat
+call %~dp0ultralytics\segm\nipples_v2_yolov11s-seg.bat
+call %~dp0ultralytics\segm\PitEyeDetailer-v2-seg.bat
+call %~dp0ultralytics\segm\PitHandDetailer-v2-Test-v9c.bat
 
 call %~dp0upscale_models\2x-AnimeSharpV4_Fast_RCAN_PU.bat
 
 call %~dp0vae\Wan2_1_VAE_bf16.bat
 call %~dp0vae_approx\taew2_1.bat
 
-call %~dp0loras\Wan21Fast\lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.bat
 call %~dp0loras\Fast\Wan22-I2V-A14B-4steps-lora-rank64-Seko-V1-H.bat
 call %~dp0loras\Fast\Wan22-I2V-A14B-4steps-lora-rank64-Seko-V1-L.bat
 @REM call %~dp0loras\Fast\Wan2.2-Lightning_I2V-A14B-4steps-lora_HIGH_fp16.bat
 @REM call %~dp0loras\Fast\Wan2.2-Lightning_I2V-A14B-4steps-lora_LOW_fp16.bat
+
+call %~dp0loras\Wan21Fast\lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.bat
+call %~dp0loras\NsfwWan21\BetterAnimeSexFacesWan21_v40.bat
 
 call %~dp0loras\Bundle\Nashikone-I2v.bat
 call %~dp0loras\Bundle\Nashikone-I2vWan21.bat
