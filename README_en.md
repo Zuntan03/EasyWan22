@@ -82,6 +82,10 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 Currently, documentation updates haven't caught up.
 
+### 2025/09/04
+
+- Fixed a bug where the detector was executed even when `Detailer` was disabled.
+
 ### 2025/09/03
 
 - Added support for [`Detailer`](https://github.com/Zuntan03/EasyWan22/wiki/UI-PostProcess#detailer) that automatically detects areas, crops them, enlarges them, and then enhances them.

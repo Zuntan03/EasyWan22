@@ -9,8 +9,10 @@ call %CIVITAI_MODEL_UNZIP% segm\ nipples_v2_yolov11s-seg.pt 490259 2038997
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 if not exist segm\nipples_v2_yolov11s-seg.pt (
-	echo move segm\adetailer_nipples_segm_v20\nipples_v2_yolov11s-seg.pt segm\
-	move segm\adetailer_nipples_segm_v20\nipples_v2_yolov11s-seg.pt segm\
+	if exist segm\adetailer_nipples_segm_v20\nipples_v2_yolov11s-seg.pt (
+		echo move segm\adetailer_nipples_segm_v20\nipples_v2_yolov11s-seg.pt segm\
+		move segm\adetailer_nipples_segm_v20\nipples_v2_yolov11s-seg.pt segm\
+	)
 )
 
 popd rem %~dp0..\..\..\ComfyUI\models\ultralytics
