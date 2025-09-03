@@ -89,6 +89,7 @@ Currently, documentation updates haven't caught up.
 	- Boundary lines from rewriting are cleaned up by the subsequent Refiner.
 	- Various detection models are automatically introduced.
 	- Original idea from Native version: "[WanFaceDetailer](https://www.notion.so/bedovyy/WanFaceDetailer-261ce80b3952805f8aaefb1cdb90ec04)"
+- Added `Detailer` samples.
 
 ### 2025/09/01
 
