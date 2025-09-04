@@ -84,7 +84,9 @@ Currently, documentation updates haven't caught up.
 
 ### 2025/09/04
 
+- Fixed a bug where `Refiner` would error when using `EndImage`.
 - Fixed a bug where the detector was executed even when `Detailer` was disabled.
+	- Re-fixed this issue.
 
 ### 2025/09/03
 
