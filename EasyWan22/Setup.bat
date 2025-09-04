@@ -10,7 +10,7 @@ set CURL_CMD=C:\Windows\System32\curl.exe -kL
 pushd "%~dp0.."
 
 @REM https://github.com/comfyanonymous/ComfyUI/releases
-echo v0.3.56> "%EASY_COMFYUI%\ComfyUi_Version.txt"
+echo v0.3.57> "%EASY_COMFYUI%\ComfyUi_Version.txt"
 
 @REM https://github.com/Comfy-Org/ComfyUI-Manager/tags
 echo 3.35> "%EASY_COMFYUI%\ComfyUiManager_Version.txt"
@@ -64,9 +64,9 @@ set PYTHONUTF8=1
 @REM 09/01 d9038d575f780107d2ef907761369bf3fbcbeb2f
 @REM 09/02 42d71807590b42e518f9f5065d9f69e2d8eba81d
 @REM 09/03 54391300b16a2925ad4bed7e793db1bf5d3a7e2d
-@REM 09/04 cbbf44f3bc75b4fa727138314e5730ef48f8026b
+@REM 09/04 9b864b987bee7d498ab00eeed5dd973de33f062a
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main cbbf44f3bc75b4fa727138314e5730ef48f8026b
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 9b864b987bee7d498ab00eeed5dd973de33f062a
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\

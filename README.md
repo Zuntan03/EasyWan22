@@ -85,6 +85,8 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 - `Refiner` で `EndImage` を使用しているとエラーになる不具合を修正しました。
 - `Detailer` が無効でも検出器が実行されてしまう不具合を修正しました。
 	- 再修正してみました。
+- `PointMosaic` 不使用時に正常に動作しなくなっていた不具合を修正しました。
+- ComfyUI のバージョンを [`v0.3.57`](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.3.57) にしました。
 
 ### 2025/09/03
 

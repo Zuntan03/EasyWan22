@@ -87,6 +87,8 @@ Currently, documentation updates haven't caught up.
 - Fixed a bug where `Refiner` would error when using `EndImage`.
 - Fixed a bug where the detector was executed even when `Detailer` was disabled.
 	- Re-fixed this issue.
+- Fixed a bug where it would not work properly when `PointMosaic` was not in use.
+- Updated ComfyUI version to [`v0.3.57`](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.3.57).
 
 ### 2025/09/03
 
