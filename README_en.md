@@ -82,13 +82,23 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 Currently, documentation updates haven't caught up.
 
+### 2025/09/07
+
+- Added the ability to select detection models and set thresholds for `AutoMosaic`.
+- Added the ability to apply mosaics from the end of the video in `PointMosaic`.
+	- Use this when mosaic targets appear in the latter half of the video with `SwapStartEnd` etc.
+- Since some environments seem to be experiencing issues, VAE encoding tiling for Detector and Refiner is now enabled by default.
+
+### 2025/09/05
+
+- Fixed a bug where it would not work properly when `PointMosaic` was not in use.
+- Updated ComfyUI version to [`v0.3.57`](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.3.57).
+
 ### 2025/09/04
 
 - Fixed a bug where `Refiner` would error when using `EndImage`.
 - Fixed a bug where the detector was executed even when `Detailer` was disabled.
 	- Re-fixed this issue.
-- Fixed a bug where it would not work properly when `PointMosaic` was not in use.
-- Updated ComfyUI version to [`v0.3.57`](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.3.57).
 
 ### 2025/09/03
 

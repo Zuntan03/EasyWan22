@@ -80,13 +80,24 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 現在、ドキュメントの更新が追いついていません。
 
+### 2025/09/07
+
+- `AutoMosaic` で検出モデルの選択としきい値を設定できるようにしました。
+- `PointMosaic` で動画の末尾からモザイクを掛けられるようにしました。
+	- `SwapStartEnd` などでモザイク対象が動画後半に出現する場合に利用します。
+- 一部の環境で問題が発生しているようですので、Detector や Refiner の VAE エンコード時のタイリングをデフォルトで有効にしました。
+- サンプルの動画を 18 追加しました。
+
+### 2025/09/05
+
+- `PointMosaic` 不使用時に正常に動作しなくなっていた不具合を修正しました。
+- ComfyUI のバージョンを [`v0.3.57`](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.3.57) にしました。
+
 ### 2025/09/04
 
 - `Refiner` で `EndImage` を使用しているとエラーになる不具合を修正しました。
 - `Detailer` が無効でも検出器が実行されてしまう不具合を修正しました。
 	- 再修正してみました。
-- `PointMosaic` 不使用時に正常に動作しなくなっていた不具合を修正しました。
-- ComfyUI のバージョンを [`v0.3.57`](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.3.57) にしました。
 
 ### 2025/09/03
 

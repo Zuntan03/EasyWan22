@@ -65,8 +65,9 @@ set PYTHONUTF8=1
 @REM 09/02 42d71807590b42e518f9f5065d9f69e2d8eba81d
 @REM 09/03 54391300b16a2925ad4bed7e793db1bf5d3a7e2d
 @REM 09/04 9b864b987bee7d498ab00eeed5dd973de33f062a
+@REM 09/05
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 9b864b987bee7d498ab00eeed5dd973de33f062a
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main edea93286c3536ff406c32f5c86fcbbcf8b9b650
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\
