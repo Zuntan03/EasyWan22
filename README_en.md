@@ -82,6 +82,10 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 Currently, documentation updates haven't caught up.
 
+### 2025/09/08
+
+- Added 4 sample videos.
+
 ### 2025/09/07
 
 - Added the ability to select detection models and set thresholds for `AutoMosaic`.
@@ -89,6 +93,7 @@ Currently, documentation updates haven't caught up.
 	- Use this when mosaic targets appear in the latter half of the video with `SwapStartEnd` etc.
 - Since some environments seem to be experiencing issues, VAE encoding tiling for Detector and Refiner is now enabled by default.
 - Added ~~18~~ ~~37~~ **57** sample videos.
+- Added 5 presets to `Nashikone LoRA Presets`.
 
 ### 2025/09/05
 
