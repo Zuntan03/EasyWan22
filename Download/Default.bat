@@ -45,10 +45,16 @@ call %~dp0loras\Nsfw\AnimeCumshotAesthetics_v10-H.bat
 call %~dp0loras\Nsfw\AnimeCumshotAesthetics_v10-L.bat
 call %~dp0loras\Nsfw\AssertiveCowgirl-H.bat
 call %~dp0loras\Nsfw\AssertiveCowgirl-L.bat
+call %~dp0loras\Nsfw\BouncingBoobs-H.bat
+call %~dp0loras\Nsfw\BouncingBoobs-L.bat
 call %~dp0loras\Nsfw\C0wg1rl_R3v3rs3C0wg1rl-H.bat
 call %~dp0loras\Nsfw\C0wg1rl_R3v3rs3C0wg1rl-L.bat
 call %~dp0loras\Nsfw\DeepthroatBlowjob_v10-H.bat
 call %~dp0loras\Nsfw\DeepthroatBlowjob_v10-L.bat
+call %~dp0loras\Nsfw\DildoFuckingMachine-H.bat
+call %~dp0loras\Nsfw\DildoFuckingMachine-L.bat
+call %~dp0loras\Nsfw\F4c3spl4shCumshot_v10-H.bat
+call %~dp0loras\Nsfw\F4c3spl4shCumshot_v10-L.bat
 call %~dp0loras\Nsfw\Footjob_v10-H.bat
 call %~dp0loras\Nsfw\Footjob_v10-L.bat
 call %~dp0loras\Nsfw\FutanariTransformation_v10-H.bat
@@ -62,6 +68,8 @@ call %~dp0loras\Nsfw\HugeTitfuck-L.bat
 call %~dp0loras\Nsfw\MatingPress-H.bat
 call %~dp0loras\Nsfw\MatingPress-L.bat
 call %~dp0loras\Nsfw\OralInsertion_v10.bat
+call %~dp0loras\Nsfw\Orgasm-H.bat
+call %~dp0loras\Nsfw\Orgasm-L.bat
 call %~dp0loras\Nsfw\PenisPlay-H.bat
 call %~dp0loras\Nsfw\PenisPlay-L.bat
 call %~dp0loras\Nsfw\PovCowgirl_v02-H.bat

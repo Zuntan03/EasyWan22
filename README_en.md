@@ -84,6 +84,7 @@ Currently, documentation updates haven't caught up.
 
 ### 2025/09/08
 
+- Added LoRA presets for `BouncingBoobs`, `DildoFuckingMachine`, `F4c3spl4shCumshot`, `Orgasm`.
 - Added 4 sample videos.
 
 ### 2025/09/07

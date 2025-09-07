@@ -82,6 +82,7 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 ### 2025/09/08
 
+- `BouncingBoobs`, `DildoFuckingMachine`, `F4c3spl4shCumshot`, `Orgasm` の LoRA プリセットを追加しました。
 - サンプルの動画を 4本追加しました。
 
 ### 2025/09/07
