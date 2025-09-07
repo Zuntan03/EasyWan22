@@ -65,9 +65,10 @@ set PYTHONUTF8=1
 @REM 09/02 42d71807590b42e518f9f5065d9f69e2d8eba81d
 @REM 09/03 54391300b16a2925ad4bed7e793db1bf5d3a7e2d
 @REM 09/04 9b864b987bee7d498ab00eeed5dd973de33f062a
-@REM 09/05
+@REM 09/05 edea93286c3536ff406c32f5c86fcbbcf8b9b650
+@REM 09/07 e5955d83958f1c808c86e5be3804ca42b39ab3fa
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main edea93286c3536ff406c32f5c86fcbbcf8b9b650
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main e5955d83958f1c808c86e5be3804ca42b39ab3fa
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\
@@ -91,8 +92,9 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 @REM 08/02 c34f5b465ecc77886b5a87ddd6a3a887603d7559
 @REM 08/20 e11d490f7edbe52816fca2f416166af2a0be5064
 @REM 08/22 13f2e5c33698025f7694ebbf273f905f87c6a4ec
+@REM 09/03 c87493b98237b1edd9018c4974c10fe0c2b870c9
 @REM https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet/commits/master/
-call :GITHUB_HASH_REQUIREMENTS AlekPet ComfyUI_Custom_Nodes_AlekPet master 13f2e5c33698025f7694ebbf273f905f87c6a4ec
+call :GITHUB_HASH_REQUIREMENTS AlekPet ComfyUI_Custom_Nodes_AlekPet master c87493b98237b1edd9018c4974c10fe0c2b870c9
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/kijai/ComfyUI-DepthAnythingV2/commits/main/
@@ -136,7 +138,8 @@ if not exist ..\models\ultralytics\ ( mkdir ..\models\ultralytics )
 @REM https://github.com/kijai/ComfyUI-KJNodes/commits/main/
 @REM 08/21 e2ce0843d1183aea86ce6a1617426f492dcdc802
 @REM 08/23 ba9153cb06fc77bfd86c36835f1817482e8328a0
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-KJNodes main ba9153cb06fc77bfd86c36835f1817482e8328a0
+@REM 09/02 0adab07d1ad3d0780afc97319eaf37c3681af37d
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-KJNodes main 0adab07d1ad3d0780afc97319eaf37c3681af37d
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 if not exist ComfyUI-KJNodes\fonts\f910-shin-comic-2.04.otf (
@@ -178,7 +181,8 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 @REM 08/02 c5ffa43de4ddb17244626a65a30700a05dd6b67d
 @REM 08/20 110e4ef1dbf2ea20ec39ae5a737bd5e56d4e54c2
 @REM 08/25 dbc5fa5e89b6a8b6a1a1dda787505b690f18026c
-call :GITHUB_HASH_REQUIREMENTS rgthree rgthree-comfy main dbc5fa5e89b6a8b6a1a1dda787505b690f18026c
+@REM 09/07 26988df02c7e84d0fe22908ad0955fc8797796f6
+call :GITHUB_HASH_REQUIREMENTS rgthree rgthree-comfy main 26988df02c7e84d0fe22908ad0955fc8797796f6
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 popd rem "%~dp0..\ComfyUI\custom_nodes"

@@ -88,7 +88,7 @@ Currently, documentation updates haven't caught up.
 - Added the ability to apply mosaics from the end of the video in `PointMosaic`.
 	- Use this when mosaic targets appear in the latter half of the video with `SwapStartEnd` etc.
 - Since some environments seem to be experiencing issues, VAE encoding tiling for Detector and Refiner is now enabled by default.
-- Added ~~18~~ 37 sample videos.
+- Added ~~18~~ ~~37~~ **57** sample videos.
 
 ### 2025/09/05
 
