@@ -16,6 +16,7 @@ ComfyUI の学習などには不向きですので、それらが目的の方は
 
 記事
 
+- 9/8: 『[【無料】動画生成AI「Wan2.2」の使い方　ComfyUI設定、簡単インストール方法まとめ](https://ascii.jp/elem/000/004/316/4316324/4/)』
 - 8/11:『[無料の動画生成AI「Wan2.2」が凄すぎる　PCローカルでこの品質が出せるとは](https://ascii.jp/elem/000/004/312/4312173/)』
 	- [p. 5「導入にあたっては、Zuntanさんの「EasyWan22」の環境が迷わず設定できておすすめです。」](https://ascii.jp/elem/000/004/312/4312173/5/)
 - 8/5:『[ローカル環境でWan2.2のimg2videoを試してみた](https://kagaseo.blog.jp/archives/29271567.html)』
@@ -38,6 +39,8 @@ ComfyUI の学習などには不向きですので、それらが目的の方は
 - 7/31: [@Emanon_14](https://x.com/Emanon_14/status/1950892068705841599), [@yukimino_doga](https://x.com/yukimino_doga/status/1950761171797377392) [2](https://x.com/yukimino_doga/status/1950878350257312142)
 
 ## インストール
+
+導入記事『[【無料】動画生成AI「Wan2.2」の使い方　ComfyUI設定、簡単インストール方法まとめ](https://ascii.jp/elem/000/004/316/4316324/4/)』
 
 1. [EasyWan22Installer.bat](https://github.com/Zuntan03/EasyWan22/raw/main/EasyWan22/EasyWan22Installer.bat?ver=0) を右クリックから保存します。
 	- デフォルトでは [ComfyUI 公式が推奨している Python 3.12](https://github.com/comfyanonymous/ComfyUI#manual-install-windows-linux) を使用します。  
