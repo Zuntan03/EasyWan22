@@ -88,6 +88,7 @@ Currently, documentation updates haven't caught up.
 ### 2025/09/09
 
 - Reverted ComfyUI version to `v0.3.55` due to reported VRAM overflow issues with version `v0.3.57`.
+- Added presets for `BreastExpansion` and `Dancing`.
 
 ### 2025/09/08
 

@@ -47,6 +47,8 @@ call %~dp0loras\Nsfw\AssertiveCowgirl-H.bat
 call %~dp0loras\Nsfw\AssertiveCowgirl-L.bat
 call %~dp0loras\Nsfw\BouncingBoobs-H.bat
 call %~dp0loras\Nsfw\BouncingBoobs-L.bat
+call %~dp0loras\Nsfw\BreastExpansion_v10-H.bat
+call %~dp0loras\Nsfw\BreastExpansion_v10-L.bat
 call %~dp0loras\Nsfw\C0wg1rl_R3v3rs3C0wg1rl-H.bat
 call %~dp0loras\Nsfw\C0wg1rl_R3v3rs3C0wg1rl-L.bat
 call %~dp0loras\Nsfw\DeepthroatBlowjob_v10-H.bat
@@ -87,6 +89,8 @@ call %~dp0loras\Nsfw\WrigglingMotion_v10-L.bat
 
 call %~dp0loras\NsfwWan21\ElectPenisWan21_v10.bat
 
+call %~dp0loras\Sfw\Dancing_v10-H.bat
+call %~dp0loras\Sfw\Dancing_v10-L.bat
 call %~dp0loras\Sfw\GlassKiss-H.bat
 call %~dp0loras\Sfw\GlassKiss-L.bat
 call %~dp0loras\Sfw\HighScreenFlood-H.bat
