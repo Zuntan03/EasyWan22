@@ -83,6 +83,10 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 現在、ドキュメントの更新が追いついていません。
 
+### 2025/09/09
+
+- ComfyUI のバージョン `v0.3.57` で VRAM あふれが発生する問題が報告されているため、`v0.3.55` に戻しました。
+
 ### 2025/09/08
 
 - `BouncingBoobs`, `DildoFuckingMachine`, `F4c3spl4shCumshot`, `Orgasm` の LoRA プリセットを追加しました。

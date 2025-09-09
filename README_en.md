@@ -16,6 +16,7 @@ Latest user feedback can be found here: **[Twitter](https://x.com/search?q=%22ea
 
 Articles
 
+- 9/8: "[【Free】How to use video generation AI 'Wan2.2' - ComfyUI setup and easy installation method summary](https://ascii.jp/elem/000/004/316/4316324/4/)" (Japanese)
 - 8/11: "[Free video generation AI 'Wan2.2' is amazing - You can achieve this quality on PC locally](https://ascii.jp/elem/000/004/312/4312173/)" (Japanese)
 	- [p. 5 "For installation, Zuntan's 'EasyWan22' environment is recommended as it can be set up without getting lost."](https://ascii.jp/elem/000/004/312/4312173/5/)
 - 8/5: "[Tried Wan2.2's img2video in local environment](https://kagaseo.blog.jp/archives/29271567.html)" (Japanese)
@@ -38,6 +39,8 @@ Examples
 - 7/31: [@Emanon_14](https://x.com/Emanon_14/status/1950892068705841599), [@yukimino_doga](https://x.com/yukimino_doga/status/1950761171797377392) [2](https://x.com/yukimino_doga/status/1950878350257312142)
 
 ## Installation
+
+Installation guide: "[【Free】How to use video generation AI 'Wan2.2' - ComfyUI setup and easy installation method summary](https://ascii.jp/elem/000/004/316/4316324/4/)" (Japanese)
 
 1. Right-click and save [EasyWan22Installer.bat](https://github.com/Zuntan03/EasyWan22/raw/main/EasyWan22/EasyWan22Installer.bat?ver=0).
 	- By default, it uses [Python 3.12 recommended by ComfyUI official](https://github.com/comfyanonymous/ComfyUI#manual-install-windows-linux).  
@@ -81,6 +84,10 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 -->
 
 Currently, documentation updates haven't caught up.
+
+### 2025/09/09
+
+- Reverted ComfyUI version to `v0.3.55` due to reported VRAM overflow issues with version `v0.3.57`.
 
 ### 2025/09/08
 
