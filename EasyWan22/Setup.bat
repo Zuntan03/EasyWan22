@@ -9,11 +9,17 @@ set CURL_CMD=C:\Windows\System32\curl.exe -kL
 
 pushd "%~dp0.."
 
+if exist "%~dp0ComfyUi-VersionUnlock.txt" ( goto :SKIP_COMFYUI_VERSION_LOCK )
+
 @REM https://github.com/comfyanonymous/ComfyUI/releases
 echo v0.3.55> "%EASY_COMFYUI%\ComfyUi_Version.txt"
 
 @REM https://github.com/Comfy-Org/ComfyUI-Manager/tags
 echo 3.35> "%EASY_COMFYUI%\ComfyUiManager_Version.txt"
+
+:SKIP_COMFYUI_VERSION_LOCK
+
+if exist "%~dp0Pytorch-VersionUnlock.txt" ( goto :SKIP_PYTORCH_VERSION_LOCK )
 
 echo xformers> "%EASY_COMFYUI%\UninstallModule.txt"
 
@@ -30,6 +36,8 @@ echo triton-windows==3.3.1.post19> "%EASY_COMFYUI%\Triton_Version.txt"
 @REM https://github.com/woct0rdho/SageAttention/releases
 @REM echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post2/sageattention-2.2.0+cu128torch2.8.0.post2-cp39-abi3-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
 echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post1/sageattention-2.2.0+cu128torch2.7.1.post1-cp39-abi3-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
+
+:SKIP_PYTORCH_VERSION_LOCK
 
 call %EASY_TOOLS%\ComfyUi\ComfyUi_Update.bat
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )

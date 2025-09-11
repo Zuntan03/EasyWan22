@@ -85,6 +85,17 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 Currently, documentation updates haven't caught up.
 
+### 2025/09/11
+
+- Added `EasyWan22/ComfyUi-SwitchNightly.bat` to switch ComfyUI to the latest Nightly version.
+	- This may cause performance issues in certain environments.
+	- To revert, run `EasyWan22\ComfyUi-VersionLock.bat` and `Update.bat` in sequence.
+- Added `EasyWan22/ComfyUi-Version(Unlock|Lock).bat` to toggle enabling/disabling version locking for ComfyUI and ComfyUI Manager in `Update.bat`.
+- Added `EasyWan22\Pytorch-Version(Unlock|Lock).bat` to toggle enabling/disabling version locking for Pytorch, Triton, and SageAttention in `Update.bat`.
+- The above `*-VersionUnlock.bat` files will stop version locking but continue to use versions already specified in `EasyTools/ComfyUi/*.txt`.
+	- If you want to completely disable version control, use `EasyTools/ComfyUi/ComfyUiVersionControl-Disable.bat` or `EasyTools\ComfyUi\PytorchVersionControl-Disable.bat`.
+- Added 7 sample videos.
+
 ### 2025/09/09
 
 - Reverted ComfyUI version to `v0.3.55` due to reported VRAM overflow issues with version `v0.3.57`.
