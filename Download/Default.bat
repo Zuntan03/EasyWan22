@@ -78,6 +78,7 @@ call %~dp0loras\Nsfw\PovCowgirl_v02-H.bat
 call %~dp0loras\Nsfw\PovCowgirl_v02-L.bat
 call %~dp0loras\Nsfw\PovDoubleBlowjob_v10-H.bat
 call %~dp0loras\Nsfw\PovDoubleBlowjob_v10-L.bat
+call %~dp0loras\Nsfw\PovInsertion_v10.bat
 call %~dp0loras\Nsfw\PovMissionary-H.bat
 call %~dp0loras\Nsfw\PovMissionary-L.bat
 call %~dp0loras\Nsfw\ReverseSuspendedCongress_v10-H.bat

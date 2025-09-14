@@ -35,7 +35,8 @@ echo triton-windows==3.3.1.post19> "%EASY_COMFYUI%\Triton_Version.txt"
 
 @REM https://github.com/woct0rdho/SageAttention/releases
 @REM echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post2/sageattention-2.2.0+cu128torch2.8.0.post2-cp39-abi3-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
-echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post1/sageattention-2.2.0+cu128torch2.7.1.post1-cp39-abi3-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
+@REM echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post1/sageattention-2.2.0+cu128torch2.7.1.post1-cp39-abi3-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
+echo https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post2/sageattention-2.2.0+cu128torch2.7.1.post2-cp39-abi3-win_amd64.whl> "%EASY_COMFYUI%\SageAttention_Version.txt"
 
 :SKIP_PYTORCH_VERSION_LOCK
 
@@ -75,8 +76,9 @@ set PYTHONUTF8=1
 @REM 09/04 9b864b987bee7d498ab00eeed5dd973de33f062a
 @REM 09/05 edea93286c3536ff406c32f5c86fcbbcf8b9b650
 @REM 09/07 e5955d83958f1c808c86e5be3804ca42b39ab3fa
+@REM 09/11 9cefe309e3d8eb9ad3afda576cf7098c72e9efad
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main e5955d83958f1c808c86e5be3804ca42b39ab3fa
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 9cefe309e3d8eb9ad3afda576cf7098c72e9efad
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\

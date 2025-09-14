@@ -83,6 +83,16 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 現在、ドキュメントの更新が追いついていません。
 
+### 2025/09/14
+
+- Civitai ダウンロードの古い仕組みを使用していた不具合を修正しました。
+	- `Download\ultralytics\segm\99coins_anime_girl_face_m_seg.bat`
+	- `Download\ultralytics\segm\nipples_v2_yolov11s-seg.bat`
+	- `Download\ultralytics\segm\PitEyeDetailer-v2-seg.bat`
+	- `Download\ultralytics\segm\PitHandDetailer-v2-Test-v9c.bat`
+- プリセットを追加しました。
+	- `Download\loras\Nsfw\PovInsertion_v10.bat`
+
 ### 2025/09/11
 
 - ComfyUI を最新の Nightly 版に切り替えられる `EasyWan22/ComfyUi-SwitchNightly.bat` を追加しました。

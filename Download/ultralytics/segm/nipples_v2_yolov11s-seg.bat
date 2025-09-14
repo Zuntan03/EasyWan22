@@ -1,11 +1,11 @@
 @echo off
 chcp 65001 > NUL
 set EASY_TOOLS=%~dp0..\..\..\EasyTools
-set CIVITAI_MODEL_UNZIP=%EASY_TOOLS%\Download\CivitaiModelUnzip.bat
+set CIVITAI_MODEL_DOWNLOAD_UNZIP=%EASY_TOOLS%\Civitai\Civitai_ModelDownloadUnzip.bat
 pushd %~dp0..\..\..\ComfyUI\models\ultralytics
 
 @REM https://civitai.com/models/490259?modelVersionId=2038997
-call %CIVITAI_MODEL_UNZIP% segm\ nipples_v2_yolov11s-seg.pt 490259 2038997
+call %CIVITAI_MODEL_DOWNLOAD_UNZIP% segm\ nipples_v2_yolov11s-seg.pt 490259 2038997
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 if not exist segm\nipples_v2_yolov11s-seg.pt (
