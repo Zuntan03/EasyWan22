@@ -60,6 +60,13 @@ echo pip install -qq PyYAML==6.0.2
 pip install -qq PyYAML==6.0.2
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
+@REM https://files.catbox.moe/pqzrbx.png
+@REM https://x.com/BoB_Arietta/status/1967855058374234254?t=r5GFk6pZEMBOws2atbkRrg
+@REM https://x.com/KatonboOpk/status/1967877560488050924?t=deyPu3b1SH8cfO6ZXG4ioA
+@REM https://github.com/cubiq/ComfyUI_essentials/blob/main/requirements.txt
+echo pip install -qq --only-binary=stringzilla stringzilla==4.0.7
+pip install -qq --only-binary=stringzilla stringzilla==4.0.7
+
 popd rem "%~dp0.."
 pushd "%~dp0..\ComfyUI\custom_nodes"
 
