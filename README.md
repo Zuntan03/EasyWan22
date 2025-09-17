@@ -43,10 +43,11 @@ ComfyUI の学習などには不向きですので、それらが目的の方は
 導入記事『[【無料】動画生成AI「Wan2.2」の使い方　ComfyUI設定、簡単インストール方法まとめ](https://ascii.jp/elem/000/004/316/4316324/4/)』
 
 1. [EasyWan22Installer.bat](https://github.com/Zuntan03/EasyWan22/raw/main/EasyWan22/EasyWan22Installer.bat?ver=0) を右クリックから保存します。
+<!--
 	- デフォルトでは [ComfyUI 公式が推奨している Python 3.12](https://github.com/comfyanonymous/ComfyUI#manual-install-windows-linux) を使用します。  
 	[EasyWan22Installer-Python3_10.bat](https://github.com/Zuntan03/EasyWan22/raw/main/EasyWan22/EasyWan22Installer-Python3_10.bat?ver=0) でインストールすると Python 3.10 系を利用できます。
 		- 環境依存の問題で Python 3.10 でないと動作しない環境もあります。  
-		インストールや起動に失敗する場合は、Python 3.10 系でのインストールを試してみてください。
+		インストールや起動に失敗する場合は、Python 3.10 系でのインストールを試してみてください。-->
 2. インストール先の **空フォルダ** を `C:/EasyWan22/` や `D:/EasyWan22/` などの浅いパスに用意して、`EasyWan22Installer.bat` を置いて実行します。
 	- **`発行元を確認できませんでした。このソフトウェアを実行しますか？` と表示されたら `実行` します。**
 	- **`WindowsによってPCが保護されました` と表示されたら、`詳細表示` から `実行` します。**
@@ -82,6 +83,10 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 -->
 
 現在、ドキュメントの更新が追いついていません。
+
+### 2025/09/17
+
+- Python 3.12 系では特定の環境でコンパイラを要求されてるため、インストーラを Python 3.10 系対応のみにしました。
 
 ### 2025/09/14
 

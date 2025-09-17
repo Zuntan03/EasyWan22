@@ -127,7 +127,7 @@ if /i not "%DOWNLOAD_MODEL_YES_OR_NO%" == "n" (
 	call %EASY_TOOLS_DIR%\Civitai\Civitai_ApiKey.bat
 )
 
-@REM echo 3.10.6> "%EASY_TOOLS_DIR%\Python\Python_DefaultVersion.txt"
+echo 3.10.6> "%EASY_TOOLS_DIR%\Python\Python_DefaultVersion.txt"
 
 call %PROJECT_SETUP_BAT%
 if %ERRORLEVEL% neq 0 ( exit /b 1 )
