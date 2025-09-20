@@ -84,6 +84,14 @@ Currently, documentation updates haven't caught up.
 
 ### 2025/09/20
 
+- Added support for Kijai version [Wan-Animate](https://humanaigc.github.io/wan-animate/) samples.
+	- Works without issues on Geforce RTX 3060 12GB.
+	- Download necessary files with `Download/Sample-KijaiWanAnimate.bat`.
+	- For workflow, drag and drop `Sample/20250920-KijaiWanAnimate-Workflow.png` into ComfyUI to check the sample.
+		- In the workflow's `Kijai/wanvideo_WanAnimate_example_01.json`, you need to reselect models as appropriate.
+	- Mainly operate the `Control` group in the top-left. Also check the `Information` in the workflow.
+	- You can also download and use the fp8 model with `Download\diffusion_models\Animate\Wan2_2-Animate-14B_fp8_e4m3fn_scaled_KJ.bat`.
+	- If you want to rewrite the background as well, increase `MaskExtend`.
 - Added `EndImage-PostProcess` option to `FastMixSampler` and `RefinerSampler`.
 	- Can disable post-processing for EndImage discoloration countermeasures.
 - Updated versions of various custom nodes.

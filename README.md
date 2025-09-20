@@ -82,6 +82,14 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 ### 2025/09/20
 
+- Kijai 版の [Wan-Animate](https://humanaigc.github.io/wan-animate/) のサンプルに対応しました。
+	- Geforce RTX 3060 12GB で問題なく動作しています。
+	- `Download/Sample-KijaiWanAnimate.bat` で必要なファイルをダウンロードします。
+	- ワークフローは `Sample/20250920-KijaiWanAnimate-Workflow.png` を ComfyUI にドラッグ＆ドロップするとサンプルを確認できます。
+		- ワークフローの `Kijai/wanvideo_WanAnimate_example_01.json` ではモデルなどを適時選択し直す必要があります。
+	- 主に左上の `Control` グループを操作します。ワークフロー内の `Information` も確認ください。
+	- `Download\diffusion_models\Animate\Wan2_2-Animate-14B_fp8_e4m3fn_scaled_KJ.bat` で fp8 モデルをダウンロードして利用することもできます。
+	- 背景も書き換えたい場合は、`MaskExtend` を増やしてください。
 - `FastMixSampler` と `RefinerSampler` に `EndImage-PostProcess` オプションを追加しました。
 	- EndImage の変色対策の後処理を無効化できます。
 - 各種カスタムノードのバージョンを更新しました。

@@ -61,10 +61,10 @@ echo pip install -qq PyYAML==6.0.2
 pip install -qq PyYAML==6.0.2
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
+@REM https://github.com/cubiq/ComfyUI_essentials/blob/main/requirements.txt
 @REM https://files.catbox.moe/pqzrbx.png
 @REM https://x.com/BoB_Arietta/status/1967855058374234254?t=r5GFk6pZEMBOws2atbkRrg
 @REM https://x.com/KatonboOpk/status/1967877560488050924?t=deyPu3b1SH8cfO6ZXG4ioA
-@REM https://github.com/cubiq/ComfyUI_essentials/blob/main/requirements.txt
 echo pip install -qq --only-binary=stringzilla stringzilla==4.0.7
 pip install -qq --only-binary=stringzilla stringzilla==4.0.7
 
@@ -128,6 +128,11 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 @REM https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved/commits/main/
 @REM call :GITHUB_HASH_REQUIREMENTS Kosinkadink ComfyUI-AnimateDiff-Evolved main a34036b662d69d155a4536b2ac65483ae941e257
 @REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
+@REM https://github.com/Fannovel16/comfyui_controlnet_aux/commits/main/
+@REM 09/10 cc6b232f4a47f0cdf70f4e1bfa24b74bd0d75bf1
+call :GITHUB_HASH_REQUIREMENTS Fannovel16 comfyui_controlnet_aux main cc6b232f4a47f0cdf70f4e1bfa24b74bd0d75bf1
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/pythongosssss/ComfyUI-Custom-Scripts/commits/main/
 @REM 08/10 f2838ed5e59de4d73cde5c98354b87a8d3200190
