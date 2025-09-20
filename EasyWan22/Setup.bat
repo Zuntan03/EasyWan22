@@ -12,6 +12,7 @@ pushd "%~dp0.."
 if exist "%~dp0ComfyUi-VersionUnlock.txt" ( goto :SKIP_COMFYUI_VERSION_LOCK )
 
 @REM https://github.com/comfyanonymous/ComfyUI/releases
+@REM https://github.com/comfyanonymous/ComfyUI/blob/e8df53b764c7dfce1a9235f6ee70a17cfdece3ff/main.py#L115 os.environ['MIMALLOC_PURGE_DELAY'] = '0' ?
 echo v0.3.55> "%EASY_COMFYUI%\ComfyUi_Version.txt"
 
 @REM https://github.com/Comfy-Org/ComfyUI-Manager/tags
@@ -55,7 +56,7 @@ echo pip install -qq transformers==4.49.0
 pip install -qq transformers==4.49.0
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
-@REM https://github.com/Zuntan03/EasyWan22/issues/1
+@REM https://github.com/Zuntan03/EasyWan22/issues/1 Python 3.12.x, ModuleNotFoundError: No module named 'yaml'
 echo pip install -qq PyYAML==6.0.2
 pip install -qq PyYAML==6.0.2
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
@@ -67,25 +68,52 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 echo pip install -qq --only-binary=stringzilla stringzilla==4.0.7
 pip install -qq --only-binary=stringzilla stringzilla==4.0.7
 
+@REM llama-cpp-python
+@REM if "%EASY_PYTHON_VERSION_3%"=="310" (
+@REM 	goto :EASY_PYTHON_310_MODULES
+@REM ) else if "%EASY_PYTHON_VERSION_3%"=="312" (
+@REM 	goto :EASY_PYTHON_312_MODULES
+@REM ) else (
+@REM 	echo ERROR: Invalid Python version. EASY_PYTHON_VERSION_3: %EASY_PYTHON_VERSION_3%
+@REM 	pause
+@REM 	goto :EASY_PYTHON_MODULES_END
+@REM )
+@REM :EASY_PYTHON_310_MODULES
+@REM if exist "%~dp0LlamaCppPython_GeforcrRTX50x0.txt" ( goto :LLAMA_CPP_PYTHON_50x0_310 )
+
+@REM echo pip install -qq https://github.com/abetlen/llama-cpp-python/releases/download/v0.3.4-cu124/llama_cpp_python-0.3.4-cp310-cp310-win_amd64.whl
+@REM pip install -qq https://github.com/abetlen/llama-cpp-python/releases/download/v0.3.4-cu124/llama_cpp_python-0.3.4-cp310-cp310-win_amd64.whl
+@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+@REM goto :EASY_PYTHON_MODULES_END
+
+@REM :LLAMA_CPP_PYTHON_50x0_310
+@REM echo pip install https://huggingface.co/marcorez8/llama-cpp-python-windows-blackwell-cuda/resolve/main/llama_cpp_python-0.3.9-cp310-cp310-win_amd64.whl
+@REM pip install https://huggingface.co/marcorez8/llama-cpp-python-windows-blackwell-cuda/resolve/main/llama_cpp_python-0.3.9-cp310-cp310-win_amd64.whl
+@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+@REM goto :EASY_PYTHON_MODULES_END
+
+@REM :EASY_PYTHON_312_MODULES
+@REM if exist "%~dp0LlamaCppPython_GeforcrRTX50x0.txt" ( goto :LLAMA_CPP_PYTHON_50x0_312 )
+
+@REM echo pip install -qq https://github.com/abetlen/llama-cpp-python/releases/download/v0.3.4-cu124/llama_cpp_python-0.3.4-cp312-cp312-win_amd64.whl
+@REM pip install -qq https://github.com/abetlen/llama-cpp-python/releases/download/v0.3.4-cu124/llama_cpp_python-0.3.4-cp312-cp312-win_amd64.whl
+@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+@REM goto :EASY_PYTHON_MODULES_END
+
+@REM :LLAMA_CPP_PYTHON_50x0_312
+@REM echo pip install https://github.com/boneylizard/llama-cpp-python-cu128-gemma3/releases/download/rtx5090-blackwell-gpt-oss/llama_cpp_python-0.3.16-cp312-cp312-win_amd64.whl
+@REM pip install https://github.com/boneylizard/llama-cpp-python-cu128-gemma3/releases/download/rtx5090-blackwell-gpt-oss/llama_cpp_python-0.3.16-cp312-cp312-win_amd64.whl
+@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+
+@REM :EASY_PYTHON_MODULES_END
+
 popd rem "%~dp0.."
 pushd "%~dp0..\ComfyUI\custom_nodes"
 
-@REM REMBG: pip UnicodeDecodeError: 'cp932' codec can't decode byte 0x97 in position 2879: illegal multibyte sequence
-set PYTHONUTF8=1
-
-@REM 08/26 30f185a19b406a1c486c5932e56aac5c970c7d84
-@REM No LoRA Error: cannot access local variable 'control_lora' where it is not associated with a value
-@REM https://github.com/kijai/ComfyUI-WanVideoWrapper/issues/1132 Fixed https://github.com/kijai/ComfyUI-WanVideoWrapper/commit/704cca215bd5f132df6095b6b35e4b0b8e52242f
-@REM 08/31 df0b8c419afcb2ac79062b1ac611bd3b154da317
-@REM 09/01 d9038d575f780107d2ef907761369bf3fbcbeb2f
-@REM 09/02 42d71807590b42e518f9f5065d9f69e2d8eba81d
-@REM 09/03 54391300b16a2925ad4bed7e793db1bf5d3a7e2d
-@REM 09/04 9b864b987bee7d498ab00eeed5dd973de33f062a
-@REM 09/05 edea93286c3536ff406c32f5c86fcbbcf8b9b650
-@REM 09/07 e5955d83958f1c808c86e5be3804ca42b39ab3fa
 @REM 09/11 9cefe309e3d8eb9ad3afda576cf7098c72e9efad
+@REM 09/20 0dc8a8456472e26e41a35fe3c660afaa98b9cdd1
 @REM https://github.com/kijai/ComfyUI-WanVideoWrapper/commits/main/
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 9cefe309e3d8eb9ad3afda576cf7098c72e9efad
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-WanVideoWrapper main 0dc8a8456472e26e41a35fe3c660afaa98b9cdd1
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 xcopy /SQY ComfyUI-WanVideoWrapper\example_workflows\*.* ..\user\default\workflows\Kijai\
@@ -106,10 +134,8 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call :GITHUB_HASH_REQUIREMENTS pythongosssss ComfyUI-Custom-Scripts main f2838ed5e59de4d73cde5c98354b87a8d3200190
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-@REM 08/02 c34f5b465ecc77886b5a87ddd6a3a887603d7559
-@REM 08/20 e11d490f7edbe52816fca2f416166af2a0be5064
-@REM 08/22 13f2e5c33698025f7694ebbf273f905f87c6a4ec
 @REM 09/03 c87493b98237b1edd9018c4974c10fe0c2b870c9
+@REM 09/19 223f2a8fc74f8b8d345a23d5ae39c0c6959a204b
 @REM https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet/commits/master/
 call :GITHUB_HASH_REQUIREMENTS AlekPet ComfyUI_Custom_Nodes_AlekPet master c87493b98237b1edd9018c4974c10fe0c2b870c9
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
@@ -139,7 +165,8 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 @REM https://github.com/city96/ComfyUI-GGUF/commits/main/
 @REM 08/20 d247022e3fa66851c5084cc251b076aab816423d
-call :GITHUB_HASH_REQUIREMENTS city96 ComfyUI-GGUF main d247022e3fa66851c5084cc251b076aab816423d
+@REM 09/15 be2a08330d7ec232d684e50ab938870d7529471e
+call :GITHUB_HASH_REQUIREMENTS city96 ComfyUI-GGUF main be2a08330d7ec232d684e50ab938870d7529471e
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/ltdrdata/ComfyUI-Impact-Pack/tags
@@ -153,10 +180,9 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 if not exist ..\models\ultralytics\ ( mkdir ..\models\ultralytics )
 
 @REM https://github.com/kijai/ComfyUI-KJNodes/commits/main/
-@REM 08/21 e2ce0843d1183aea86ce6a1617426f492dcdc802
-@REM 08/23 ba9153cb06fc77bfd86c36835f1817482e8328a0
 @REM 09/02 0adab07d1ad3d0780afc97319eaf37c3681af37d
-call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-KJNodes main 0adab07d1ad3d0780afc97319eaf37c3681af37d
+@REM 09/19 e81f33508b0821ea2f53f4f46a833fa6215626bd
+call :GITHUB_HASH_REQUIREMENTS kijai ComfyUI-KJNodes main e81f33508b0821ea2f53f4f46a833fa6215626bd
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 if not exist ComfyUI-KJNodes\fonts\f910-shin-comic-2.04.otf (
@@ -194,13 +220,14 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 @REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/rgthree/rgthree-comfy/commits/main/
-@REM 07/12 944d5353a1b0a668f40844018c3dc956b95a67d7
-@REM 08/02 c5ffa43de4ddb17244626a65a30700a05dd6b67d
-@REM 08/20 110e4ef1dbf2ea20ec39ae5a737bd5e56d4e54c2
-@REM 08/25 dbc5fa5e89b6a8b6a1a1dda787505b690f18026c
 @REM 09/07 26988df02c7e84d0fe22908ad0955fc8797796f6
-call :GITHUB_HASH_REQUIREMENTS rgthree rgthree-comfy main 26988df02c7e84d0fe22908ad0955fc8797796f6
+@REM 09/10 0fb1e239a903e93ef626a8c20589b38f46e39dff
+call :GITHUB_HASH_REQUIREMENTS rgthree rgthree-comfy main 0fb1e239a903e93ef626a8c20589b38f46e39dff
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
+echo pip install -qq huggingface_hub[hf_xet]
+pip install -qq huggingface_hub[hf_xet]
+if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 popd rem "%~dp0..\ComfyUI\custom_nodes"
 pushd "%~dp0..\ComfyUI"
