@@ -82,6 +82,8 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 ### 2025/09/20
 
+- `FastMixSampler` と `RefinerSampler` に `EndImage-PostProcess` オプションを追加しました。
+	- EndImage の変色対策の後処理を無効化できます。
 - 各種カスタムノードのバージョンを更新しました。
 
 ### 2025/09/17

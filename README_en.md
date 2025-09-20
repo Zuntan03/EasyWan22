@@ -84,6 +84,8 @@ Currently, documentation updates haven't caught up.
 
 ### 2025/09/20
 
+- Added `EndImage-PostProcess` option to `FastMixSampler` and `RefinerSampler`.
+	- Can disable post-processing for EndImage discoloration countermeasures.
 - Updated versions of various custom nodes.
 
 ### 2025/09/17
