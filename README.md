@@ -80,6 +80,10 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 現在、ドキュメントの更新が追いついていません。
 
+### 2025/09/22
+
+- サンプルをひとつ追加しました。
+
 ### 2025/09/20
 
 - Kijai 版の [Wan-Animate](https://humanaigc.github.io/wan-animate/) のサンプルに対応しました。

@@ -82,6 +82,10 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 Currently, documentation updates haven't caught up.
 
+### 2025/09/22
+
+- Added one sample.
+
 ### 2025/09/20
 
 - Added support for Kijai version [Wan-Animate](https://humanaigc.github.io/wan-animate/) samples.
