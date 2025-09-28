@@ -202,6 +202,36 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call :GITHUB_HASH_REQUIREMENTS Smirnov75 ComfyUI-mxToolkit main 7f7a0e584f12078a1c589645d866ae96bad0cc35
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
+@REM 出力先が繋がっていなくても動作してしまい、無効化できない
+@REM @REM https://github.com/yuvraj108c/ComfyUI-Rife-Tensorrt/commits/master/
+@REM call :GITHUB_HASH_REQUIREMENTS yuvraj108c ComfyUI-Rife-Tensorrt master 06b847dfa799aa97cb3ef640cc1f26a53029e7f3
+@REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
+@REM echo pip install -qq tensorrt-cu12_bindings==10.4.0 tensorrt-cu12_libs==10.4.0
+@REM pip install -qq tensorrt-cu12_bindings==10.4.0 tensorrt-cu12_libs==10.4.0
+@REM if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+
+@REM if exist ComfyUI-Rife-Tensorrt\models\ ( goto :RIFE_TENSORRT_COMPILED )
+@REM mkdir ComfyUI-Rife-Tensorrt\models
+@REM mkdir ..\models\tensorrt\rife
+
+@REM pushd ComfyUI-Rife-Tensorrt\models
+@REM echo %CURL_CMD% -O https://huggingface.co/yuvraj108c/rife-onnx/resolve/main/rife49_ensemble_True_scale_1_sim.onnx
+@REM %CURL_CMD% -O https://huggingface.co/yuvraj108c/rife-onnx/resolve/main/rife49_ensemble_True_scale_1_sim.onnx
+@REM if %ERRORLEVEL% neq 0 ( pause & popd & goto :RIFE_TENSORRT_COMPILED )
+@REM popd
+
+@REM pushd ComfyUI-Rife-Tensorrt
+@REM echo python export_trt.py
+@REM python export_trt.py
+@REM if %ERRORLEVEL% neq 0 ( pause & popd & goto :RIFE_TENSORRT_COMPILED )
+@REM popd
+
+@REM echo move /Y ComfyUI-Rife-Tensorrt\models\rife49_ensemble_True_scale_1_sim.engine ..\models\tensorrt\rife\
+@REM move /Y ComfyUI-Rife-Tensorrt\models\rife49_ensemble_True_scale_1_sim.engine ..\models\tensorrt\rife\
+@REM if %ERRORLEVEL% neq 0 ( pause )
+@REM :RIFE_TENSORRT_COMPILED
+
 @REM https://github.com/1038lab/ComfyUI-RMBG/commits/main/
 @REM 08/19 ff0af696a69cfb27ea2a98509d0f57e762200978
 call :GITHUB_HASH_REQUIREMENTS 1038lab ComfyUI-RMBG main ff0af696a69cfb27ea2a98509d0f57e762200978

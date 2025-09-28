@@ -82,6 +82,10 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 Currently, documentation updates haven't caught up.
 
+### 2025/09/28
+
+- Fixed the URL change in `Download\loras\Animate\WanAnimate_relight_lora_fp16.bat`.
+
 ### 2025/09/22
 
 - Added one sample.

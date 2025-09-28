@@ -80,6 +80,10 @@ README.md を英訳して README_en.md を更新します。更新履歴をよ�
 
 現在、ドキュメントの更新が追いついていません。
 
+### 2025/09/28
+
+- `Download\loras\Animate\WanAnimate_relight_lora_fp16.bat` の URL 変更に対応しました。
+
 ### 2025/09/22
 
 - サンプルをひとつ追加しました。
